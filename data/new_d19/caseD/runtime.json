@@ -1,0 +1,108 @@
+{
+ "item": "run time of the dispatch evaluator of the planned arrival",
+ "generated": "2026-09-28 05:03:22",
+ "script": "code/run_caseD_runtime.py",
+ "machine": {
+  "cpu": {
+   "Name": "13th Gen Intel(R) Core(TM) i7-13650HX",
+   "NumberOfCores": 14,
+   "NumberOfLogicalProcessors": 20,
+   "MaxClockSpeed": 2600
+  },
+  "os": {
+   "Caption": "Microsoft Windows 11 Home",
+   "Version": "10.0.26200",
+   "BuildNumber": "26200",
+   "TotalVisibleMemorySize": 16454352
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "logical_cpus_os": 20
+ },
+ "versions": {
+  "python": "3.12.7",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "python-flint": "0.9.0",
+  "numba": "0.60.0"
+ },
+ "load_before": {
+  "tag": "before",
+  "time": "2026-09-28 05:03:25",
+  "cpu_percent_1s": 17.6,
+  "other_python_or_latex_processes": []
+ },
+ "design_revision": "round 6: fan plan with ramped main phases (common onset after a 10 s approach at the crawl rate; the planned deceleration of every unit rises over 35 % of its main duration to its peak, holds it and falls back over the last 35 %, as a symmetric staircase on the planning grid of 250 ms; joins onto a common crawl, 5 s tail crawl, synchronized braking at a_b from T_xi); head peak rate 0.45 m/s^2; handoff box (0.05 m, 0.005 m/s); lambda re-selected",
+ "forward_pass": {
+  "runs": [
+   {
+    "admitted": true,
+    "T_f_bar": 87.17464142524274,
+    "wall_s": 1.0246743999887258,
+    "cpu_s": 1.015625,
+    "import_s": 0.12438420002581552
+   },
+   {
+    "admitted": true,
+    "T_f_bar": 87.17464142524274,
+    "wall_s": 1.036270099983085,
+    "cpu_s": 1.03125,
+    "import_s": 0.1232820000150241
+   },
+   {
+    "admitted": true,
+    "T_f_bar": 87.17464142524274,
+    "wall_s": 1.0302001000382006,
+    "cpu_s": 1.03125,
+    "import_s": 0.1233380000339821
+   },
+   {
+    "admitted": true,
+    "T_f_bar": 87.17464142524274,
+    "wall_s": 1.0196111999684945,
+    "cpu_s": 1.015625,
+    "import_s": 0.12119480001274496
+   },
+   {
+    "admitted": true,
+    "T_f_bar": 87.17464142524274,
+    "wall_s": 1.0131764999823645,
+    "cpu_s": 1.0,
+    "import_s": 0.12748079997254536
+   }
+  ],
+  "wall_median_s": 1.0246743999887258,
+  "wall_min_s": 1.0131764999823645,
+  "wall_max_s": 1.036270099983085,
+  "cpu_over_wall": [
+   0.9911685116864193,
+   0.9951556066481443,
+   1.001019122364442,
+   0.9960904705944603,
+   0.9869948622154247
+  ]
+ },
+ "search": {
+  "boundary_ms": 72,
+  "failed_next": [
+   "H4D_iii"
+  ],
+  "evaluations": 11,
+  "wall_s": 11.65931089996593,
+  "cpu_s": 11.546875,
+  "import_s": 0.12122939998516813
+ },
+ "interval": {
+  "verified": true,
+  "all_inside": true,
+  "wall_s": 2.359869299980346,
+  "cpu_s": 2.328125,
+  "import_s": 0.12401349999709055
+ },
+ "load_after": {
+  "tag": "after",
+  "time": "2026-09-28 05:03:48",
+  "cpu_percent_1s": 10.2,
+  "other_python_or_latex_processes": []
+ }
+}

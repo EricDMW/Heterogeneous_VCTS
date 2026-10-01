@@ -1,0 +1,5 @@
+==== run_fb_ensemble_audit.py 2026-09-29 02:29:19: 0 admitted states with failed bound rows; states with |eps_1(0)| = eps_det exactly: [{'index': 305, 'v1': '10.4650', 'admitted': True}] ====
+  rejected by C7b  n= 71 slack [-0.027529985312590766, -2.8882910958483166e-06] binding t [0.26, 1.25] s units [5] (before 0.5 s: 21); first increment [0.0313, 0.1299], last increment [0.106, 0.2973], head speed [10.4505, 10.5497], largest e_i(0) [44.79, 46.496], tlow_2 [0.0, 0.43347886863421187]
+  rejected by C8b  n= 11 slack [-0.2882509756957117, -0.01935136406868109] binding t None s units [] (before 0.5 s: 0); first increment [0.0573, 0.1292], last increment [0.2628, 0.2973], head speed [10.4737, 10.5417], largest e_i(0) [43.93, 46.39], tlow_2 [0.2052533604673818, 0.4563368013412987]
+  -> data/new_d19/fbref/ensemble_audit.json
+  wrote data/new_d19/fbref/ensemble_audit.json (45.9 s)

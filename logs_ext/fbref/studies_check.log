@@ -1,0 +1,90 @@
+=== part check ===
+  T3 nofilter      vs proposed (benchmark takeover): 87 fields, 0 different []
+  T3 feedback      vs proposed (benchmark takeover): 87 fields, 0 different []
+  T3 feedback_step vs proposed (benchmark takeover): 87 fields, 0 different []
+  T3 proposed (benchmark takeover): barrier 0.000 s, fallback 0.000 s, smallest inactivity margin u_cbf - u_nom 5.4833 m/s^2
+  T3 nofilter      vs proposed (doubled increments): 87 fields, 0 different []
+  T3 feedback      vs proposed (doubled increments): 87 fields, 0 different []
+  T3 feedback_step vs proposed (doubled increments): 87 fields, 0 different []
+  T3 proposed (doubled increments): barrier 0.000 s, fallback 0.000 s, smallest inactivity margin u_cbf - u_nom 5.4856 m/s^2
+  T4 perturbed plant feedback default     seeds 1-3: max stop 2.8e-14 s, marker 1.7e-13 m, gap 1.7e-13 m -> True
+  T4 perturbed plant feedback compensated seeds 1-3: max stop 2.8e-14 s, marker 1.1e-13 m, gap 1.1e-13 m -> True
+  T4 ideal feedback before the first RULE/stop (149.750 s): |ds| 6.3e-12 m |dv| 1.7e-13 m/s -> True; terminal (RULE convention differs): stop 3.7e-06 s, marker 6.6e-08 m
+  T4 loss feedback 28 runs: max |ds| 8.0e-12 m |dv| 4.0e-12 m/s before the first RULE/stop/contact; contact outcome equal in 28; max |contact instant diff| 8.3e-06 s -> True
+  T4 perturbed plant cacc     default     seeds 1-3: max stop 2.8e-14 s, marker 1.7e-13 m, gap 1.7e-13 m -> True
+  T4 perturbed plant cacc     compensated seeds 1-3: max stop 2.8e-14 s, marker 1.7e-13 m, gap 1.7e-13 m -> True
+  T4 ideal cacc     before the first RULE/stop (149.750 s): |ds| 6.1e-12 m |dv| 1.3e-13 m/s -> True; terminal (RULE convention differs): stop 3.3e-07 s, marker 1.1e-08 m
+  T4 loss cacc     28 runs: max |ds| 1.2e-11 m |dv| 3.4e-12 m/s before the first RULE/stop/contact; contact outcome equal in 28; max |contact instant diff| 1.2e-04 s -> True
+  T5 certificate (lam 0.065, dbar 0.02, U 0.02): admitted True, failed [] (2.1 s)
+  T5 dispersion [s]                                     observed 0.0715807     <= 0.106564      inside True
+  T5 completion T_f [s]                                 observed 149.822       <= 149.864       inside True
+  T5 |marker error| unit 1 [m]                          observed 0.000130928   <= 0.0550125     inside True
+  T5 |marker error| unit 2 [m]                          observed 0.0107281     <= 0.244677      inside True
+  T5 |marker error| unit 3 [m]                          observed 0.0222783     <= 0.436409      inside True
+  T5 |marker error| unit 4 [m]                          observed 0.034764      <= 0.63071       inside True
+  T5 |marker error| unit 5 [m]                          observed 0.0484801     <= 0.828091      inside True
+  T5 |terminal gap error| pair 2 [m]                    observed 0.0108591     <= 0.189664      inside True
+  T5 smallest clearance margin pair 2 [m]               observed 5.51086       >= 4.42442       inside True
+  T5 |terminal gap error| pair 3 [m]                    observed 0.0115502     <= 0.191732      inside True
+  T5 smallest clearance margin pair 3 [m]               observed 5.51155       >= 3.86609       inside True
+  T5 |terminal gap error| pair 4 [m]                    observed 0.0124857     <= 0.1943        inside True
+  T5 smallest clearance margin pair 4 [m]               observed 5.51249       >= 2.97351       inside True
+  T5 |terminal gap error| pair 5 [m]                    observed 0.0137161     <= 0.197381      inside True
+  T5 smallest clearance margin pair 5 [m]               observed 5.51372       >= 1.60592       inside True
+  T5 activation of unit 1 [s]                           observed 0             <= 0             inside True
+  T5 S2 switch of unit 1 [s]                            observed 0.015         <= 0.0581429     inside True
+  T5 largest command before T_xi, unit 1                observed -0.0299052    <= -0.0299043    inside True
+  T5 smallest command before T_xi, unit 1               observed -1.078        >= -1.07995      inside True
+  T5 activation of unit 2 [s]                           observed 0.034         <= 0.0781429     inside True
+  T5 S2 switch of unit 2 [s]                            observed 0.26          <= 0.389543      inside True
+  T5 largest command before T_xi, unit 2                observed 0             <= 0             inside True
+  T5 smallest command before T_xi, unit 2               observed -1.07992      >= -1.10482      inside True
+  T5 activation of unit 3 [s]                           observed 0.279         <= 0.409543      inside True
+  T5 S2 switch of unit 3 [s]                            observed 0.61          <= 0.899525      inside True
+  T5 largest command before T_xi, unit 3                observed 0             <= 0             inside True
+  T5 smallest command before T_xi, unit 3               observed -1.07992      >= -1.1303       inside True
+  T5 activation of unit 4 [s]                           observed 0.629         <= 0.919525      inside True
+  T5 S2 switch of unit 4 [s]                            observed 1.122         <= 1.64535       inside True
+  T5 largest command before T_xi, unit 4                observed 0             <= 0             inside True
+  T5 smallest command before T_xi, unit 4               observed -1.07992      >= -1.15638      inside True
+  T5 activation of unit 5 [s]                           observed 1.141         <= 1.66535       inside True
+  T5 S2 switch of unit 5 [s]                            observed 1.827         <= 2.65579       inside True
+  T5 largest command before T_xi, unit 5                observed 0             <= 0.00700173    inside True
+  T5 smallest command before T_xi, unit 5               observed -1.07992      >= -1.18308      inside True
+  T5 |e_i(T_xi)| unit 1 [m] (handoff box)               observed 0.00013903    <= 0.05          inside True
+  T5 |eps_i(T_xi)| unit 1 [m/s] (handoff box)           observed 8.10182e-06   <= 0.005         inside True
+  T5 entry into the handoff box, unit 1 [s]             observed 36.664        <= 37.153        inside True
+  T5 |e_i(T_xi)| unit 2 [m] (handoff box)               observed 0.0298437     <= 0.05          inside True
+  T5 |eps_i(T_xi)| unit 2 [m/s] (handoff box)           observed 0.00175751    <= 0.005         inside True
+  T5 entry into the handoff box, unit 2 [s]             observed 139.962       <= 140.279       inside True
+  T5 |e_i(T_xi)| unit 3 [m] (handoff box)               observed 0.0306266     <= 0.05          inside True
+  T5 |eps_i(T_xi)| unit 3 [m/s] (handoff box)           observed 0.00179829    <= 0.005         inside True
+  T5 entry into the handoff box, unit 3 [s]             observed 140.381       <= 141.989       inside True
+  T5 |e_i(T_xi)| unit 4 [m] (handoff box)               observed 0.0316714     <= 0.05          inside True
+  T5 |eps_i(T_xi)| unit 4 [m/s] (handoff box)           observed 0.00185421    <= 0.005         inside True
+  T5 entry into the handoff box, unit 4 [s]             observed 140.933       <= 144.039       inside True
+  T5 |e_i(T_xi)| unit 5 [m] (handoff box)               observed 0.0330328     <= 0.05          inside True
+  T5 |eps_i(T_xi)| unit 5 [m/s] (handoff box)           observed 0.00192837    <= 0.005         inside True
+  T5 entry into the handoff box, unit 5 [s]             observed 141.635       <= 146.496       inside True
+  T5 smallest speed before T_xi (unit 1) [m/s]          observed 1.00002       >= 0.970954      inside True
+  T5 largest command post-receipt, unit 1               observed -1            <= -0.999139     inside True
+  T5 smallest command post-receipt, unit 1              observed -1            >= -1.00086      inside True
+  T5 largest command pre-receipt, unit 2                observed -0.0300549    <= -0.0281893    inside True
+  T5 smallest command pre-receipt, unit 2               observed -0.0323229    >= -0.0342388    inside True
+  T5 largest command post-receipt, unit 2               observed -1            <= -0.994983     inside True
+  T5 smallest command post-receipt, unit 2              observed -1.0025       >= -1.00502      inside True
+  T5 largest command pre-receipt, unit 3                observed -0.0301594    <= -0.0272262    inside True
+  T5 smallest command pre-receipt, unit 3               observed -0.034701     >= -0.037724     inside True
+  T5 largest command post-receipt, unit 3               observed -1            <= -0.990771     inside True
+  T5 smallest command post-receipt, unit 3              observed -1.005        >= -1.00923      inside True
+  T5 largest command pre-receipt, unit 4                observed -0.0302665    <= -0.0261907    inside True
+  T5 smallest command pre-receipt, unit 4               observed -0.0370877    >= -0.0412817    inside True
+  T5 largest command post-receipt, unit 4               observed -1            <= -0.98649      inside True
+  T5 smallest command post-receipt, unit 4              observed -1.00751      >= -1.01351      inside True
+  T5 largest command pre-receipt, unit 5                observed -0.0303774    <= -0.0250703    inside True
+  T5 smallest command pre-receipt, unit 5               observed -0.0394841    >= -0.0449242    inside True
+  T5 largest command post-receipt, unit 5               observed -1            <= -0.982126     inside True
+  T5 smallest command post-receipt, unit 5              observed -1.01004      >= -1.01787      inside True
+  check: T3 True, T4 True; T5 69 of 69 inside (certificate admitted True)
+  design record unchanged at the end: True; part run time 16.1 s
+  -> data/new_d19/fbref/studies/check.json (77.5 kB)

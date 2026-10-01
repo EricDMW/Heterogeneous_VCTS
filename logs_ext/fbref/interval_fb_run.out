@@ -1,0 +1,289 @@
+==== run_fb_interval.py 2026-09-29 02:45:54 parts ['boundary', 'ages'] ====
+   design lam 0.065, T_xi 595/4, 52 reference pieces, ages [20, 25, 26] ms
+== floating-point age boundary (certify_fb.age_boundary_ms, 1 ms grid, kmax 120) ==
+   boundary 25 ms; failing at +1 ms: ['C8b']; coarse check below: True; equal to the design record (25 ms, ['C8b']): True
+== age 20 ms (exact 1/50 s) ==
+   self-check (independent of the float evaluator, 0.1 s): ok True; chain vs Arb True; window extrema vs Fractions 598 tests, 0 failures; pulse cells vs Arb 216 tests, 0 failures
+   enclosure 9.3 s, float evaluator 1.9 s; closed True; modal branches undecided 0
+   condition   sense  slack lo              slack hi              status     float slack           inside  excursion (ulp)
+   A_R         >      +1.000001000000e+00   +1.000001000000e+00   verified   +1.000001000000e+00   True    
+   A_S         >      +1.000000000000e+00   +1.000000000000e+00   verified   n/a                   None    
+   C0a         >=     +5.942111024169e-01   +5.942111024169e-01   verified   +5.942111024169e-01   True    
+   C0b         >=     +1.328400000000e+02   +1.328400000000e+02   verified   +1.328400000000e+02   True    
+   H8          >      +8.790010000000e-01   +8.790010000000e-01   verified   +8.790010000000e-01   True    
+   C1          >=     +4.426893619021e-03   +4.426893619021e-03   verified   +4.426893619021e-03   True    
+   C2          >=     +2.000000000000e-02   +2.000000000000e-02   verified   +2.000000000000e-02   True    
+   C3          >=     +2.174000000000e+00   +2.174000000000e+00   verified   +2.174000000000e+00   False   -9.33e-15 (21.0 ulp)
+   C4          >      +9.709538803129e-01   +9.709538803129e-01   verified   +9.709538803129e-01   True    
+   C5          >=     +9.549997692167e-03   +9.549997692167e-03   verified   +9.549997692167e-03   True    
+   C6          >      +9.864902640124e-01   +9.864902640124e-01   verified   +9.864902640124e-01   True    
+   C7a         >=     +1.299826898131e-02   +1.299826898131e-02   verified   +1.299826898131e-02   True    
+   C7b         >=     +1.692451324945e-02   +1.692451324946e-02   verified   +1.692451324945e-02   True    
+   C7c_brk_lo  >=     +1.821258115853e-01   +1.821258115853e-01   verified   +1.821258115853e-01   True    
+   C7c_brk_up  >=     +1.002125811585e+00   +1.002125811585e+00   verified   +1.002125811585e+00   True    
+   C7c_pre_lo  >=     +5.999415298567e-01   +5.999415298567e-01   verified   +5.999415298567e-01   True    
+   C7c_pre_up  >=     +4.507028759094e-02   +4.507028759094e-02   verified   +4.507028759094e-02   True    
+   C8a         >      +4.592996363002e+01   +4.592996363002e+01   verified   +4.592996363002e+01   True    
+   C8b         >      +3.778882446763e-01   +3.778882446767e-01   verified   +3.778882446765e-01   True    
+   C8c         >      +1.490707419128e+00   +1.490707419129e+00   verified   +1.490707419129e+00   True    
+   C9a         >      +1.605917631691e+00   +1.605917631692e+00   verified   +1.605917631691e+00   True    
+   C9b         >=     +1.691395047270e+00   +1.691395047270e+00   verified   +1.691395047270e+00   True    
+   C10         >=     +8.934360981570e-01   +8.934360981570e-01   verified   +8.934360981570e-01   True    
+   C11         >=     +2.171909410209e+00   +2.171909410209e+00   verified   +2.171909410209e+00   True    
+   C12         >=     +8.026190532479e-01   +8.026190532479e-01   verified   +8.026190532479e-01   True    
+   FB refinement: tlow float [0.014285714286, 0.118171454267, 0.272046168325, 0.532932356065, 0.929211102417]
+                  tlow interval [[0.014285714286, 0.014285714286], [0.118171454267, 0.118171454267], [0.272046168325, 0.272046168325], [0.532932356065, 0.532932356065], [0.929211102417, 0.929211102417]]
+                  float inside True; activation masks identical True; cells kept only by the interval [0, 0, 0, 0, 0], only by the float [0, 0, 0, 0, 0]
+   pulses: P_e [[0.076659498924, 0.076659498924], [0.076670305645, 0.076670305645], [0.07668107997, 0.07668107997], [0.076691821902, 0.076691821902]]
+           P_eps [[0.005949047935, 0.005949047935], [0.005966442089, 0.005966442089], [0.005983871803, 0.005983871803], [0.006001337139, 0.006001337139]]
+           P_f [[0.000911408123, 0.000911408123], [0.000913253437, 0.000913253437], [0.00091510205, 0.00091510205], [0.000916953967, 0.000916953967]]
+           A1 ['91/6250', '91/6250', '91/6250', '91/6250'] A2 ['698047/50000000', '698047/50000000', '698047/50000000', '698047/50000000'] (exact)
+           cells with activation decided exactly: [51, 51, 51, 51]
+   bounds: dispersion [0.1065639018430475, 0.10656390184304781]  T_f [149.86368096150076, 149.86368096150088]  marker max [0.8280905897908685, 0.8280905897908715]  gap max [0.19738094675205783, 0.19738094675205842]
+           clearance floors [[4.4244209913544905, 4.4244209913547845], [3.866091202099121, 3.866091202099428], [2.9735054983081257, 2.9735054983084463], [1.6059176316912305, 1.6059176316915724]]
+           u_max before T_xi [[-0.029904345943337542, -0.02990434594333752], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.007001731018688061, 0.007001731018692726]]
+   entry: deadline grid indices (ms, lower/upper) [[37153, 37153], [140279, 140279], [141989, 141989], [144039, 144039], [146496, 146496]]; T_ent_bar [146.49599999999998, 146.496]; T_hold [146.57599999999996, 146.57600000000002]; Vhnd max [0.0004500023078334772, 0.0004500023078334793]
+   float constants checked 368, outside their interval 5 (beyond 1e-13 rel: 0, max 44.0 ulp)
+      pair4.hmb                    float 0.10297298202111878  interval [0.10297298202111892, 0.10297298202111926]  excursion -1.39e-16 (10.0 ulp)
+      pair4.hmb_s2                 float 0.10297298202111878  interval [0.10297298202111892, 0.10297298202111926]  excursion -1.39e-16 (10.0 ulp)
+      pair5.hmb                    float 0.10521021256288349  interval [0.10521021256288306, 0.1052102125628834]  excursion 8.33e-17 (6.0 ulp)
+      pair5.hmb_s2                 float 0.10521021256288349  interval [0.10521021256288306, 0.1052102125628834]  excursion 8.33e-17 (6.0 ulp)
+      Vhnd_max                     float 0.00045000230783348171  interval [0.00045000230783347721, 0.00045000230783347932]  excursion 2.39e-18 (44.0 ulp)
+   float pulse bounds inside the cell enclosures: True (24 pair/bound rows)
+   float entry deadlines [37.153, 140.279, 141.989, 144.03900000000002, 146.496] s, equal to the enclosure: True
+   float entry deadlines recomputed with the exact A^tail: [37.153, 140.279, 141.989, 144.03900000000002, 146.496] s
+   V_j tails, float_as_evaluated:
+      V1 inside 0.9619; above 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 174.539 s, median 0.0e+00); below 7998 pts (0 beyond 1e-12 rel; max rel 1.24e-15 at 208.556 s)
+      V2 inside 0.5701; above 90246 pts (2000 beyond 1e-12 rel; max rel 7.07e-09 at 47.521 s, median 2.0e-14); below 34 pts (34 beyond 1e-12 rel; max rel 6.66e-04 at 7.270 s)
+      V3 inside 0.4972; above 105452 pts (6646 beyond 1e-12 rel; max rel 2.43e-06 at 48.291 s, median 1.5e-14); below 135 pts (135 beyond 1e-12 rel; max rel 4.28e-04 at 14.040 s)
+      V4 inside 0.4689; above 111253 pts (14522 beyond 1e-12 rel; max rel 3.27e-06 at 51.811 s, median 1.4e-14); below 286 pts (286 beyond 1e-12 rel; max rel 4.29e-04 at 13.810 s)
+      V5 inside 0.4432; above 116431 pts (26905 beyond 1e-12 rel; max rel 3.48e-06 at 54.581 s, median 2.0e-14); below 493 pts (493 beyond 1e-12 rel; max rel 3.09e-04 at 13.830 s)
+   V_j tails, float_with_exact_Atail:
+      V1 inside 0.9619; above 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 174.539 s, median 0.0e+00); below 7998 pts (0 beyond 1e-12 rel; max rel 1.24e-15 at 208.556 s)
+      V2 inside 0.5703; above 90246 pts (2000 beyond 1e-12 rel; max rel 7.07e-09 at 47.521 s, median 2.0e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.000 s)
+      V3 inside 0.4978; above 105452 pts (6646 beyond 1e-12 rel; max rel 2.43e-06 at 48.291 s, median 1.5e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.107 s)
+      V4 inside 0.4701; above 111269 pts (14538 beyond 1e-12 rel; max rel 4.68e-06 at 51.811 s, median 1.4e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.645 s)
+      V5 inside 0.4449; above 116566 pts (26950 beyond 1e-12 rel; max rel 5.61e-06 at 53.831 s, median 2.0e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.142 s)
+   V_j tails, float_with_exact_Atail_and_shifts:
+      V1 inside 0.9619; above 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 174.539 s, median 0.0e+00); below 7998 pts (0 beyond 1e-12 rel; max rel 1.24e-15 at 208.556 s)
+      V2 inside 0.5798; above 88246 pts (0 beyond 1e-12 rel; max rel 5.98e-14 at 209.984 s, median 1.9e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.000 s)
+      V3 inside 0.5295; above 98806 pts (0 beyond 1e-12 rel; max rel 5.06e-14 at 209.941 s, median 1.2e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.107 s)
+      V4 inside 0.5299; above 98731 pts (0 beyond 1e-12 rel; max rel 4.34e-14 at 209.961 s, median 1.0e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.645 s)
+      V5 inside 0.5322; above 98239 pts (0 beyond 1e-12 rel; max rel 3.77e-14 at 209.641 s, median 9.2e-15); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.142 s)
+   A^tail: float grid points beyond rounding 64 (at ties hi_J = T_k: 64; below the exact tail: 64); float lag shifts exceeding the exact ones (V: {'32': 1}; A^tail: {})
+   margins in units of the rounding estimate (N = 1000 ops, u = 2^-53):
+      C3_entry_pass_unit1      slack 2.148e-06  estimate 1.11e-13  ratio 1.93e+07  >= 1e3: True
+      C3_entry_fail_unit1      slack 0.0003591  estimate 1.11e-13  ratio 3.23e+09  >= 1e3: True
+      C3_entry_pass_unit2      slack 1.006e-05  estimate 1.11e-13  ratio 9.06e+07  >= 1e3: True
+      C3_entry_fail_unit2      slack 0.0004808  estimate 1.11e-13  ratio 4.33e+09  >= 1e3: True
+      C3_entry_pass_unit3      slack 1.671e-05  estimate 1.11e-13  ratio 1.51e+08  >= 1e3: True
+      C3_entry_fail_unit3      slack 0.0003866  estimate 1.11e-13  ratio 3.48e+09  >= 1e3: True
+      C3_entry_pass_unit4      slack 1.635e-05  estimate 1.11e-13  ratio 1.47e+08  >= 1e3: True
+      C3_entry_fail_unit4      slack 0.0003627  estimate 1.11e-13  ratio 3.27e+09  >= 1e3: True
+      C3_entry_pass_unit5      slack 2.178e-05  estimate 1.11e-13  ratio 1.96e+08  >= 1e3: True
+      C3_entry_fail_unit5      slack 0.0002812  estimate 1.11e-13  ratio 2.53e+09  >= 1e3: True
+      C3                       slack 2.174  estimate 1.65e-11  ratio 1.32e+11  >= 1e3: True
+      C5                       slack 0.00955  estimate 1.11e-15  ratio 8.6e+12  >= 1e3: True
+      C4                       slack 0.971  estimate 1.16e-12  ratio 8.37e+11  >= 1e3: True
+      C7a                      slack 0.013  estimate 1.33e-13  ratio 9.76e+10  >= 1e3: True
+      C7b                      slack 0.01692  estimate 1.33e-13  ratio 1.27e+11  >= 1e3: True
+      C8a                      slack 45.93  estimate 5.55e-12  ratio 8.27e+12  >= 1e3: True
+      C8b                      slack 0.3779  estimate 5.55e-12  ratio 6.81e+10  >= 1e3: True
+      C9a                      slack 1.606  estimate 5.55e-12  ratio 2.89e+11  >= 1e3: True
+      C9b                      slack 1.691  estimate 5.55e-12  ratio 3.05e+11  >= 1e3: True
+   discrepancy [C3] float slack 2.1739999999999906 below the interval [2.1739999999999999, 2.1740000000000004] by 9.33e-15 (21.0 ulp); rounding of the float evaluator
+   discrepancy [constants] 5 of 368 float constants outside their interval, max 44.0 ulp (beyond 1e-13 relative: 0); items: pair4.hmb, pair4.hmb_s2, pair5.hmb, pair5.hmb_s2, Vhnd_max
+   discrepancy [entry V_j tails (below)] float tails V_1..V_5 below the enclosure by more than 1e-12 relative at [0, 34, 135, 286, 493] grid points (max relative 0.000666): the float planned L1 tail differs from the exact one beyond rounding at 64 grid points, 64 of them at ties hi_J = T_k (float below exact at 64): the float compares rounded values and omits the jump at such a tie, i.e. uses hi_J > T there, which is also a valid bound because every pulse is supported in [lo_J, hi_J); recomputed with the exact A^tail, the float tails are below the enclosure beyond 1e-12 relative at [0, 0, 0, 0, 0] points (remaining below points are rounding, max relative 1.2e-15)
+   discrepancy [entry V_j tails (above)] float tails above the enclosure by more than 1e-12 relative at [0, 2000, 6646, 14522, 26905] grid points (max relative 3.48e-06, conservative side): the float lag shift ceil((B + dbar)/dtg - 1e-12) is one grid step longer than the exact ceil((B + dbar)/(1 ms)) for B = ['32'] s; recomputed with the exact A^tail and the exact shifts, the float tails are above beyond 1e-12 relative at [0, 0, 0, 0, 0] points and below at [0, 0, 0, 0, 0] points (max relative above 6e-14, below 1.2e-15: guards 1e-15 and rounded constants)
+   verified all: True; refuted: []; undecided: [] (14.7 s)
+== age 25 ms (exact 1/40 s) ==
+   self-check (independent of the float evaluator, 0.2 s): ok True; chain vs Arb True; window extrema vs Fractions 598 tests, 0 failures; pulse cells vs Arb 216 tests, 0 failures
+   enclosure 9.7 s, float evaluator 1.9 s; closed True; modal branches undecided 0
+   condition   sense  slack lo              slack hi              status     float slack           inside  excursion (ulp)
+   A_R         >      +1.000001000000e+00   +1.000001000000e+00   verified   +1.000001000000e+00   True    
+   A_S         >      +1.000000000000e+00   +1.000000000000e+00   verified   n/a                   None    
+   C0a         >=     +3.952411144973e-01   +3.952411144973e-01   verified   +3.952411144973e-01   True    
+   C0b         >=     +1.328000000000e+02   +1.328000000000e+02   verified   +1.328000000000e+02   True    
+   H8          >      +8.550010000000e-01   +8.550010000000e-01   verified   +8.550010000000e-01   True    
+   C1          >=     +4.419420126786e-03   +4.419420126786e-03   verified   +4.419420126786e-03   True    
+   C2          >=     +2.000000000000e-02   +2.000000000000e-02   verified   +2.000000000000e-02   True    
+   C3          >=     +8.770000000000e-01   +8.770000000000e-01   verified   +8.770000000000e-01   False   3.89e-15 (35.0 ulp)
+   C4          >      +9.635087852876e-01   +9.635087852876e-01   verified   +9.635087852876e-01   True    
+   C5          >=     +9.516144659524e-03   +9.516144659525e-03   verified   +9.516144659524e-03   True    
+   C6          >      +9.841400167243e-01   +9.841400167243e-01   verified   +9.841400167243e-01   True    
+   C7a         >=     +2.407639719474e-03   +2.407639719479e-03   verified   +2.407639719476e-03   True    
+   C7b         >=     +1.592259230800e-02   +1.592259230800e-02   verified   +1.592259230800e-02   True    
+   C7c_brk_lo  >=     +1.789213263974e-01   +1.789213263974e-01   verified   +1.789213263974e-01   True    
+   C7c_brk_up  >=     +9.989213263974e-01   +9.989213263974e-01   verified   +9.989213263974e-01   True    
+   C7c_pre_lo  >=     +5.976153247028e-01   +5.976153247028e-01   verified   +5.976153247028e-01   True    
+   C7c_pre_up  >=     +4.482008825796e-02   +4.482008825796e-02   verified   +4.482008825796e-02   True    
+   C8a         >      +4.574157535706e+01   +4.574157535706e+01   verified   +4.574157535706e+01   True    
+   C8b         >      +8.197860293191e-03   +8.197860293519e-03   verified   +8.197860293350e-03   True    
+   C8c         >      +9.783159265602e-01   +9.783159265605e-01   verified   +9.783159265603e-01   True    
+   C9a         >      +1.100064999491e+00   +1.100064999492e+00   verified   +1.100064999491e+00   True    
+   C9b         >=     +1.330942583626e+00   +1.330942583627e+00   verified   +1.330942583627e+00   True    
+   C10         >=     +8.723076937707e-01   +8.723076937707e-01   verified   +8.723076937707e-01   True    
+   C11         >=     +2.053461075070e+00   +2.053461075070e+00   verified   +2.053461075070e+00   True    
+   C12         >=     +7.710371029189e-01   +7.710371029189e-01   verified   +7.710371029189e-01   True    
+   FB refinement: tlow float [0.014285714286, 0.097714317834, 0.214988729941, 0.423068595561, 0.750241114497]
+                  tlow interval [[0.014285714286, 0.014285714286], [0.097714317834, 0.097714317834], [0.214988729941, 0.214988729941], [0.423068595561, 0.423068595561], [0.750241114497, 0.750241114497]]
+                  float inside True; activation masks identical True; cells kept only by the interval [0, 0, 0, 0, 0], only by the float [0, 0, 0, 0, 0]
+   pulses: P_e [[0.095827751686, 0.095827751686], [0.095844616369, 0.095844616369], [0.095861421114, 0.095861421114], [0.0958781643, 0.0958781643]]
+           P_eps [[0.00744174143, 0.00744174143], [0.007468940621, 0.007468940621], [0.007496209327, 0.007496209327], [0.007523547701, 0.007523547701]]
+           P_f [[0.001139836428, 0.001139836428], [0.001142721664, 0.001142721664], [0.001145613347, 0.001145613347], [0.00114851149, 0.00114851149]]
+           A1 ['91/5000', '91/5000', '91/5000', '91/5000'] A2 ['698047/40000000', '698047/40000000', '698047/40000000', '698047/40000000'] (exact)
+           cells with activation decided exactly: [51, 51, 51, 51]
+   bounds: dispersion [0.12769230622930805, 0.1276923062293085]  T_f [149.88588162139231, 149.88588162139243]  marker max [0.9465389249295741, 0.9465389249295775]  gap max [0.22896289708112214, 0.22896289708112283]
+           clearance floors [[4.241200101127869, 4.24120010112817], [3.624417058840671, 3.624417058840972], [2.631243076673197, 2.631243076673519], [1.1000649994912586, 1.1000649994915948]]
+           u_max before T_xi [[-0.029904345943337542, -0.02990434594333752], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.017592360280521354, 0.017592360280526357]]
+   entry: deadline grid indices (ms, lower/upper) [[37153, 37153], [140336, 140336], [142394, 142394], [144848, 144848], [147773, 147773]]; T_ent_bar [147.773, 147.77300000000002]; T_hold [147.873, 147.87300000000005]; Vhnd max [0.0004838553404754975, 0.0004838553404754998]
+   float constants checked 368, outside their interval 5 (beyond 1e-13 rel: 0, max 50.0 ulp)
+      pair4.hmb                    float 0.10909428721331686  interval [0.10909428721331701, 0.10909428721331735]  excursion -1.53e-16 (11.0 ulp)
+      pair4.hmb_s2                 float 0.10909428721331686  interval [0.10909428721331701, 0.10909428721331735]  excursion -1.53e-16 (11.0 ulp)
+      pair5.hmb                    float 0.11174907293110238  interval [0.11174907293110192, 0.1117490729311023]  excursion 8.33e-17 (6.0 ulp)
+      pair5.hmb_s2                 float 0.11174907293110238  interval [0.11174907293110192, 0.1117490729311023]  excursion 8.33e-17 (6.0 ulp)
+      Vhnd_max                     float 0.0004838553404755025  interval [0.00048385534047549751, 0.00048385534047549979]  excursion 2.71e-18 (50.0 ulp)
+   float pulse bounds inside the cell enclosures: True (24 pair/bound rows)
+   float entry deadlines [37.153, 140.336, 142.394, 144.848, 147.773] s, equal to the enclosure: True
+   float entry deadlines recomputed with the exact A^tail: [37.153, 140.336, 142.394, 144.848, 147.773] s
+   V_j tails, float_as_evaluated:
+      V1 inside 0.9619; above 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 174.539 s, median 0.0e+00); below 7998 pts (0 beyond 1e-12 rel; max rel 1.24e-15 at 208.556 s)
+      V2 inside 0.5641; above 91535 pts (2000 beyond 1e-12 rel; max rel 3.45e-08 at 79.776 s, median 1.8e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.000 s)
+      V3 inside 0.5154; above 101764 pts (4155 beyond 1e-12 rel; max rel 1.55e-06 at 121.273 s, median 1.3e-14); below 5 pts (5 beyond 1e-12 rel; max rel 1.56e-03 at 3.300 s)
+      V4 inside 0.5137; above 102005 pts (9068 beyond 1e-12 rel; max rel 8.84e-06 at 133.826 s, median 1.3e-14); below 118 pts (118 beyond 1e-12 rel; max rel 1.00e-03 at 3.325 s)
+      V5 inside 0.5211; above 100272 pts (20399 beyond 1e-12 rel; max rel 1.04e-05 at 139.851 s, median 1.6e-14); below 292 pts (292 beyond 1e-12 rel; max rel 7.17e-04 at 3.350 s)
+   V_j tails, float_with_exact_Atail:
+      V1 inside 0.9619; above 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 174.539 s, median 0.0e+00); below 7998 pts (0 beyond 1e-12 rel; max rel 1.24e-15 at 208.556 s)
+      V2 inside 0.5641; above 91535 pts (2000 beyond 1e-12 rel; max rel 3.45e-08 at 79.776 s, median 1.8e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.000 s)
+      V3 inside 0.5154; above 101764 pts (4155 beyond 1e-12 rel; max rel 1.55e-06 at 121.273 s, median 1.3e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.051 s)
+      V4 inside 0.5143; above 102005 pts (9068 beyond 1e-12 rel; max rel 8.84e-06 at 133.826 s, median 1.3e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.177 s)
+      V5 inside 0.5225; above 100272 pts (20399 beyond 1e-12 rel; max rel 1.04e-05 at 139.851 s, median 1.6e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.505 s)
+   V_j tails, float_with_exact_Atail_and_shifts:
+      V1 inside 0.9619; above 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 174.539 s, median 0.0e+00); below 7998 pts (0 beyond 1e-12 rel; max rel 1.24e-15 at 208.556 s)
+      V2 inside 0.5736; above 89535 pts (0 beyond 1e-12 rel; max rel 4.93e-14 at 209.962 s, median 1.7e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.000 s)
+      V3 inside 0.5250; above 99744 pts (0 beyond 1e-12 rel; max rel 4.13e-14 at 209.998 s, median 1.1e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.051 s)
+      V4 inside 0.5238; above 100005 pts (0 beyond 1e-12 rel; max rel 3.52e-14 at 209.993 s, median 9.1e-15); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.177 s)
+      V5 inside 0.5320; above 98272 pts (0 beyond 1e-12 rel; max rel 3.05e-14 at 209.908 s, median 8.2e-15); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.505 s)
+   A^tail: float grid points beyond rounding 48 (at ties hi_J = T_k: 48; below the exact tail: 48); float lag shifts exceeding the exact ones (V: {'64': 1}; A^tail: {})
+   margins in units of the rounding estimate (N = 1000 ops, u = 2^-53):
+      C3_entry_pass_unit1      slack 2.148e-06  estimate 1.11e-13  ratio 1.93e+07  >= 1e3: True
+      C3_entry_fail_unit1      slack 0.0003591  estimate 1.11e-13  ratio 3.23e+09  >= 1e3: True
+      C3_entry_pass_unit2      slack 4.363e-05  estimate 1.11e-13  ratio 3.93e+08  >= 1e3: True
+      C3_entry_fail_unit2      slack 0.0001441  estimate 1.11e-13  ratio 1.3e+09  >= 1e3: True
+      C3_entry_pass_unit3      slack 1.906e-06  estimate 1.11e-13  ratio 1.72e+07  >= 1e3: True
+      C3_entry_fail_unit3      slack 0.0005268  estimate 1.11e-13  ratio 4.74e+09  >= 1e3: True
+      C3_entry_pass_unit4      slack 1.226e-05  estimate 1.11e-13  ratio 1.1e+08  >= 1e3: True
+      C3_entry_fail_unit4      slack 0.000389  estimate 1.11e-13  ratio 3.5e+09  >= 1e3: True
+      C3_entry_pass_unit5      slack 5.29e-06  estimate 1.11e-13  ratio 4.76e+07  >= 1e3: True
+      C3_entry_fail_unit5      slack 0.0004248  estimate 1.11e-13  ratio 3.83e+09  >= 1e3: True
+      C3                       slack 0.877  estimate 1.65e-11  ratio 5.31e+10  >= 1e3: True
+      C5                       slack 0.009516  estimate 1.11e-15  ratio 8.57e+12  >= 1e3: True
+      C4                       slack 0.9635  estimate 1.16e-12  ratio 8.3e+11  >= 1e3: True
+      C7a                      slack 0.002408  estimate 1.33e-13  ratio 1.81e+10  >= 1e3: True
+      C7b                      slack 0.01592  estimate 1.33e-13  ratio 1.2e+11  >= 1e3: True
+      C8a                      slack 45.74  estimate 5.55e-12  ratio 8.24e+12  >= 1e3: True
+      C8b                      slack 0.008198  estimate 5.55e-12  ratio 1.48e+09  >= 1e3: True
+      C9a                      slack 1.1  estimate 5.55e-12  ratio 1.98e+11  >= 1e3: True
+      C9b                      slack 1.331  estimate 5.55e-12  ratio 2.4e+11  >= 1e3: True
+   discrepancy [C3] float slack 0.87700000000000389 above the interval [0.87699999999999989, 0.877] by 3.89e-15 (35.0 ulp); rounding of the float evaluator
+   discrepancy [constants] 5 of 368 float constants outside their interval, max 50.0 ulp (beyond 1e-13 relative: 0); items: pair4.hmb, pair4.hmb_s2, pair5.hmb, pair5.hmb_s2, Vhnd_max
+   discrepancy [entry V_j tails (below)] float tails V_1..V_5 below the enclosure by more than 1e-12 relative at [0, 0, 5, 118, 292] grid points (max relative 0.00156): the float planned L1 tail differs from the exact one beyond rounding at 48 grid points, 48 of them at ties hi_J = T_k (float below exact at 48): the float compares rounded values and omits the jump at such a tie, i.e. uses hi_J > T there, which is also a valid bound because every pulse is supported in [lo_J, hi_J); recomputed with the exact A^tail, the float tails are below the enclosure beyond 1e-12 relative at [0, 0, 0, 0, 0] points (remaining below points are rounding, max relative 1.2e-15)
+   discrepancy [entry V_j tails (above)] float tails above the enclosure by more than 1e-12 relative at [0, 2000, 4155, 9068, 20399] grid points (max relative 1.04e-05, conservative side): the float lag shift ceil((B + dbar)/dtg - 1e-12) is one grid step longer than the exact ceil((B + dbar)/(1 ms)) for B = ['64'] s; recomputed with the exact A^tail and the exact shifts, the float tails are above beyond 1e-12 relative at [0, 0, 0, 0, 0] points and below at [0, 0, 0, 0, 0] points (max relative above 4.9e-14, below 1.2e-15: guards 1e-15 and rounded constants)
+   verified all: True; refuted: []; undecided: [] (15.1 s)
+== age 26 ms (exact 13/500 s) ==
+   self-check (independent of the float evaluator, 0.1 s): ok True; chain vs Arb True; window extrema vs Fractions 598 tests, 0 failures; pulse cells vs Arb 216 tests, 0 failures
+   enclosure 9.3 s, float evaluator 1.9 s; closed True; modal branches undecided 0
+   condition   sense  slack lo              slack hi              status     float slack           inside  excursion (ulp)
+   A_R         >      +1.000001000000e+00   +1.000001000000e+00   verified   +1.000001000000e+00   True    
+   A_S         >      +1.000000000000e+00   +1.000000000000e+00   verified   n/a                   None    
+   C0a         >=     +3.554196224318e-01   +3.554196224318e-01   verified   +3.554196224318e-01   True    
+   C0b         >=     +1.327920000000e+02   +1.327920000000e+02   verified   +1.327920000000e+02   True    
+   H8          >      +8.502010000000e-01   +8.502010000000e-01   verified   +8.502010000000e-01   False   -1.11e-16 (1.0 ulp)
+   C1          >=     +4.417907715958e-03   +4.417907715958e-03   verified   +4.417907715958e-03   True    
+   C2          >=     +2.000000000000e-02   +2.000000000000e-02   verified   +2.000000000000e-02   True    
+   C3          >=     +6.120000000000e-01   +6.120000000000e-01   verified   +6.120000000000e-01   False   8.1e-15 (73.0 ulp)
+   C4          >      +9.620107178017e-01   +9.620107178017e-01   verified   +9.620107178017e-01   True    
+   C5          >=     +9.509339419351e-03   +9.509339419351e-03   verified   +9.509339419351e-03   True    
+   C6          >      +9.836680225492e-01   +9.836680225492e-01   verified   +9.836680225492e-01   True    
+   C7a         >=     +2.711390506193e-04   +2.711390506241e-04   verified   +2.711390506217e-04   True    
+   C7b         >=     +1.571987569288e-02   +1.571987569288e-02   verified   +1.571987569288e-02   True    
+   C7c_brk_lo  >=     +1.782761843874e-01   +1.782761843874e-01   verified   +1.782761843874e-01   True    
+   C7c_brk_up  >=     +9.982761843874e-01   +9.982761843874e-01   verified   +9.982761843874e-01   True    
+   C7c_pre_lo  >=     +5.971444842944e-01   +5.971444842944e-01   verified   +5.971444842944e-01   True    
+   C7c_pre_up  >=     +4.476485887218e-02   +4.476485887218e-02   verified   +4.476485887218e-02   True    
+   C8a         >      +4.570290464529e+01   +4.570290464529e+01   verified   +4.570290464529e+01   True    
+   C8b         >      -6.779734683173e-02   -6.779734683140e-02   refuted    -6.779734683157e-02   True    
+   C8c         >      +8.734027245077e-01   +8.734027245080e-01   verified   +8.734027245078e-01   True    
+   C9a         >      +9.964769749653e-01   +9.964769749657e-01   verified   +9.964769749655e-01   True    
+   C9b         >=     +1.256829491147e+00   +1.256829491148e+00   verified   +1.256829491147e+00   True    
+   C10         >=     +8.680477603589e-01   +8.680477603589e-01   verified   +8.680477603589e-01   True    
+   C11         >=     +2.029601042640e+00   +2.029601042640e+00   verified   +2.029601042640e+00   True    
+   C12         >=     +7.646317569982e-01   +7.646317569982e-01   verified   +7.646317569982e-01   True    
+   FB refinement: tlow float [0.014285714286, 0.093622890548, 0.203573912552, 0.401084169932, 0.714419622432]
+                  tlow interval [[0.014285714286, 0.014285714286], [0.093622890548, 0.093622890548], [0.203573912552, 0.203573912552], [0.401084169932, 0.401084169932], [0.714419622432, 0.714419622432]]
+                  float inside True; activation masks identical True; cells kept only by the interval [0, 0, 0, 0, 0], only by the float [0, 0, 0, 0, 0]
+   pulses: P_e [[0.099661563841, 0.099661563841], [0.099679802462, 0.099679802462], [0.099697972811, 0.099697972811], [0.099716072748, 0.099716072748]]
+           P_eps [[0.007740541187, 0.007740541187], [0.00776996434, 0.00776996434], [0.0077994657, 0.0077994657], [0.007829045448, 0.007829045448]]
+           P_f [[0.001185549783, 0.001185549783], [0.001188670872, 0.001188670872], [0.001191799214, 0.001191799214], [0.001194934825, 0.001194934825]]
+           A1 ['1183/62500', '1183/62500', '1183/62500', '1183/62500'] A2 ['9074611/500000000', '9074611/500000000', '9074611/500000000', '9074611/500000000'] (exact)
+           cells with activation decided exactly: [51, 51, 51, 51]
+   bounds: dispersion [0.13195223964106415, 0.13195223964106464]  T_f [149.89038153434998, 149.8903815343501]  marker max [0.9703989573601425, 0.9703989573601459]  gap max [0.2353682430017536, 0.23536824300175427]
+           clearance floors [[4.204500696524568, 4.204500696524877], [3.5756630315151825, 3.575663031515505], [2.561634928520421, 2.5616349285207365], [0.9964769749653378, 0.9964769749656738]]
+           u_max before T_xi [[-0.029904345943337542, -0.02990434594333752], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.019728860949375867, 0.019728860949380648]]
+   entry: deadline grid indices (ms, lower/upper) [[37153, 37153], [140348, 140348], [142476, 142476], [145012, 145012], [148034, 148034]]; T_ent_bar [148.034, 148.03400000000002]; T_hold [148.13799999999998, 148.13800000000003]; Vhnd max [0.000490660580649171, 0.0004906605806491732]
+   float constants checked 368, outside their interval 5 (beyond 1e-13 rel: 0, max 22.0 ulp)
+      pair4.hmb                    float 0.11032864997838633  interval [0.11032864997838644, 0.11032864997838683]  excursion -1.11e-16 (8.0 ulp)
+      pair4.hmb_s2                 float 0.11032864997838633  interval [0.11032864997838644, 0.11032864997838683]  excursion -1.11e-16 (8.0 ulp)
+      pair5.hmb                    float 0.11307425045766431  interval [0.11307425045766384, 0.11307425045766421]  excursion 9.71e-17 (7.0 ulp)
+      pair5.hmb_s2                 float 0.11307425045766431  interval [0.11307425045766384, 0.11307425045766421]  excursion 9.71e-17 (7.0 ulp)
+      Vhnd_max                     float 0.00049066058064917563  interval [0.00049066058064917097, 0.00049066058064917324]  excursion 2.39e-18 (22.0 ulp)
+   float pulse bounds inside the cell enclosures: True (24 pair/bound rows)
+   float entry deadlines [37.153, 140.348, 142.476, 145.012, 148.034] s, equal to the enclosure: True
+   float entry deadlines recomputed with the exact A^tail: [37.153, 140.348, 142.476, 145.012, 148.034] s
+   V_j tails, float_as_evaluated:
+      V1 inside 0.9619; above 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 174.539 s, median 0.0e+00); below 7998 pts (0 beyond 1e-12 rel; max rel 1.24e-15 at 208.556 s)
+      V2 inside 0.5647; above 91415 pts (2000 beyond 1e-12 rel; max rel 9.17e-09 at 47.527 s, median 1.8e-14); below 3 pts (3 beyond 1e-12 rel; max rel 3.35e-03 at 3.276 s)
+      V3 inside 0.4930; above 106424 pts (6732 beyond 1e-12 rel; max rel 3.90e-06 at 51.803 s, median 1.3e-14); below 40 pts (40 beyond 1e-12 rel; max rel 1.63e-03 at 3.302 s)
+      V4 inside 0.4645; above 112320 pts (14748 beyond 1e-12 rel; max rel 6.93e-06 at 52.079 s, median 1.2e-14); below 126 pts (126 beyond 1e-12 rel; max rel 2.10e-03 at 3.328 s)
+      V5 inside 0.4444; above 116432 pts (28071 beyond 1e-12 rel; max rel 9.21e-06 at 53.855 s, median 1.7e-14); below 254 pts (254 beyond 1e-12 rel; max rel 1.50e-03 at 3.354 s)
+   V_j tails, float_with_exact_Atail:
+      V1 inside 0.9619; above 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 174.539 s, median 0.0e+00); below 7998 pts (0 beyond 1e-12 rel; max rel 1.24e-15 at 208.556 s)
+      V2 inside 0.5647; above 91415 pts (2000 beyond 1e-12 rel; max rel 9.17e-09 at 47.527 s, median 1.8e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.000 s)
+      V3 inside 0.4932; above 106424 pts (6732 beyond 1e-12 rel; max rel 3.90e-06 at 51.803 s, median 1.3e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.113 s)
+      V4 inside 0.4651; above 112320 pts (14748 beyond 1e-12 rel; max rel 6.93e-06 at 52.079 s, median 1.2e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.137 s)
+      V5 inside 0.4456; above 116433 pts (28072 beyond 1e-12 rel; max rel 9.22e-06 at 53.855 s, median 1.7e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 1.059 s)
+   V_j tails, float_with_exact_Atail_and_shifts:
+      V1 inside 0.9619; above 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 174.539 s, median 0.0e+00); below 7998 pts (0 beyond 1e-12 rel; max rel 1.24e-15 at 208.556 s)
+      V2 inside 0.5742; above 89415 pts (0 beyond 1e-12 rel; max rel 4.75e-14 at 209.997 s, median 1.7e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.000 s)
+      V3 inside 0.5253; above 99692 pts (0 beyond 1e-12 rel; max rel 3.98e-14 at 209.993 s, median 1.1e-14); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.113 s)
+      V4 inside 0.5258; above 99572 pts (0 beyond 1e-12 rel; max rel 3.39e-14 at 209.987 s, median 8.9e-15); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 0.137 s)
+      V5 inside 0.5342; above 97825 pts (0 beyond 1e-12 rel; max rel 2.92e-14 at 209.970 s, median 7.9e-15); below 0 pts (0 beyond 1e-12 rel; max rel 0.00e+00 at 1.059 s)
+   A^tail: float grid points beyond rounding 62 (at ties hi_J = T_k: 62; below the exact tail: 62); float lag shifts exceeding the exact ones (V: {'32': 1}; A^tail: {})
+   margins in units of the rounding estimate (N = 1000 ops, u = 2^-53):
+      C3_entry_pass_unit1      slack 2.148e-06  estimate 1.11e-13  ratio 1.93e+07  >= 1e3: True
+      C3_entry_fail_unit1      slack 0.0003591  estimate 1.11e-13  ratio 3.23e+09  >= 1e3: True
+      C3_entry_pass_unit2      slack 2.643e-05  estimate 1.11e-13  ratio 2.38e+08  >= 1e3: True
+      C3_entry_fail_unit2      slack 0.0003159  estimate 1.11e-13  ratio 2.85e+09  >= 1e3: True
+      C3_entry_pass_unit3      slack 4.33e-05  estimate 1.11e-13  ratio 3.9e+08  >= 1e3: True
+      C3_entry_fail_unit3      slack 0.0001112  estimate 1.11e-13  ratio 1e+09  >= 1e3: True
+      C3_entry_pass_unit4      slack 1.679e-05  estimate 1.11e-13  ratio 1.51e+08  >= 1e3: True
+      C3_entry_fail_unit4      slack 0.0003408  estimate 1.11e-13  ratio 3.07e+09  >= 1e3: True
+      C3_entry_pass_unit5      slack 1.481e-05  estimate 1.11e-13  ratio 1.33e+08  >= 1e3: True
+      C3_entry_fail_unit5      slack 0.0003254  estimate 1.11e-13  ratio 2.93e+09  >= 1e3: True
+      C3                       slack 0.612  estimate 1.65e-11  ratio 3.71e+10  >= 1e3: True
+      C5                       slack 0.009509  estimate 1.11e-15  ratio 8.57e+12  >= 1e3: True
+      C4                       slack 0.962  estimate 1.16e-12  ratio 8.29e+11  >= 1e3: True
+      C7a                      slack 0.0002711  estimate 1.33e-13  ratio 2.04e+09  >= 1e3: True
+      C7b                      slack 0.01572  estimate 1.33e-13  ratio 1.18e+11  >= 1e3: True
+      C8a                      slack 45.7  estimate 5.55e-12  ratio 8.23e+12  >= 1e3: True
+      C8b                      slack -0.0678  estimate 5.55e-12  ratio -1.22e+10  >= 1e3: False
+      C9a                      slack 0.9965  estimate 5.55e-12  ratio 1.8e+11  >= 1e3: True
+      C9b                      slack 1.257  estimate 5.55e-12  ratio 2.26e+11  >= 1e3: True
+   discrepancy [H8] float slack 0.85020099999999987 below the interval [0.85020099999999998, 0.8502010000000001] by 1.11e-16 (1.0 ulp); rounding of the float evaluator
+   discrepancy [C3] float slack 0.6120000000000082 above the interval [0.61199999999999999, 0.6120000000000001] by 8.1e-15 (73.0 ulp); rounding of the float evaluator
+   discrepancy [constants] 5 of 368 float constants outside their interval, max 22.0 ulp (beyond 1e-13 relative: 0); items: pair4.hmb, pair4.hmb_s2, pair5.hmb, pair5.hmb_s2, Vhnd_max
+   discrepancy [entry V_j tails (below)] float tails V_1..V_5 below the enclosure by more than 1e-12 relative at [0, 3, 40, 126, 254] grid points (max relative 0.00335): the float planned L1 tail differs from the exact one beyond rounding at 62 grid points, 62 of them at ties hi_J = T_k (float below exact at 62): the float compares rounded values and omits the jump at such a tie, i.e. uses hi_J > T there, which is also a valid bound because every pulse is supported in [lo_J, hi_J); recomputed with the exact A^tail, the float tails are below the enclosure beyond 1e-12 relative at [0, 0, 0, 0, 0] points (remaining below points are rounding, max relative 1.2e-15)
+   discrepancy [entry V_j tails (above)] float tails above the enclosure by more than 1e-12 relative at [0, 2000, 6732, 14748, 28071] grid points (max relative 9.21e-06, conservative side): the float lag shift ceil((B + dbar)/dtg - 1e-12) is one grid step longer than the exact ceil((B + dbar)/(1 ms)) for B = ['32'] s; recomputed with the exact A^tail and the exact shifts, the float tails are above beyond 1e-12 relative at [0, 0, 0, 0, 0] points and below at [0, 0, 0, 0, 0] points (max relative above 4.8e-14, below 1.2e-15: guards 1e-15 and rounded constants)
+   verified all: False; refuted: ['C8b']; undecided: [] (15.0 s)
+   summary: {"20_ms": {"verified_all": true, "refuted": [], "undecided": [], "float_admitted": true, "float_failed": [], "float_slacks_outside": ["C3"], "float_slacks_outside_beyond_1e13_rel": [], "status_disagrees_with_float": [], "float_constants_outside": 5, "float_constants_outside_beyond_1e13_rel": 0, "pulse_cells_all_inside": true, "entry_deadlines_equal": true, "selfcheck_ok": true, "tlow_float_inside": true, "activation_masks_identical": true, "smallest_verified_slacks": {"C1": 0.004426893619020503, "C5": 0.009549997692166518, "C7a": 0.01299826898130727, "C7b": 0.01692451324945265, "C2": 0.019999999999999993}, "refuted_slack_intervals": {}, "runtime_s": 14.691984176635742}, "25_ms": {"verified_all": true, "refuted": [], "undecided": [], "float_admitted": true, "float_failed": [], "float_slacks_outside": ["C3"], "float_slacks_outside_beyond_1e13_rel": [], "status_disagrees_with_float": [], "float_constants_outside": 5, "float_constants_outside_beyond_1e13_rel": 0, "pulse_cells_all_inside": true, "entry_deadlines_equal": true, "selfcheck_ok": true, "tlow_float_inside": true, "activation_masks_identical": true, "smallest_verified_slacks": {"C7a": 0.0024076397194736396, "C1": 0.004419420126785671, "C8b": 0.008197860293191365, "C5": 0.009516144659524496, "C7b": 0.01592259230799997}, "refuted_slack_intervals": {}, "runtime_s": 15.120790958404541}, "26_ms": {"verified_all": false, "refuted": ["C8b"], "undecided": [], "float_admitted": false, "float_failed": ["C8b"], "float_slacks_outside": ["H8", "C3"], "float_slacks_outside_beyond_1e13_rel": [], "status_disagrees_with_float": [], "float_constants_outside": 5, "float_constants_outside_beyond_1e13_rel": 0, "pulse_cells_all_inside": true, "entry_deadlines_equal": true, "selfcheck_ok": true, "tlow_float_inside": true, "activation_masks_identical": true, "smallest_verified_slacks": {"C7a": 0.00027113905061934904, "C1": 0.004417907715957984, "C5": 0.009509339419350823, "C7b": 0.015719875692878024, "C2": 0.019999999999999993}, "refuted_slack_intervals": {"C8b": [-0.06779734683172613, -0.06779734683139901]}, "runtime_s": 14.937703609466553}, "certified_bounds_20ms": {"dispersion_s": [0.1065639018430475, 0.10656390184304781], "T_f_bar_s": [149.86368096150076, 149.86368096150088], "marker_max_m": [0.8280905897908685, 0.8280905897908715], "gap_max_m": [0.19738094675205783, 0.19738094675205842], "clearance_floor_m": [[4.4244209913544905, 4.4244209913547845], [3.866091202099121, 3.866091202099428], [2.9735054983081257, 2.9735054983084463], [1.6059176316912305, 1.6059176316915724]], "clearance_floor_min_m": [1.6059176316912305, 1.6059176316915724], "entry_deadline_s": {"interval": [146.49599999999998, 146.496], "float": 146.496}, "T_hold_s": {"interval": [146.57599999999996, 146.57600000000002], "float": 146.57600000000002}, "velocity_floor_m_s": [0.9709538803128861, 0.9709538803128919], "u_max_before_T_xi": [[-0.029904345943337542, -0.02990434594333752], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.007001731018688061, 0.007001731018692726]], "u_min_before_T_xi": [[-1.0799511211037505, -1.0799511211037496], [-1.1048236797647453, -1.1048236797647437], [-1.1302981967521049, -1.1302981967521029], [-1.1563814276367868, -1.1563814276367839], [-1.1830754867505473, -1.1830754867505437]]}, "age_boundary": {"float_boundary_ms": 25, "float_failed_next": ["C8b"], "equal_to_design_record": true, "interval_verified_at_boundary": true, "interval_refuted_at_boundary_plus_1": ["C8b"]}}
+   wrote D:\Calvin\Papers\Jornal\25_TITS_Optimization_Trainset\V_12_TITS\code\data\new_d19\fbref\interval_fb.json (70.8 s)

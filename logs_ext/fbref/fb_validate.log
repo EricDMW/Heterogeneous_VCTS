@@ -1,0 +1,650 @@
+==== run_fb_validate.py 2026-09-29 00:48:02 parts ['ref'] (python 3.12.7, numpy 1.26.4, Windows-11-10.0.26200-SP0, 10 processes) ====
+=== part: ref ===
+[ref] certificate lam=0.065 vhnd=0.01 lags=[41, 41] dbar=20 ms: admitted=True failed=[] (1.8 s); design constants True
+  bounds and slacks identical to design_fb.json (selected, 20 ms): True (differing [] [] [])
+  reference h=0.0001: disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] (0.9 s); records 10 ms / 1 ms identical: True
+  FB law on the reference run: ok True (setup schedules False, run schedules False, nosched park, schedule jumps 0, max |e_i - (c_i - d_s,i)| 0.0, max |eps_i - (v_{i-1} - v_i)| 0.0, e(0) [0.0, 43.5, 43.5, 43.5, 43.5])
+  fine h=2.5e-05: disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] (3.3 s); max |reference - fine| 5.49e-09 (entry_obs)
+  settling_time                                bound 0.106564                                         observed 0.0715796                                        ok=True
+  stop_increments                              bound [0.025836, 0.026309, 0.026877, 0.027542]         observed [0.017827, 0.017863, 0.017912, 0.017978]         ok=True
+  final_standstill                             bound 149.864                                          observed 149.822                                          ok=True
+  stop_offsets                                 bound 0.111564                                         observed 0.0715715                                        ok=True
+  stops_after_T_xi                             bound [148.75, 148.75, 148.75, 148.75, 148.75]         observed [149.75, 149.77, 149.79, 149.8, 149.82]          ok=True
+  marker_error                                 bound 0.828091                                         observed 0.048476                                         ok=True
+  marker_error_units                           bound [0.055013, 0.24468, 0.43641, 0.63071, 0.82809]   observed [0.00013092, 0.010724, 0.022274, 0.03476, 0.048476] ok=True
+  terminal_gap_error                           bound 0.197381                                         observed 0.013716                                         ok=True
+  terminal_gap_error_pairs                     bound [0.18966, 0.19173, 0.1943, 0.19738]              observed [0.010855, 0.01155, 0.012486, 0.013716]          ok=True
+  clearance_floor_pairs                        bound [4.4244, 3.8661, 2.9735, 1.6059]                 observed [5.5109, 5.5116, 5.5125, 5.5137]                 ok=True
+  barrier_nonnegative                          bound [0, 0, 0, 0]                                     observed [5.4536, 5.4551, 5.4528, 5.4519]                 ok=True
+  barrier_floor_acquisition                    bound [48.16, 47.901, 47.409, 46.668]                  observed [48.282, 48.237, 48.083, 47.829]                 ok=True
+  barrier_floor_s2                             bound [4.4619, 3.9381, 3.0456, 1.6914]                 observed [5.4675, 5.4702, 5.469, 5.4693]                  ok=True
+  barrier_braking                              bound [4.4244, 3.8661, 2.9735, 1.6059]                 observed [5.4536, 5.4551, 5.4528, 5.4519]                 ok=True
+  inactivity_margin_pairs                      bound [4.0251, 3.1166, 1.9168, 0.39112]                observed [6.706, 6.2547, 5.8447, 5.4815]                  ok=True
+  inactivity_margin                            bound 0.391121                                         observed 5.48148                                          ok=True
+  command_lower                                bound [-1.2, -1.2, -1.2, -1.2, -1.2]                   observed [-1.078, -1.0799, -1.0799, -1.0799, -1.0799]     ok=True
+  command_upper                                bound [0.02, 0.02, 0.02, 0.02, 0.02]                   observed [-0.029905, 0, 0, 0, 0]                          ok=True
+  nominal_command_upper                        bound [0.02, 0.02, 0.02, 0.02, 0.02]                   observed [-0.029905, 0, 0, 0, 0]                          ok=True
+  command_after_latch                          bound 0                                                observed 0                                                ok=True
+  command_upper_before_T_xi                    bound [-0.029904, 4.8654e-05, 4.8654e-05, 4.8654e-05, 0.0070017] observed [-0.029905, 0, 0, 0, 0]                          ok=True
+  command_lower_before_T_xi                    bound [-1.08, -1.1048, -1.1303, -1.1564, -1.1831]      observed [-1.078, -1.0799, -1.0799, -1.0799, -1.0799]     ok=True
+  command_upper_pre_receipt                    bound [-, -0.028189, -0.027226, -0.026191, -0.02507]   observed [-, -0.030055, -0.030159, -0.030267, -0.030377]  ok=True
+  command_lower_pre_receipt                    bound [-, -0.034239, -0.037724, -0.041282, -0.044924]  observed [-, -0.032323, -0.034701, -0.037088, -0.039484]  ok=True
+  braking_envelope                             bound [0.00086125, 0.005017, 0.0092286, 0.01351, 0.017874] observed [0, 0.0024961, 0.0050001, 0.0075127, 0.010035]   ok=True
+  command_upper_pointwise                      bound [0, 0, 0, 0, 0]                                  observed [-9.0589e-09, 0, 0, 0, 0]                        ok=True
+  command_lower_pointwise                      bound [0, 0, 0, 0, 0]                                  observed [0, -7.0983e-06, -3.252e-05, -3.252e-05, -3.252e-05] ok=True
+  velocity_floor_pointwise                     bound [0, 0, 0, 0, 0]                                  observed [-3.0115e-05, -0.0018285, -0.0084549, -0.019959, -0.036408] ok=True
+  velocity_floor                               bound 0.970954                                         observed 1.00002                                          ok=True
+  handoff_speed_floor                          bound 0.975001                                         observed 0.999993                                         ok=True
+  activation_deadlines                         bound [0, 0.078143, 0.40954, 0.91953, 1.6654]          observed [0, 0.034, 0.279, 0.629, 1.141]                  ok=True
+  detection_deadlines                          bound [0.058143, 0.38954, 0.89953, 1.6454, 2.6558]     observed [0.015, 0.26, 0.61, 1.122, 1.827]                ok=True
+  earliest_switch_instants                     bound [0.014286, 0.11817, 0.27205, 0.53293, 0.92921]   observed [0.015, 0.26, 0.61, 1.122, 1.827]                ok=True
+  activation_after_earliest_predecessor_switch bound [0, 0.014286, 0.11817, 0.27205, 0.53293]         observed [0, 0.034, 0.279, 0.629, 1.141]                  ok=True
+  activation_after_predecessor_switch          bound [0, 0.015, 0.26, 0.61, 1.122]                    observed [0, 0.034, 0.279, 0.629, 1.141]                  ok=True
+  switch_position_lower                        bound [-0.00026535, 43.475, 43.388, 43.175, 42.752]    observed [-0.00026063, 43.485, 43.437, 43.326, 43.105]    ok=True
+  switch_position_upper                        bound [0, 43.5, 43.5, 43.5, 43.5]                      observed [-0.00026063, 43.485, 43.437, 43.326, 43.105]    ok=True
+  switch_speed_lower                           bound [-0.015, -0.015, -0.015, -0.015, -0.015]         observed [-0.01475, -0.014768, -0.014717, -0.014997, -0.014869] ok=True
+  switch_speed_upper                           bound [0, 0, 0, 0, 0]                                  observed [-0.01475, -0.014768, -0.014717, -0.014997, -0.014869] ok=True
+  first_window_position_excursion              bound [0.00026535, 0.025045, 0.11163, 0.32491, 0.74774] observed [0.00026063, 0.015435, 0.062543, 0.17373, 0.39505] ok=True
+  first_window_position_nonincreasing          bound [0, 43.5, 43.5, 43.5, 43.5]                      observed [0, 43.5, 43.5, 43.5, 43.5]                      ok=True
+  first_window_velocity_error                  bound [0.02, 0.10864, 0.17114, 0.25369, 0.3463]        observed [0.02, 0.09909, 0.14052, 0.20052, 0.27052]       ok=True
+  S1_sign                                      bound [0, 0, 0, 0, 0]                                  observed [-0.01475, -0.014768, -0.014717, -0.014997, -0.014869] ok=True
+  s2_position_error                            bound [0.085091, 43.603, 43.716, 43.957, 44.407]       observed [0.083672, 43.485, 43.437, 43.326, 43.105]       ok=True
+  s2_velocity_error                            bound [0.015, 1.0468, 1.0537, 1.0636, 1.0786]          observed [0.01475, 1.0359, 1.0358, 1.0342, 1.0301]        ok=True
+  ramp_receipts                                bound [148.75, 148.77, 148.79, 148.81, 148.83]         observed [148.75, 148.77, 148.79, 148.81, 148.83]         ok=True
+  ramp_relay_steps                             bound [0.02, 0.02, 0.02, 0.02]                         observed [0.019, 0.019, 0.019, 0.019]                     ok=True
+  ramp_relay_order                             bound [0, 0, 0, 0]                                     observed [0.019, 0.019, 0.019, 0.019]                     ok=True
+  persistent_entry                             bound 146.496                                          observed 141.634                                          ok=True
+  persistent_entry_pairs                       bound [37.153, 140.28, 141.99, 144.04, 146.5]          observed [36.666, 139.96, 140.38, 140.93, 141.64]         ok=True
+  box_hold_position                            bound 0.05                                             observed 0.0376749                                        ok=True
+  box_hold_velocity                            bound 0.005                                            observed 0.00219649                                       ok=True
+  handoff_position_error                       bound [0.05, 0.05, 0.05, 0.05, 0.05]                   observed [0.00013903, 0.029838, 0.030627, 0.031671, 0.033033] ok=True
+  handoff_velocity_error                       bound [0.005, 0.005, 0.005, 0.005, 0.005]              observed [8.102e-06, 0.0017573, 0.0017983, 0.0018542, 0.0019284] ok=True
+  braking_mismatch_integral                    bound [0.019618, 0.019982, 0.020433, 0.020974]         observed [0.018431, 0.018522, 0.018613, 0.018704]         ok=True
+  braking_speed_band                           bound [0.025814, 0.026177, 0.026629, 0.02717]          observed [0.020164, 0.020249, 0.020348, 0.020466]         ok=True
+  braking_position_band                        bound [0.18933, 0.19139, 0.19394, 0.19701]             observed [0.029838, 0.030627, 0.031671, 0.033033]         ok=True
+  filter_modifications                         bound 0                                                observed 0                                                ok=True
+  information_age                              bound 0.02                                             observed 0.02                                             ok=True
+  all_stopped                                  ok=True
+  no_contact                                   ok=True
+  no_rule_before_T_xi                          ok=True
+  fb_law                                       ok=True
+  all bounds ok (reference): True failed []; checked 63 of 63 rows; fine: True []
+  -> data/new_d19/fbref/traj_fb.npz (15676 samples, record 0.01 s)
+  -> data/new_d19/fbref/traj_fb_1ms.npz (156751 samples, record 0.001 s)
+  window start [0.0000, 4.0000] s: 160001 samples
+  window stop  [148.7000, 149.8266] s: 45063 samples
+  -> data/new_d19/fbref/traj_fb_stop.npz (windowed samples, record 2.5e-05 s)
+  -> data/new_d19/fbref/reference.json
+  headline: dispersion 71.580 ms (bound 0.1066 s), marker 0.0485 m (0.8281), gap 0.0137 m (0.1974), T_f 149.8216 s (149.8637), u in [-1.07992, 0.00000], entry 141.634 s (146.496), age 20.000 ms
+[ref] done in 19.4 s
+==== run_fb_validate.py 2026-09-29 00:48:32 parts ['conv', 'digital', 'independent'] (python 3.12.7, numpy 1.26.4, Windows-11-10.0.26200-SP0, 10 processes) ====
+=== part: conv ===
+[conv] cont h in (0.0001, 5e-05, 2.5e-05) (+ diagnostic (0.001, 0.0005)), constant transport 19 ms
+  h=0.001    disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] bounds_ok=True (0.4 s)
+  h=0.0005   disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] bounds_ok=True (0.2 s)
+  h=0.0001   disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] bounds_ok=True (0.9 s)
+  h=5e-05    disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] bounds_ok=True (1.7 s)
+  h=2.5e-05  disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] bounds_ok=True (3.4 s)
+  0.0001->5e-05  |dtau| 4.55e-13 s |ddisp| 8.81e-13 s |dmarker| 2.13e-11 m |dgap| 3.21e-11 m |dgmin| 3.21e-11 m |de_hnd| 3.56e-11 m
+  5e-05->2.5e-05 |dtau| 5.68e-13 s |ddisp| 3.69e-13 s |dmarker| 1.75e-11 m |dgap| 1.81e-11 m |dgmin| 1.81e-11 m |de_hnd| 2.18e-11 m
+  max |diff| to h=2.5e-05 over the refinements: 5.49e-09 (entry_obs); max stop diff 7.11e-13 s
+  -> data/new_d19/fbref/convergence.json
+[conv] done in 9.3 s
+=== part: digital ===
+[digital] zoh 1 kHz (T_u = h = 1 ms) vs cont (h = 0.0001 s): constant 19 ms and 5 random schedules
+  const19   cont: disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] bounds_ok=True
+  const19   zoh : disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01690) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] bounds_ok=True | |dtau| 1.12e-06 s |ddisp| 1.12e-06 s |dmarker| 4.06e-06 m |dentry| 2.99e-05 s
+  seed600   cont: disp=0.03578 s T_f=149.7858 s marker<=0.0856 m gap<=0.0279 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01863) mods=0 npos=0 entry=141.429 s order=[1, 2, 3, 4, 5] bounds_ok=True
+  seed600   zoh : disp=0.03578 s T_f=149.7858 s marker<=0.0856 m gap<=0.0279 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01864) mods=0 npos=0 entry=141.429 s order=[1, 2, 3, 4, 5] bounds_ok=True | |dtau| 9.69e-07 s |ddisp| 3.25e-07 s |dmarker| 4.99e-06 m |dentry| 3.08e-05 s
+  seed601   cont: disp=0.02726 s T_f=149.7773 s marker<=0.0947 m gap<=0.0297 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01832) mods=0 npos=0 entry=141.370 s order=[1, 2, 3, 4, 5] bounds_ok=True
+  seed601   zoh : disp=0.02726 s T_f=149.7773 s marker<=0.0947 m gap<=0.0297 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01833) mods=0 npos=0 entry=141.370 s order=[1, 2, 3, 4, 5] bounds_ok=True | |dtau| 7.68e-07 s |ddisp| 2.24e-07 s |dmarker| 5.12e-06 m |dentry| 3.65e-05 s
+  seed602   cont: disp=0.04517 s T_f=149.7952 s marker<=0.0758 m gap<=0.0223 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01773) mods=0 npos=0 entry=141.442 s order=[1, 2, 3, 4, 5] bounds_ok=True
+  seed602   zoh : disp=0.04517 s T_f=149.7952 s marker<=0.0758 m gap<=0.0223 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01776) mods=0 npos=0 entry=141.442 s order=[1, 2, 3, 4, 5] bounds_ok=True | |dtau| 6.68e-07 s |ddisp| 6.51e-07 s |dmarker| 4.42e-06 m |dentry| 8.64e-04 s
+  seed603   cont: disp=0.03832 s T_f=149.7883 s marker<=0.0828 m gap<=0.0259 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01896) mods=0 npos=0 entry=141.409 s order=[1, 2, 3, 4, 5] bounds_ok=True
+  seed603   zoh : disp=0.03832 s T_f=149.7883 s marker<=0.0828 m gap<=0.0259 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01898) mods=0 npos=0 entry=141.408 s order=[1, 2, 3, 4, 5] bounds_ok=True | |dtau| 5.43e-07 s |ddisp| 3.51e-07 s |dmarker| 4.63e-06 m |dentry| 8.66e-04 s
+  seed604   cont: disp=0.05369 s T_f=149.8037 s marker<=0.0665 m gap<=0.0198 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01831) mods=0 npos=0 entry=141.431 s order=[1, 2, 3, 4, 5] bounds_ok=True
+  seed604   zoh : disp=0.05369 s T_f=149.8037 s marker<=0.0665 m gap<=0.0198 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01832) mods=0 npos=0 entry=141.431 s order=[1, 2, 3, 4, 5] bounds_ok=True | |dtau| 1.02e-06 s |ddisp| 7.77e-07 s |dmarker| 4.47e-06 m |dentry| 3.16e-05 s
+  zoh vs cont: max |dtau| 1.12e-06 s, |ddisp| 1.12e-06 s, |dmarker| 5.12e-06 m, |dentry| 8.66e-04 s; all bounds ok True
+  -> data/new_d19/fbref/digital.json
+[digital] done in 9.5 s
+=== part: independent ===
+[indep] sim_hr (zoh 1 ms, cont 1e-4 s; nosched park) vs sim_bench_hr ('proposed', 'feedback'; ideal plant, own kernel) on ['const19', 'seed500', 'seed501', 'seed502']
+  const19   sim_hr_zoh_h0.001_vs_sim_hr_cont_h0.0001                   stops 1.12e-06 s markers 4.06e-06 m gaps 3.92e-06 m act 0.0e+00 sw 2.2e-16 order True
+  const19   sim_hr_zoh_h0.001_vs_sim_bench_hr_proposed                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  const19   sim_hr_zoh_h0.001_vs_sim_bench_hr_feedback                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  const19   sim_bench_hr_proposed_vs_feedback                          stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed500   sim_hr_zoh_h0.001_vs_sim_hr_cont_h0.0001                   stops 8.18e-07 s markers 5.05e-06 m gaps 4.25e-06 m act 0.0e+00 sw 1.7e-18 order True
+  seed500   sim_hr_zoh_h0.001_vs_sim_bench_hr_proposed                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed500   sim_hr_zoh_h0.001_vs_sim_bench_hr_feedback                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed500   sim_bench_hr_proposed_vs_feedback                          stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed501   sim_hr_zoh_h0.001_vs_sim_hr_cont_h0.0001                   stops 1.07e-06 s markers 5.03e-06 m gaps 3.96e-06 m act 1.1e-16 sw 1.7e-18 order True
+  seed501   sim_hr_zoh_h0.001_vs_sim_bench_hr_proposed                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed501   sim_hr_zoh_h0.001_vs_sim_bench_hr_feedback                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed501   sim_bench_hr_proposed_vs_feedback                          stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed502   sim_hr_zoh_h0.001_vs_sim_hr_cont_h0.0001                   stops 9.18e-07 s markers 4.90e-06 m gaps 4.13e-06 m act 2.2e-16 sw 2.2e-16 order True
+  seed502   sim_hr_zoh_h0.001_vs_sim_bench_hr_proposed                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed502   sim_hr_zoh_h0.001_vs_sim_bench_hr_feedback                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed502   sim_bench_hr_proposed_vs_feedback                          stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  aggregate: {"sim_bench_hr_proposed": {"max_stop_diff": 0.0, "max_settling_diff": 0.0, "max_marker_diff": 0.0, "max_gap_diff": 0.0, "max_tact_diff": 0.0, "max_tset_diff": 0.0, "max_trule_diff": 0.0, "max_e_hnd_diff": 0.0, "max_gmin_diff": 3.907985046680551e-14, "max_u_min_unit_diff": 0.0, "max_u_max_unit_diff": 0.0, "max_entry_diff": null, "stop_order_equal": true, "rule_equal": true}, "sim_bench_hr_feedback": {"max_stop_diff": 0.0, "max_settling_diff": 0.0, "max_marker_diff": 0.0, "max_gap_diff": 0.0, "max_tact_diff": 0.0, "max_tset_diff": 0.0, "max_trule_diff": 0.0, "max_e_hnd_diff": 0.0, "max_gmin_diff": 3.907985046680551e-14, "max_u_min_unit_diff": 0.0, "max_u_max_unit_diff": 0.0, "max_entry_diff": null, "stop_order_equal": true, "rule_equal": true}, "cont_vs_zoh": {"max_stop_diff": 1.1176587406680483e-06, "max_settling_diff": 1.1156917025800794e-06, "max_marker_diff": 5.047471802299697e-06, "max_gap_diff": 4.247279491664813e-06, "max_tact_diff": 2.220446049250313e-16, "max_tset_diff": 2.220446049250313e-16, "max_trule_diff": 1.1176587406680483e-06, "max_e_hnd_diff": 5.1668573064489465e-06, "max_gmin_diff": 4.247279491664813e-06, "max_u_min_unit_diff": 7.105427357601002e-15, "max_u_max_unit_diff": 5.201519770459129e-12, "max_entry_diff": 3.504882542415544e-05, "stop_order_equal": true, "rule_equal": true}, "bench_proposed_vs_feedback": {"max_stop_diff": 0.0, "max_settling_diff": 0.0, "max_marker_diff": 0.0, "max_gap_diff": 0.0, "max_tact_diff": 0.0, "max_tset_diff": 0.0, "max_trule_diff": 0.0, "max_e_hnd_diff": 0.0, "max_gmin_diff": 0.0, "max_u_min_unit_diff": 0.0, "max_u_max_unit_diff": 0.0, "max_entry_diff": null, "stop_order_equal": true, "rule_equal": true}, "bench_no_schedule": true, "sim_hr_positive_nominal": 0, "all_sim_hr_bounds_ok": true, "all_sim_hr_fb_law": true, "tolerances": {"sim_bench_hr_stop_s": 1e-09, "sim_bench_hr_marker_m": 1e-09}, "sim_bench_hr_proposed_agrees": true, "sim_bench_hr_feedback_agrees": true, "bench_proposed_identical_to_feedback": true}
+  -> data/new_d19/fbref/independent.json
+[independent] done in 8.3 s
+==== run_fb_validate.py 2026-09-29 00:49:06 parts ['sched', 'adv'] (python 3.12.7, numpy 1.26.4, Windows-11-10.0.26200-SP0, 10 processes) ====
+=== part: sched ===
+[sched] 1000 random FIFO schedules (seed 500 + j), d_j in 1..19 steps, zoh 1 kHz, 10 processes
+  sched 100/1000 (13 s)
+  sched 200/1000 (19 s)
+  sched 300/1000 (25 s)
+  sched 400/1000 (31 s)
+  sched 500/1000 (38 s)
+  sched 600/1000 (44 s)
+  sched 700/1000 (50 s)
+  sched 800/1000 (56 s)
+  sched 900/1000 (62 s)
+  sched 1000/1000 (68 s)
+  aggregate: dispersion 16.219..67.344 ms (bound 106.56 ms), marker <= 0.1067 m (0.8281), gap <= 0.0298 m (0.1974), entry <= 141.48 s (146.50), u_max_pre 0.00000 (informed -0.01731), mods 0, sat 0, npos 0, bounds_ok True (0 failed []), age_ok True, fb_law True, stop orders [(1, 2, 3, 4, 5)] (69 s)
+  -> data/new_d19/fbref/schedules.json
+[sched] done in 71.8 s
+=== part: adv ===
+[adv] 84 constructed schedules, zoh 1 kHz, 10 processes
+  adv 25/84 (8 s)
+  adv 50/84 (10 s)
+  adv 75/84 (12 s)
+  step patterns      n= 18 disp <= 71.572 ms marker <= 0.1123 m gap <= 0.0295 m entry <= 141.63 s u_max_pre 0.00000 (informed -0.01673) gmin 5.511 m mmin 5.481 npos 0 mods 0 bounds_ok True
+  constant           n=  2 disp <= 71.581 ms marker <= 0.1117 m gap <= 0.0292 m entry <= 141.63 s u_max_pre 0.00000 (informed -0.01690) gmin 5.511 m mmin 5.481 npos 0 mods 0 bounds_ok True
+  bursts             n= 10 disp <= 59.609 ms marker <= 0.1129 m gap <= 0.0299 m entry <= 141.49 s u_max_pre 0.00000 (informed -0.01714) gmin 5.511 m mmin 5.481 npos 0 mods 0 bounds_ok True
+  windows            n= 45 disp <= 71.788 ms marker <= 0.1126 m gap <= 0.0296 m entry <= 141.37 s u_max_pre 0.00000 (informed -0.01627) gmin 5.511 m mmin 5.481 npos 0 mods 0 bounds_ok True
+  per-hop windows    n=  1 disp <= 10.216 ms marker <= 0.1120 m gap <= 0.0293 m entry <= 141.17 s u_max_pre 0.00000 (informed -0.01945) gmin 5.527 m mmin 5.512 npos 0 mods 0 bounds_ok True
+  sawtooth batches   n=  4 disp <= 62.221 ms marker <= 0.0686 m gap <= 0.0234 m entry <= 141.54 s u_max_pre 0.00000 (informed -0.01731) gmin 5.513 m mmin 5.486 npos 0 mods 0 bounds_ok True
+  alternating        n=  2 disp <= 71.578 ms marker <= 0.0517 m gap <= 0.0145 m entry <= 141.63 s u_max_pre 0.00000 (informed -0.01689) gmin 5.511 m mmin 5.481 npos 0 mods 0 bounds_ok True
+  per-hop constant   n=  2 disp <= 40.887 ms marker <= 0.0802 m gap <= 0.0293 m entry <= 141.55 s u_max_pre 0.00000 (informed -0.01821) gmin 5.511 m mmin 5.481 npos 0 mods 0 bounds_ok True
+  steps_short_global             e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '+0.0000'] lo ['+0.0000', '-0.0690', '-0.0674', '-0.0637', '-0.0577']
+  steps_short_hop1_others1       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0097', '+0.0238', '+0.0430'] lo ['+0.0000', '-0.0690', '-0.0915', '-0.1028', '-0.1076']
+  steps_short_hop1_others19      e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0001', '+0.0001', '+0.0001'] lo ['+0.0000', '-0.0690', '-0.0001', '-0.0001', '-0.0001']
+  steps_short_hop2_others1       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0065', '+0.0252', '+0.0450'] lo ['+0.0000', '-0.1212', '-0.1174', '-0.1108', '-0.1153']
+  steps_short_hop2_others19      e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0000', '+0.0001', '+0.0001'] lo ['+0.0000', '+0.0000', '-0.0675', '-0.0001', '-0.0001']
+  steps_short_hop3_others1       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0151', '+0.0176', '+0.0470'] lo ['+0.0000', '-0.1212', '-0.1434', '-0.1533', '-0.1229']
+  steps_short_hop3_others19      e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '+0.0001'] lo ['+0.0000', '+0.0000', '+0.0000', '-0.0639', '-0.0000']
+  steps_short_hop4_others1       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0151', '+0.0323', '+0.0336'] lo ['+0.0000', '-0.1212', '-0.1434', '-0.1530', '-0.1750']
+  steps_short_hop4_others19      e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '+0.0000'] lo ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '-0.0580']
+  steps_long_global              e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0151', '+0.0323', '+0.0553'] lo ['+0.0000', '-0.0555', '-0.0823', '-0.0963', '-0.1035']
+  steps_long_hop1_others1        e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0151', '+0.0323', '+0.0553'] lo ['+0.0000', '-0.0555', '-0.1434', '-0.1530', '-0.1553']
+  steps_long_hop1_others19       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0065', '+0.0098', '+0.0138'] lo ['+0.0000', '-0.0555', '-0.0528', '-0.0502', '-0.0472']
+  steps_long_hop2_others1        e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0151', '+0.0323', '+0.0553'] lo ['+0.0000', '-0.1212', '-0.0824', '-0.1530', '-0.1553']
+  steps_long_hop2_others19       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0097', '+0.0081', '+0.0114'] lo ['+0.0000', '+0.0000', '-0.0295', '-0.0422', '-0.0397']
+  steps_long_hop3_others1        e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0151', '+0.0323', '+0.0553'] lo ['+0.0000', '-0.1212', '-0.1434', '-0.0964', '-0.1553']
+  steps_long_hop3_others19       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0000', '+0.0164', '+0.0091'] lo ['+0.0000', '+0.0000', '+0.0000', '-0.0058', '-0.0321']
+  steps_long_hop4_others1        e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0151', '+0.0323', '+0.0553'] lo ['+0.0000', '-0.1212', '-0.1434', '-0.1530', '-0.1037']
+  steps_long_hop4_others19       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '+0.0237'] lo ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '-0.0022']
+  const_max (reference)          e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '+0.0000'] lo ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '+0.0000']
+  aggregate: dispersion <= 71.788 ms (max_after_all_W100ms), marker <= 0.1129 m, gap <= 0.0299 m, entry <= 141.63 s, u_max_pre 0.00000, mods 0, npos 0, bounds_ok True (0 failed []), age_ok True (12 s)
+  -> data/new_d19/fbref/adversarial.json
+[adv] done in 15.3 s
+==== run_fb_validate.py 2026-09-29 00:50:42 parts ['sweep'] (python 3.12.7, numpy 1.26.4, Windows-11-10.0.26200-SP0, 10 processes) ====
+=== part: sweep ===
+[sweep] age bounds [5, 10, 15, 20, 24, 25, 30, 40, 50, 70, 100, 150, 200, 300, 500, 1000] ms: certificate of the fixed design, constant transport and 20 random schedules per age (zoh 1 kHz), 10 processes
+  sweep 1/16 (27 s)
+  sweep 2/16 (27 s)
+  sweep 3/16 (27 s)
+  sweep 4/16 (27 s)
+  sweep 5/16 (27 s)
+  sweep 6/16 (27 s)
+  sweep 7/16 (27 s)
+  sweep 8/16 (27 s)
+  sweep 9/16 (27 s)
+  sweep 10/16 (27 s)
+  sweep 11/16 (41 s)
+  sweep 12/16 (41 s)
+  sweep 13/16 (41 s)
+  sweep 14/16 (41 s)
+  sweep 15/16 (41 s)
+  sweep 16/16 (42 s)
+     5 ms cert ADM                                | disp 11.1..20.4 ms (bound 44.9 ms) marker <= 0.1110 m gap <= 0.0293 m gmin 5.524 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 141.22 s contact 0 bounds@age True design ok
+    10 ms cert ADM                                | disp 19.6..37.5 ms (bound 65.2 ms) marker <= 0.1023 m gap <= 0.0286 m gmin 5.520 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 141.36 s contact 0 bounds@age True design ok
+    15 ms cert ADM                                | disp 21.3..54.5 ms (bound 85.7 ms) marker <= 0.1007 m gap <= 0.0296 m gmin 5.515 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 141.50 s contact 0 bounds@age True design ok
+    20 ms cert ADM                                | disp 21.3..71.6 ms (bound 106.6 ms) marker <= 0.1013 m gap <= 0.0285 m gmin 5.511 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 141.63 s contact 0 bounds@age True design ok
+    24 ms cert ADM                                | disp 28.1..85.3 ms (bound 123.4 ms) marker <= 0.0940 m gap <= 0.0299 m gmin 5.507 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 141.74 s contact 0 bounds@age True design ['braking_mismatch_integral', 'command_lower_pointwise', 'command_upper_pointwise', 'information_age', 'ramp_receipts', 'ramp_relay_steps']
+    25 ms cert cl  C7a                            | disp 32.4..88.7 ms (bound 127.7 ms) marker <= 0.0894 m gap <= 0.0289 m gmin 5.506 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 141.77 s contact 0 bounds@age True design ['braking_mismatch_integral', 'command_lower_pointwise', 'command_upper_pointwise', 'information_age', 'ramp_receipts', 'ramp_relay_steps']
+    30 ms cert cl  C3,C7a,C8b                     | disp 28.1..105.8 ms (bound 149.1 ms) marker <= 0.0945 m gap <= 0.0299 m gmin 5.502 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 141.91 s contact 0 bounds@age True design ['braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_upper_pointwise', 'information_age', 'ramp_receipts', 'ramp_relay_steps', 'stop_increments']
+    40 ms cert cl  C0a,C3,C7a,C8b,C8c,C9a         | disp 43.5..140.0 ms (bound 192.8 ms) marker <= 0.0788 m gap <= 0.0303 m gmin 5.493 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 142.18 s contact 0 bounds@age True design ['braking_envelope', 'braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_pointwise', 'final_standstill', 'first_window_velocity_error', 'information_age', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets']
+    50 ms cert cl  C0a,C2,C3,C7a,C8b,C8c,C9a,C9b  | disp 27.4..174.4 ms (bound 237.7 ms) marker <= 0.0970 m gap <= 0.0295 m gmin 5.484 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 142.45 s contact 0 bounds@age True design ['braking_envelope', 'braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_pointwise', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'information_age', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower']
+    70 ms cert cl  C0a,C2,C3,C7a,C8b,C8c,C9a,C9b  | disp 58.9..243.2 ms (bound 331.2 ms) marker <= 0.1260 m gap <= 0.0337 m gmin 5.466 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 142.99 s contact 0 bounds@age True design ['activation_deadlines', 'braking_envelope', 'braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_pointwise', 'detection_deadlines', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'information_age', 'persistent_entry_pairs', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower']
+   100 ms cert cl  C0a,C2,C3,C7a,C8b,C8c,C9a,C9b  | disp 92.0..347.1 ms (bound 481.0 ms) marker <= 0.2299 m gap <= 0.0603 m gmin 5.440 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 143.79 s contact 0 bounds@age True design ['activation_deadlines', 'braking_envelope', 'braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_pointwise', 'detection_deadlines', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'information_age', 'persistent_entry_pairs', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower']
+   150 ms cert cl  C0a,C2,C3,C7a,C7b,C8b,C8c,C9a, | disp 194.9..521.4 ms (bound 758.9 ms) marker <= 0.4018 m gap <= 0.1043 m gmin 5.396 m u_max_pre 0.00887 npos 12834 sat 0 mods 0 entry <= 145.10 s contact 0 bounds@age True design ['activation_deadlines', 'braking_envelope', 'braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_before_T_xi', 'command_upper_pointwise', 'detection_deadlines', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'information_age', 'persistent_entry_pairs', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower']
+   200 ms cert cl  C0a,C2,C3,C7a,C7b,C8b,C8c,C9a, | disp 71.5..697.4 ms (bound 1076.1 ms) marker <= 0.5722 m gap <= 0.1482 m gmin 5.352 m u_max_pre 0.02000 npos 57326 sat 1161 mods 1161 entry <= 146.40 s contact 0 bounds@age ['filter_modifications', 'nominal_command_upper'] design ['activation_deadlines', 'barrier_floor_acquisition', 'braking_envelope', 'braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_before_T_xi', 'command_upper_pointwise', 'detection_deadlines', 'filter_modifications', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'information_age', 'nominal_command_upper', 'persistent_entry_pairs', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower']
+   300 ms cert cl  C0a,H8,C2,C3,C7a,C7b,C7c_brk_l | disp 174.0..1054.8 ms (bound 1852.8 ms) marker <= 0.9005 m gap <= 0.2352 m gmin 5.265 m u_max_pre 0.02000 npos 186669 sat 63534 mods 63534 entry <= 146.24 s contact 0 bounds@age ['filter_modifications', 'handoff_position_error', 'nominal_command_upper'] design ['activation_deadlines', 'barrier_floor_acquisition', 'box_hold_position', 'braking_envelope', 'braking_mismatch_integral', 'braking_position_band', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_before_T_xi', 'command_upper_pointwise', 'detection_deadlines', 'filter_modifications', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'handoff_position_error', 'information_age', 'marker_error', 'marker_error_units', 'nominal_command_upper', 'persistent_entry', 'persistent_entry_pairs', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower', 'terminal_gap_error', 'terminal_gap_error_pairs']
+   500 ms cert cl  C0a,H8,C2,C3,C4,C7a,C7b,C7c_br | disp 335.9..1806.7 ms (bound 4239.8 ms) marker <= 1.5458 m gap <= 0.4074 m gmin 5.093 m u_max_pre 0.02000 npos 298343 sat 168497 mods 168497 entry <= 148.66 s contact 0 bounds@age ['filter_modifications', 'handoff_position_error', 'handoff_velocity_error', 'nominal_command_upper'] design ['activation_deadlines', 'barrier_floor_acquisition', 'box_hold_position', 'box_hold_velocity', 'braking_envelope', 'braking_mismatch_integral', 'braking_position_band', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_before_T_xi', 'command_upper_pointwise', 'detection_deadlines', 'filter_modifications', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'handoff_position_error', 'handoff_velocity_error', 'information_age', 'marker_error', 'marker_error_units', 'nominal_command_upper', 'persistent_entry', 'persistent_entry_pairs', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower', 'terminal_gap_error', 'terminal_gap_error_pairs']
+  1000 ms cert cl  C0a,H8,C1,C2,C3,C4,C5,C7a,C7b, | disp 900.8..3322.4 ms (bound 40485.0 ms) marker <= 2.7702 m gap <= 0.8369 m gmin 4.663 m u_max_pre 0.02000 npos 637817 sat 494932 mods 494932 entry <= none contact 0 bounds@age ['S1_sign', 'command_lower_pre_receipt', 'filter_modifications', 'handoff_position_error', 'handoff_velocity_error', 'nominal_command_upper', 'switch_speed_upper'] design ['S1_sign', 'activation_deadlines', 'barrier_braking', 'barrier_floor_acquisition', 'box_hold_position', 'box_hold_velocity', 'braking_envelope', 'braking_mismatch_integral', 'braking_position_band', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_before_T_xi', 'command_upper_pointwise', 'detection_deadlines', 'filter_modifications', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'handoff_position_error', 'handoff_velocity_error', 'information_age', 'marker_error', 'marker_error_units', 'nominal_command_upper', 'persistent_entry', 'persistent_entry_pairs', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower', 'switch_speed_upper', 'terminal_gap_error', 'terminal_gap_error_pairs']
+  boundary 24 ms (next fails ['C7a']); admitted ages on the grid [5, 10, 15, 20, 24]; first failures {"design_bound": {"age_ms": 24, "failed": ["braking_mismatch_integral", "command_lower_pointwise", "command_upper_pointwise", "information_age", "ramp_receipts", "ramp_relay_steps"]}, "certificate": {"age_ms": 25, "failed": ["C7a"]}, "positive_nominal": {"age_ms": 150, "runs": 5}, "bound_at_age": {"age_ms": 200, "failed": ["filter_modifications", "nominal_command_upper"], "admitted": false}, "requirement": {"age_ms": 200, "failed": ["filter_inactive", "input_set_unmodified"]}, "clipped_command": {"age_ms": 200, "saturations": 1161, "upper": 1161, "lower": 0}, "clip_or_filter": {"age_ms": 200, "count": 1161}}
+  -> data/new_d19/fbref/sweep.json
+[sweep] done in 135.7 s
+==== run_fb_validate.py 2026-09-29 00:53:11 parts ['ensemble'] (python 3.12.7, numpy 1.26.4, Windows-11-10.0.26200-SP0, 10 processes) ====
+=== part: ensemble ===
+[ens] 300 takeover states inside C2: c_i(0) in [47, 53] m (1 mm grid), v_1(0) in [10.45, 10.55] m/s, increments in [[0.02, 0.13], [0.035, 0.17], [0.05, 0.23], [0.065, 0.3]] m/s (seed 7); the design rule is re-run at lam = 0.065 for every state; rule at the nominal state reproduces the design reference: True (10.0 s)
+  ens 50/383 (186 s)
+  ens 100/383 (389 s)
+  ens 150/383 (608 s)
+  ens 200/383 (791 s)
+  ens 250/383 (964 s)
+  ens 300/383 (1134 s)
+  ens 350/383 (1298 s)
+  ens 50/89 (185 s)
+  300 states (C2 rejected 182 draws): admitted 193, rejected 107 {'C7b': 71, 'C7a': 39, 'C8b': 11} (1769 s)
+  admitted by largest takeover error: [{'max_e0_range': [40.5, 41.5], 'n': 0, 'admitted': 0}, {'max_e0_range': [41.5, 42.5], 'n': 3, 'admitted': 3}, {'max_e0_range': [42.5, 43.5], 'n': 17, 'admitted': 12}, {'max_e0_range': [43.5, 44.5], 'n': 44, 'admitted': 36}, {'max_e0_range': [44.5, 45.5], 'n': 91, 'admitted': 69}, {'max_e0_range': [45.5, 46.5], 'n': 145, 'admitted': 73}]
+  admitted: {"n": 193, "n_runs": 386, "bounds_all_ok": false, "n_bounds_failed": 2, "bounds_failed": ["command_lower_before_T_xi", "command_lower_pointwise"], "all_rows_checked": true, "requirements_all_ok": true, "requirements_failed": [], "filter_modifications_total": 0, "runs_with_filter_action": 0, "saturations_total": 0, "positive_nominal_total": 0, "runs_with_positive_nominal": 0, "runs_with_rule_before_T_xi": 0, "fb_law_all": true, "all_stopped": true, "no_contact": true, "age_ok": true, "n_handoff_box_violated": 0, "observed": {"settling": [0.01629715953427535, 0.0721603025042441], "T_f": [148.04453859087, 150.82157700736053], "marker": [0.04058207013332549, 0.10815904536900689], "gap": [0.013408721828966463, 0.03169502601269869], "entry": [140.23821517380367, 142.86837525074995], "gmin_min": [5.508076928979335, 5.524872020796579], "mmin_lim_min": [5.480560403001167, 5.513937024632898], "u_min": [-1.0949754624581516, -1.043979701498125], "u_max_pre": [0.0, 0.0], "u_max_pre_informed": [-0.01980788494539655, -0.015378471976105285], "e_hnd_max": [0.03217164215442381, 0.035968928958936885], "eps_hnd_max": [0.0018867666958679585, 0.002105001141270435]}, "certified": {"T_xi": [147.0, 149.75], "a_r0": [-0.743, -0.692], "a_crawl": [0.027874, 0.033472], "T_f_bar": [148.11344864388545, 150.8639569330332], "settling_bound": [0.10627204694078035, 0.10673633226885543], "align": [0.8264534784195514, 0.8290584870054497], "gaperr_max": [0.1969610525937259, 0.1976290198745657], "T_ent_bar": [144.741, 147.6], "clearance_floor_min": [1.205664942033909, 2.7291669009362005], "sigma_min": [0.05099348189729189, 1.5844280166401166], "u_max_before_T_xi": [0.006136285108428341, 0.0074149184090216425], "vfloor_min": [0.9699720500097551, 0.9728519654298375]}, "ratio_max": {"settling": 0.6775844223836636, "marker": 0.13064089549491528, "gap": 0.1607466383729753, "entry": 0.975945312449817}, "rule": {"converged": 193, "not_converged": [], "iterations": [3.0, 5.0], "runtime_s": [17.463170766830444, 40.42936372756958]}, "c0_range": [47.001, 52.995], "e0_range": [40.501, 46.495], "v1_range": [10.4504, 10.5496], "nonpos_certified": 0, "head_first_tail_last_all": true, "stop_orders": [[1, 2, 3, 4, 5]], "rule_entered_any": true}
+  rejected: {"n": 107, "n_runs": 214, "bounds_all_ok": true, "n_bounds_failed": 0, "bounds_failed": [], "all_rows_checked": true, "requirements_all_ok": true, "requirements_failed": [], "filter_modifications_total": 0, "runs_with_filter_action": 0, "saturations_total": 0, "positive_nominal_total": 0, "runs_with_positive_nominal": 0, "runs_with_rule_before_T_xi": 0, "fb_law_all": true, "all_stopped": true, "no_contact": true, "age_ok": true, "n_handoff_box_violated": 0, "observed": {"settling": [0.016158087227211126, 0.07234822943973995], "T_f": [148.03393470207087, 151.07181724684122], "marker": [0.04341536197210871, 0.11080366858146817], "gap": [0.013364102760647256, 0.03240728735642051], "entry": [140.29964236316326, 142.81771624624486], "gmin_min": [5.508107596028594, 5.52427859108974], "mmin_lim_min": [5.480709376035926, 5.513417145650854], "u_min": [-1.1199550712431265, -1.046235], "u_max_pre": [0.0, 0.0], "u_max_pre_informed": [-0.02010111578485109, -0.015243217354979327], "e_hnd_max": [0.03221100771480678, 0.03660709463679268], "eps_hnd_max": [0.0018879873092843003, 0.0021415686773660347]}, "certified": {"T_xi": [147.0, 150.0], "a_r0": [-0.768, -0.695], "a_crawl": [0.026257, 0.033405], "T_f_bar": [148.11356699250683, 151.11411638311392], "settling_bound": [0.10627760361995356, 0.10687044720487951], "align": [0.8264845340011813, 0.8298110250825496], "gaperr_max": [0.19696904711562155, 0.1978219670029131], "T_ent_bar": [144.761, 147.849], "clearance_floor_min": [0.9126509520393196, 2.716610884521657], "sigma_min": [-0.28056973382650924, 1.5299735905922012], "u_max_before_T_xi": [0.006499536904280512, 0.38470268129851465], "vfloor_min": [0.9695358833375245, 0.9723204728896869]}, "ratio_max": {"settling": 0.6784735841565092, "marker": 0.13374285818731316, "gap": 0.164254918373359, "entry": 0.9780315182143752}, "rule": {"converged": 107, "not_converged": [], "iterations": [3.0, 5.0], "runtime_s": [21.111313819885254, 42.262526512145996]}, "c0_range": [47.007, 52.996], "e0_range": [40.507, 46.496], "v1_range": [10.4505, 10.5497], "nonpos_certified": 0, "head_first_tail_last_all": true, "stop_orders": [[1, 2, 3, 4, 5]], "rule_entered_any": true}
+  -> data/new_d19/fbref/ensemble.json
+[ensemble] done in 1781.0 s
+==== run_fb_validate.py 2026-09-29 01:24:38 parts ['outside', 'age_audit', 'check'] (python 3.12.7, numpy 1.26.4, Windows-11-10.0.26200-SP0, 10 processes) ====
+=== part: outside ===
+[outside] 40 takeover states outside C2 (pair p in 2..5 slower than its predecessor by [0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.1] m/s), design reference, 4 runs each, 10 processes
+  outside 10/40 (22 s)
+  outside 20/40 (38 s)
+  outside 30/40 (52 s)
+  outside 40/40 (67 s)
+  pair 2 delta 0.01: C2 False (slack -0.0386), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 51.0 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.068 contact None
+  pair 2 delta 0.02: C2 False (slack -0.0486), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 50.2 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.069 contact None
+  pair 2 delta 0.03: C2 False (slack -0.0586), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 50.2 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.069 contact None
+  pair 2 delta 0.04: C2 False (slack -0.0686), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 45.1 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.075 contact None
+  pair 2 delta 0.05: C2 False (slack -0.0786), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 48.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.071 contact None
+  pair 2 delta 0.06: C2 False (slack -0.0886), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 35.8 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.085 contact None
+  pair 2 delta 0.07: C2 False (slack -0.0986), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 20.4 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.102 contact None
+  pair 2 delta 0.08: C2 False (slack -0.1086), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 51.1 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.069 contact None
+  pair 2 delta 0.09: C2 False (slack -0.1186), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 31.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.090 contact None
+  pair 2 delta 0.10: C2 False (slack -0.1286), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.049 contact None; zoh_random: disp 34.9 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.087 contact None
+  pair 3 delta 0.01: C2 False (slack -0.0611), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 38.3 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.082 contact None
+  pair 3 delta 0.02: C2 False (slack -0.0711), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 21.2 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.100 contact None
+  pair 3 delta 0.03: C2 False (slack -0.0811), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 48.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.071 contact None
+  pair 3 delta 0.04: C2 False (slack -0.0911), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 46.0 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.074 contact None
+  pair 3 delta 0.05: C2 False (slack -0.1011), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 34.9 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.086 contact None
+  pair 3 delta 0.06: C2 False (slack -0.1111), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 27.2 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.094 contact None
+  pair 3 delta 0.07: C2 False (slack -0.1211), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 45.1 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.075 contact None
+  pair 3 delta 0.08: C2 False (slack -0.1311), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 57.9 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.061 contact None
+  pair 3 delta 0.09: C2 False (slack -0.1411), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 48.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.072 contact None
+  pair 3 delta 0.10: C2 False (slack -0.1511), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 33.2 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.088 contact None
+  pair 4 delta 0.01: C2 False (slack -0.0837), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 51.0 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.068 contact None
+  pair 4 delta 0.02: C2 False (slack -0.0937), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 53.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.065 contact None
+  pair 4 delta 0.03: C2 False (slack -0.1037), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 43.4 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.076 contact None
+  pair 4 delta 0.04: C2 False (slack -0.1137), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 46.0 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.074 contact None
+  pair 4 delta 0.05: C2 False (slack -0.1237), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 55.3 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.063 contact None
+  pair 4 delta 0.06: C2 False (slack -0.1337), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 29.7 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.091 contact None
+  pair 4 delta 0.07: C2 False (slack -0.1437), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 38.3 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.082 contact None
+  pair 4 delta 0.08: C2 False (slack -0.1537), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 43.4 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.077 contact None
+  pair 4 delta 0.09: C2 False (slack -0.1637), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 45.1 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.075 contact None
+  pair 4 delta 0.10: C2 False (slack -0.1737), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 50.2 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.070 contact None
+  pair 5 delta 0.01: C2 False (slack -0.1063), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 51.0 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.068 contact None
+  pair 5 delta 0.02: C2 False (slack -0.1163), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 4/0 npos 4 mods 4 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 46.0 ms sat 15/0 npos 15 mods 15 rule [2, 3, 4, 5] (before T_xi []) marker 0.074 contact None
+  pair 5 delta 0.03: C2 False (slack -0.1263), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 46/0 npos 46 mods 46 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 38.3 ms sat 53/0 npos 53 mods 53 rule [2, 3, 4, 5] (before T_xi []) marker 0.082 contact None
+  pair 5 delta 0.04: C2 False (slack -0.1363), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 88/0 npos 88 mods 88 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 46.9 ms sat 94/0 npos 94 mods 94 rule [2, 3, 4, 5] (before T_xi []) marker 0.073 contact None
+  pair 5 delta 0.05: C2 False (slack -0.1463), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 129/0 npos 129 mods 129 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 37.4 ms sat 115/0 npos 115 mods 115 rule [2, 3, 4, 5] (before T_xi []) marker 0.083 contact None
+  pair 5 delta 0.06: C2 False (slack -0.1563), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 169/0 npos 169 mods 169 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 47.7 ms sat 170/0 npos 170 mods 170 rule [2, 3, 4, 5] (before T_xi []) marker 0.072 contact None
+  pair 5 delta 0.07: C2 False (slack -0.1663), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 209/0 npos 209 mods 209 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 33.2 ms sat 219/0 npos 219 mods 219 rule [2, 3, 4, 5] (before T_xi []) marker 0.088 contact None
+  pair 5 delta 0.08: C2 False (slack -0.1763), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 249/0 npos 249 mods 249 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 49.4 ms sat 250/0 npos 250 mods 250 rule [2, 3, 4, 5] (before T_xi []) marker 0.071 contact None
+  pair 5 delta 0.09: C2 False (slack -0.1863), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 288/0 npos 288 mods 288 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 56.2 ms sat 305/0 npos 305 mods 305 rule [2, 3, 4, 5] (before T_xi []) marker 0.064 contact None
+  pair 5 delta 0.10: C2 False (slack -0.1963), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 327/0 npos 327 mods 327 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 51.9 ms sat 337/0 npos 337 mods 337 rule [2, 3, 4, 5] (before T_xi []) marker 0.068 contact None
+  aggregate: {"n_states": 40, "n_runs": 160, "certificate_not_applicable_all": true, "admitted_any": false, "symmetric_box_admitted": [], "symmetric_box_failures": ["C7a"], "runs_with_clipping": 36, "runs_with_upper_clipping": 36, "runs_with_positive_nominal": 36, "runs_with_filter_action": 0, "runs_with_rule_before_T_xi": 0, "runs_all_followers_rule": 160, "runs_within_design_bounds": 0, "runs_not_stopped": 0, "runs_with_contact": 0, "runs_fb_law": 160, "settling_max": 0.07158883629455204, "marker_max": 0.1123280427998452, "gap_max": 0.029565687155809428, "u_max": 0.02, "unom_max": 0.13636190100993806, "u_max_pre_informed": 0.02, "e_hnd_max": 0.0330346934380259, "eps_hnd_max": 0.0019287285122233655, "gmin_min": 5.510592267757204, "mmin_lim_min": 5.480371045075648, "requirements_failed": ["filter_inactive", "input_set_unmodified"], "design_bounds_failed": ["S1_sign", "activation_after_earliest_predecessor_switch", "command_upper_before_T_xi", "command_upper_pointwise", "earliest_switch_instants", "filter_modifications", "first_window_position_nonincreasing", "nominal_command_upper", "switch_position_upper", "switch_speed_upper", "velocity_floor_pointwise"], "stop_orders": [[1, 2, 3, 4, 5]], "age_ok": true, "first_clip_delta_by_pair": {"2": null, "3": null, "4": null, "5": 0.02}, "first_positive_delta_by_pair": {"2": null, "3": null, "4": null, "5": 0.02}, "first_filter_delta_by_pair": {"2": null, "3": null, "4": null, "5": null}, "first_design_bound_failure_delta_by_pair": {"2": 0.01, "3": 0.01, "4": 0.01, "5": 0.01}}
+  -> data/new_d19/fbref/outside.json
+[outside] done in 69.2 s
+=== part: age_audit ===
+[age_audit] constant transport: 9 runs + 16 swept ages, within bound True, mismatches 0
+  random: 1000 schedules, sup of the age 20 ms, 3814 hops reach the bound, mismatches 0
+  constructed: 84 schedules, sup of the age 20 ms, mismatches 0
+  sweep: 320 random schedules at 16 ages, within bounds True, mismatches 0
+  totals: 2207 schedules, all within bound True, mismatches with the runs 0 (165 s)
+  -> data/new_d19/fbref/age_audit.json
+[age_audit] done in 165.0 s
+=== part: check ===
+  reference.json     OK {"n_checked": 63, "failed": [], "dispersion": 0.07157955653156023, "u": [-1.0799186011406188, 0.0], "positive_nominal": 0}
+  convergence.json   OK {"max_diff": 5.488800525199622e-09, "argmax": "entry_obs", "max_stop_diff": 7.105427357601002e-13}
+  digital.json       OK {"max_stop_diff_1kHz": 1.1176587406680483e-06, "max_marker_diff_1kHz": 5.118498108913627e-06}
+  schedules.json     OK {"n": 1000, "settling_max": 0.06734385457303915, "n_bounds_failed": 0, "failed_rows": [], "positive_nominal": 0}
+  adversarial.json   OK {"n": 84, "settling_max": 0.07178753270386551, "n_bounds_failed": 0, "failed_rows": [], "positive_nominal": 0}
+  sweep.json         OK {"certified_ages_ms": [5, 10, 15, 20, 24], "boundary_ms": 24, "first_failures": {"design_bound": {"age_ms": 24, "failed": ["braking_mismatch_integral", "command_lower_pointwise", "command_upper_pointwise", "information_age", "ramp_receipts", "ramp_relay_steps"]}, "certificate": {"age_ms": 25, "failed": ["C7a"]}, "positive_nominal": {"age_ms": 150, "runs": 5}, "bound_at_age": {"age_ms": 200, "failed": ["filter_modifications", "nominal_command_upper"], "admitted": false}, "requirement": {"age_ms": 200, "failed": ["filter_inactive", "input_set_unmodified"]}, "clipped_command": {"age_ms": 200, "sa
+  ensemble.json      FAIL {"n": 300, "n_admitted": 193, "failures": {"C7b": 71, "C7a": 39, "C8b": 11}, "n_rejected_by_C2": 182}
+  outside.json       OK {"runs": 160, "clipping": 36, "positive": 36, "filter": 0, "rule_before_T_xi": 0, "within_design_bounds": 0, "not_stopped": 0, "contact": 0}
+  age_audit.json     OK {"schedules": 2207, "all_within_bound": true, "mismatches_vs_runs": 0}
+  independent.json   OK {"sim_bench_hr_proposed": {"max_stop_diff": 0.0, "max_settling_diff": 0.0, "max_marker_diff": 0.0, "max_gap_diff": 0.0, "max_tact_diff": 0.0, "max_tset_diff": 0.0, "max_trule_diff": 0.0, "max_e_hnd_diff": 0.0, "max_gmin_diff": 3.907985046680551e-14, "max_u_min_unit_diff": 0.0, "max_u_max_unit_diff": 0.0, "max_entry_diff": null, "stop_order_equal": true, "rule_equal": true}}
+  -> data/new_d19/fbref/check.json
+  FAILURES PRESENT: ['ensemble.json:admitted_inside_bounds']
+[check] done in 0.3 s
+  -> data/new_d19/fbref/ensemble_audit.json
+  -> data/new_d19/fbref/ensemble_audit.json
+==== run_fb_validate.py 2026-09-29 01:48:26 parts ['ref', 'conv', 'digital', 'sched', 'adv', 'sweep', 'ensemble', 'outside', 'independent', 'age_audit', 'check'] (python 3.12.7, numpy 1.26.4, Windows-11-10.0.26200-SP0, 10 processes) ====
+=== part: ref ===
+[ref] certificate lam=0.065 vhnd=0.01 lags=[41, 41] dbar=20 ms: admitted=True failed=[] (1.8 s); design constants True
+  bounds and slacks identical to design_fb.json (selected, 20 ms): True (differing [] [] [])
+  reference h=0.0001: disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] (0.8 s); records 10 ms / 1 ms identical: True
+  FB law on the reference run: ok True (setup schedules False, run schedules False, nosched park, schedule jumps 0, max |e_i - (c_i - d_s,i)| 0.0, max |eps_i - (v_{i-1} - v_i)| 0.0, e(0) [0.0, 43.5, 43.5, 43.5, 43.5])
+  fine h=2.5e-05: disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] (3.2 s); max |reference - fine| 5.49e-09 (entry_obs)
+  settling_time                                bound 0.106564                                         observed 0.0715796                                        ok=True
+  stop_increments                              bound [0.025836, 0.026309, 0.026877, 0.027542]         observed [0.017827, 0.017863, 0.017912, 0.017978]         ok=True
+  final_standstill                             bound 149.864                                          observed 149.822                                          ok=True
+  stop_offsets                                 bound 0.111564                                         observed 0.0715715                                        ok=True
+  stops_after_T_xi                             bound [148.75, 148.75, 148.75, 148.75, 148.75]         observed [149.75, 149.77, 149.79, 149.8, 149.82]          ok=True
+  marker_error                                 bound 0.828091                                         observed 0.048476                                         ok=True
+  marker_error_units                           bound [0.055013, 0.24468, 0.43641, 0.63071, 0.82809]   observed [0.00013092, 0.010724, 0.022274, 0.03476, 0.048476] ok=True
+  terminal_gap_error                           bound 0.197381                                         observed 0.013716                                         ok=True
+  terminal_gap_error_pairs                     bound [0.18966, 0.19173, 0.1943, 0.19738]              observed [0.010855, 0.01155, 0.012486, 0.013716]          ok=True
+  clearance_floor_pairs                        bound [4.4244, 3.8661, 2.9735, 1.6059]                 observed [5.5109, 5.5116, 5.5125, 5.5137]                 ok=True
+  barrier_nonnegative                          bound [0, 0, 0, 0]                                     observed [5.4536, 5.4551, 5.4528, 5.4519]                 ok=True
+  barrier_floor_acquisition                    bound [48.16, 47.901, 47.409, 46.668]                  observed [48.282, 48.237, 48.083, 47.829]                 ok=True
+  barrier_floor_s2                             bound [4.4619, 3.9381, 3.0456, 1.6914]                 observed [5.4675, 5.4702, 5.469, 5.4693]                  ok=True
+  barrier_braking                              bound [4.4244, 3.8661, 2.9735, 1.6059]                 observed [5.4536, 5.4551, 5.4528, 5.4519]                 ok=True
+  inactivity_margin_pairs                      bound [4.0251, 3.1166, 1.9168, 0.39112]                observed [6.706, 6.2547, 5.8447, 5.4815]                  ok=True
+  inactivity_margin                            bound 0.391121                                         observed 5.48148                                          ok=True
+  command_lower                                bound [-1.2, -1.2, -1.2, -1.2, -1.2]                   observed [-1.078, -1.0799, -1.0799, -1.0799, -1.0799]     ok=True
+  command_upper                                bound [0.02, 0.02, 0.02, 0.02, 0.02]                   observed [-0.029905, 0, 0, 0, 0]                          ok=True
+  nominal_command_upper                        bound [0.02, 0.02, 0.02, 0.02, 0.02]                   observed [-0.029905, 0, 0, 0, 0]                          ok=True
+  command_after_latch                          bound 0                                                observed 0                                                ok=True
+  command_upper_before_T_xi                    bound [-0.029904, 0, 0, 0, 0.0070017]                  observed [-0.029905, 0, 0, 0, 0]                          ok=True
+  command_lower_before_T_xi                    bound [-1.08, -1.1048, -1.1303, -1.1564, -1.1831]      observed [-1.078, -1.0799, -1.0799, -1.0799, -1.0799]     ok=True
+  command_upper_pre_receipt                    bound [-, -0.028189, -0.027226, -0.026191, -0.02507]   observed [-, -0.030055, -0.030159, -0.030267, -0.030377]  ok=True
+  command_lower_pre_receipt                    bound [-, -0.034239, -0.037724, -0.041282, -0.044924]  observed [-, -0.032323, -0.034701, -0.037088, -0.039484]  ok=True
+  braking_envelope                             bound [0.00086125, 0.005017, 0.0092286, 0.01351, 0.017874] observed [0, 0.0024961, 0.0050001, 0.0075127, 0.010035]   ok=True
+  command_upper_pointwise                      bound [0, 0, 0, 0, 0]                                  observed [-9.0589e-09, 0, 0, 0, 0]                        ok=True
+  command_lower_pointwise                      bound [0, 0, 0, 0, 0]                                  observed [0, -7.0983e-06, -3.252e-05, -3.252e-05, -3.252e-05] ok=True
+  velocity_floor_pointwise                     bound [0, 0, 0, 0, 0]                                  observed [-3.0115e-05, -0.0018285, -0.0084549, -0.019959, -0.036408] ok=True
+  velocity_floor                               bound 0.970954                                         observed 1.00002                                          ok=True
+  handoff_speed_floor                          bound 0.975001                                         observed 0.999993                                         ok=True
+  activation_deadlines                         bound [0, 0.078143, 0.40954, 0.91953, 1.6654]          observed [0, 0.034, 0.279, 0.629, 1.141]                  ok=True
+  detection_deadlines                          bound [0.058143, 0.38954, 0.89953, 1.6454, 2.6558]     observed [0.015, 0.26, 0.61, 1.122, 1.827]                ok=True
+  earliest_switch_instants                     bound [0.014286, 0.11817, 0.27205, 0.53293, 0.92921]   observed [0.015, 0.26, 0.61, 1.122, 1.827]                ok=True
+  activation_after_earliest_predecessor_switch bound [0, 0.014286, 0.11817, 0.27205, 0.53293]         observed [0, 0.034, 0.279, 0.629, 1.141]                  ok=True
+  activation_after_predecessor_switch          bound [0, 0.015, 0.26, 0.61, 1.122]                    observed [0, 0.034, 0.279, 0.629, 1.141]                  ok=True
+  switch_position_lower                        bound [-0.00026535, 43.475, 43.388, 43.175, 42.752]    observed [-0.00026063, 43.485, 43.437, 43.326, 43.105]    ok=True
+  switch_position_upper                        bound [0, 43.5, 43.5, 43.5, 43.5]                      observed [-0.00026063, 43.485, 43.437, 43.326, 43.105]    ok=True
+  switch_speed_lower                           bound [-0.015, -0.015, -0.015, -0.015, -0.015]         observed [-0.01475, -0.014768, -0.014717, -0.014997, -0.014869] ok=True
+  switch_speed_upper                           bound [0, 0, 0, 0, 0]                                  observed [-0.01475, -0.014768, -0.014717, -0.014997, -0.014869] ok=True
+  first_window_position_excursion              bound [0.00026535, 0.025045, 0.11163, 0.32491, 0.74774] observed [0.00026063, 0.015435, 0.062543, 0.17373, 0.39505] ok=True
+  first_window_position_nonincreasing          bound [0, 43.5, 43.5, 43.5, 43.5]                      observed [0, 43.5, 43.5, 43.5, 43.5]                      ok=True
+  first_window_velocity_error                  bound [0.02, 0.10864, 0.17114, 0.25369, 0.3463]        observed [0.02, 0.09909, 0.14052, 0.20052, 0.27052]       ok=True
+  S1_sign                                      bound [0, 0, 0, 0, 0]                                  observed [-0.01475, -0.014768, -0.014717, -0.014997, -0.014869] ok=True
+  s2_position_error                            bound [0.085091, 43.603, 43.716, 43.957, 44.407]       observed [0.083672, 43.485, 43.437, 43.326, 43.105]       ok=True
+  s2_velocity_error                            bound [0.015, 1.0468, 1.0537, 1.0636, 1.0786]          observed [0.01475, 1.0359, 1.0358, 1.0342, 1.0301]        ok=True
+  ramp_receipts                                bound [148.75, 148.77, 148.79, 148.81, 148.83]         observed [148.75, 148.77, 148.79, 148.81, 148.83]         ok=True
+  ramp_relay_steps                             bound [0.02, 0.02, 0.02, 0.02]                         observed [0.019, 0.019, 0.019, 0.019]                     ok=True
+  ramp_relay_order                             bound [0, 0, 0, 0]                                     observed [0.019, 0.019, 0.019, 0.019]                     ok=True
+  persistent_entry                             bound 146.496                                          observed 141.634                                          ok=True
+  persistent_entry_pairs                       bound [37.153, 140.28, 141.99, 144.04, 146.5]          observed [36.666, 139.96, 140.38, 140.93, 141.64]         ok=True
+  box_hold_position                            bound 0.05                                             observed 0.0376749                                        ok=True
+  box_hold_velocity                            bound 0.005                                            observed 0.00219649                                       ok=True
+  handoff_position_error                       bound [0.05, 0.05, 0.05, 0.05, 0.05]                   observed [0.00013903, 0.029838, 0.030627, 0.031671, 0.033033] ok=True
+  handoff_velocity_error                       bound [0.005, 0.005, 0.005, 0.005, 0.005]              observed [8.102e-06, 0.0017573, 0.0017983, 0.0018542, 0.0019284] ok=True
+  braking_mismatch_integral                    bound [0.019618, 0.019982, 0.020433, 0.020974]         observed [0.018431, 0.018522, 0.018613, 0.018704]         ok=True
+  braking_speed_band                           bound [0.025814, 0.026177, 0.026629, 0.02717]          observed [0.020164, 0.020249, 0.020348, 0.020466]         ok=True
+  braking_position_band                        bound [0.18933, 0.19139, 0.19394, 0.19701]             observed [0.029838, 0.030627, 0.031671, 0.033033]         ok=True
+  filter_modifications                         bound 0                                                observed 0                                                ok=True
+  information_age                              bound 0.02                                             observed 0.02                                             ok=True
+  all_stopped                                  ok=True
+  no_contact                                   ok=True
+  no_rule_before_T_xi                          ok=True
+  fb_law                                       ok=True
+  all bounds ok (reference): True failed []; checked 63 of 63 rows; fine: True []
+  -> data/new_d19/fbref/traj_fb.npz (15676 samples, record 0.01 s)
+  -> data/new_d19/fbref/traj_fb_1ms.npz (156751 samples, record 0.001 s)
+  window start [0.0000, 4.0000] s: 160001 samples
+  window stop  [148.7000, 149.8266] s: 45063 samples
+  -> data/new_d19/fbref/traj_fb_stop.npz (windowed samples, record 2.5e-05 s)
+  -> data/new_d19/fbref/reference.json
+  headline: dispersion 71.580 ms (bound 0.1066 s), marker 0.0485 m (0.8281), gap 0.0137 m (0.1974), T_f 149.8216 s (149.8637), u in [-1.07992, 0.00000], entry 141.634 s (146.496), age 20.000 ms
+[ref] done in 18.5 s
+=== part: conv ===
+[conv] cont h in (0.0001, 5e-05, 2.5e-05) (+ diagnostic (0.001, 0.0005)), constant transport 19 ms
+  h=0.001    disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] bounds_ok=True (0.1 s)
+  h=0.0005   disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] bounds_ok=True (0.2 s)
+  h=0.0001   disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] bounds_ok=True (0.8 s)
+  h=5e-05    disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] bounds_ok=True (1.6 s)
+  h=2.5e-05  disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] bounds_ok=True (3.2 s)
+  0.0001->5e-05  |dtau| 4.55e-13 s |ddisp| 8.81e-13 s |dmarker| 2.13e-11 m |dgap| 3.21e-11 m |dgmin| 3.21e-11 m |de_hnd| 3.56e-11 m
+  5e-05->2.5e-05 |dtau| 5.68e-13 s |ddisp| 3.69e-13 s |dmarker| 1.75e-11 m |dgap| 1.81e-11 m |dgmin| 1.81e-11 m |de_hnd| 2.18e-11 m
+  max |diff| to h=2.5e-05 over the refinements: 5.49e-09 (entry_obs); max stop diff 7.11e-13 s
+  -> data/new_d19/fbref/convergence.json
+[conv] done in 8.5 s
+=== part: digital ===
+[digital] zoh 1 kHz (T_u = h = 1 ms) vs cont (h = 0.0001 s): constant 19 ms and 5 random schedules
+  const19   cont: disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01689) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] bounds_ok=True
+  const19   zoh : disp=0.07158 s T_f=149.8216 s marker<=0.0485 m gap<=0.0137 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01690) mods=0 npos=0 entry=141.634 s order=[1, 2, 3, 4, 5] bounds_ok=True | |dtau| 1.12e-06 s |ddisp| 1.12e-06 s |dmarker| 4.06e-06 m |dentry| 2.99e-05 s
+  seed600   cont: disp=0.03578 s T_f=149.7858 s marker<=0.0856 m gap<=0.0279 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01863) mods=0 npos=0 entry=141.429 s order=[1, 2, 3, 4, 5] bounds_ok=True
+  seed600   zoh : disp=0.03578 s T_f=149.7858 s marker<=0.0856 m gap<=0.0279 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01864) mods=0 npos=0 entry=141.429 s order=[1, 2, 3, 4, 5] bounds_ok=True | |dtau| 9.69e-07 s |ddisp| 3.25e-07 s |dmarker| 4.99e-06 m |dentry| 3.08e-05 s
+  seed601   cont: disp=0.02726 s T_f=149.7773 s marker<=0.0947 m gap<=0.0297 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01832) mods=0 npos=0 entry=141.370 s order=[1, 2, 3, 4, 5] bounds_ok=True
+  seed601   zoh : disp=0.02726 s T_f=149.7773 s marker<=0.0947 m gap<=0.0297 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01833) mods=0 npos=0 entry=141.370 s order=[1, 2, 3, 4, 5] bounds_ok=True | |dtau| 7.68e-07 s |ddisp| 2.24e-07 s |dmarker| 5.12e-06 m |dentry| 3.65e-05 s
+  seed602   cont: disp=0.04517 s T_f=149.7952 s marker<=0.0758 m gap<=0.0223 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01773) mods=0 npos=0 entry=141.442 s order=[1, 2, 3, 4, 5] bounds_ok=True
+  seed602   zoh : disp=0.04517 s T_f=149.7952 s marker<=0.0758 m gap<=0.0223 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01776) mods=0 npos=0 entry=141.442 s order=[1, 2, 3, 4, 5] bounds_ok=True | |dtau| 6.68e-07 s |ddisp| 6.51e-07 s |dmarker| 4.42e-06 m |dentry| 8.64e-04 s
+  seed603   cont: disp=0.03832 s T_f=149.7883 s marker<=0.0828 m gap<=0.0259 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01896) mods=0 npos=0 entry=141.409 s order=[1, 2, 3, 4, 5] bounds_ok=True
+  seed603   zoh : disp=0.03832 s T_f=149.7883 s marker<=0.0828 m gap<=0.0259 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01898) mods=0 npos=0 entry=141.408 s order=[1, 2, 3, 4, 5] bounds_ok=True | |dtau| 5.43e-07 s |ddisp| 3.51e-07 s |dmarker| 4.63e-06 m |dentry| 8.66e-04 s
+  seed604   cont: disp=0.05369 s T_f=149.8037 s marker<=0.0665 m gap<=0.0198 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01831) mods=0 npos=0 entry=141.431 s order=[1, 2, 3, 4, 5] bounds_ok=True
+  seed604   zoh : disp=0.05369 s T_f=149.8037 s marker<=0.0665 m gap<=0.0198 m u in [-1.07992, 0.00000] (pre max 0.00000, informed -0.01832) mods=0 npos=0 entry=141.431 s order=[1, 2, 3, 4, 5] bounds_ok=True | |dtau| 1.02e-06 s |ddisp| 7.77e-07 s |dmarker| 4.47e-06 m |dentry| 3.16e-05 s
+  zoh vs cont: max |dtau| 1.12e-06 s, |ddisp| 1.12e-06 s, |dmarker| 5.12e-06 m, |dentry| 8.66e-04 s; all bounds ok True
+  -> data/new_d19/fbref/digital.json
+[digital] done in 9.0 s
+=== part: sched ===
+[sched] 1000 random FIFO schedules (seed 500 + j), d_j in 1..19 steps, zoh 1 kHz, 10 processes
+  sched 100/1000 (12 s)
+  sched 200/1000 (19 s)
+  sched 300/1000 (25 s)
+  sched 400/1000 (32 s)
+  sched 500/1000 (38 s)
+  sched 600/1000 (44 s)
+  sched 700/1000 (51 s)
+  sched 800/1000 (57 s)
+  sched 900/1000 (63 s)
+  sched 1000/1000 (69 s)
+  aggregate: dispersion 16.219..67.344 ms (bound 106.56 ms), marker <= 0.1067 m (0.8281), gap <= 0.0298 m (0.1974), entry <= 141.48 s (146.50), u_max_pre 0.00000 (informed -0.01731), mods 0, sat 0, npos 0, bounds_ok True (0 failed []), age_ok True, fb_law True, stop orders [(1, 2, 3, 4, 5)] (70 s)
+  -> data/new_d19/fbref/schedules.json
+[sched] done in 72.7 s
+=== part: adv ===
+[adv] 84 constructed schedules, zoh 1 kHz, 10 processes
+  adv 25/84 (8 s)
+  adv 50/84 (10 s)
+  adv 75/84 (12 s)
+  step patterns      n= 18 disp <= 71.572 ms marker <= 0.1123 m gap <= 0.0295 m entry <= 141.63 s u_max_pre 0.00000 (informed -0.01673) gmin 5.511 m mmin 5.481 npos 0 mods 0 bounds_ok True
+  constant           n=  2 disp <= 71.581 ms marker <= 0.1117 m gap <= 0.0292 m entry <= 141.63 s u_max_pre 0.00000 (informed -0.01690) gmin 5.511 m mmin 5.481 npos 0 mods 0 bounds_ok True
+  bursts             n= 10 disp <= 59.609 ms marker <= 0.1129 m gap <= 0.0299 m entry <= 141.49 s u_max_pre 0.00000 (informed -0.01714) gmin 5.511 m mmin 5.481 npos 0 mods 0 bounds_ok True
+  windows            n= 45 disp <= 71.788 ms marker <= 0.1126 m gap <= 0.0296 m entry <= 141.37 s u_max_pre 0.00000 (informed -0.01627) gmin 5.511 m mmin 5.481 npos 0 mods 0 bounds_ok True
+  per-hop windows    n=  1 disp <= 10.216 ms marker <= 0.1120 m gap <= 0.0293 m entry <= 141.17 s u_max_pre 0.00000 (informed -0.01945) gmin 5.527 m mmin 5.512 npos 0 mods 0 bounds_ok True
+  sawtooth batches   n=  4 disp <= 62.221 ms marker <= 0.0686 m gap <= 0.0234 m entry <= 141.54 s u_max_pre 0.00000 (informed -0.01731) gmin 5.513 m mmin 5.486 npos 0 mods 0 bounds_ok True
+  alternating        n=  2 disp <= 71.578 ms marker <= 0.0517 m gap <= 0.0145 m entry <= 141.63 s u_max_pre 0.00000 (informed -0.01689) gmin 5.511 m mmin 5.481 npos 0 mods 0 bounds_ok True
+  per-hop constant   n=  2 disp <= 40.887 ms marker <= 0.0802 m gap <= 0.0293 m entry <= 141.55 s u_max_pre 0.00000 (informed -0.01821) gmin 5.511 m mmin 5.481 npos 0 mods 0 bounds_ok True
+  steps_short_global             e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '+0.0000'] lo ['+0.0000', '-0.0690', '-0.0674', '-0.0637', '-0.0577']
+  steps_short_hop1_others1       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0097', '+0.0238', '+0.0430'] lo ['+0.0000', '-0.0690', '-0.0915', '-0.1028', '-0.1076']
+  steps_short_hop1_others19      e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0001', '+0.0001', '+0.0001'] lo ['+0.0000', '-0.0690', '-0.0001', '-0.0001', '-0.0001']
+  steps_short_hop2_others1       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0065', '+0.0252', '+0.0450'] lo ['+0.0000', '-0.1212', '-0.1174', '-0.1108', '-0.1153']
+  steps_short_hop2_others19      e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0000', '+0.0001', '+0.0001'] lo ['+0.0000', '+0.0000', '-0.0675', '-0.0001', '-0.0001']
+  steps_short_hop3_others1       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0151', '+0.0176', '+0.0470'] lo ['+0.0000', '-0.1212', '-0.1434', '-0.1533', '-0.1229']
+  steps_short_hop3_others19      e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '+0.0001'] lo ['+0.0000', '+0.0000', '+0.0000', '-0.0639', '-0.0000']
+  steps_short_hop4_others1       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0151', '+0.0323', '+0.0336'] lo ['+0.0000', '-0.1212', '-0.1434', '-0.1530', '-0.1750']
+  steps_short_hop4_others19      e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '+0.0000'] lo ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '-0.0580']
+  steps_long_global              e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0151', '+0.0323', '+0.0553'] lo ['+0.0000', '-0.0555', '-0.0823', '-0.0963', '-0.1035']
+  steps_long_hop1_others1        e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0151', '+0.0323', '+0.0553'] lo ['+0.0000', '-0.0555', '-0.1434', '-0.1530', '-0.1553']
+  steps_long_hop1_others19       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0065', '+0.0098', '+0.0138'] lo ['+0.0000', '-0.0555', '-0.0528', '-0.0502', '-0.0472']
+  steps_long_hop2_others1        e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0151', '+0.0323', '+0.0553'] lo ['+0.0000', '-0.1212', '-0.0824', '-0.1530', '-0.1553']
+  steps_long_hop2_others19       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0097', '+0.0081', '+0.0114'] lo ['+0.0000', '+0.0000', '-0.0295', '-0.0422', '-0.0397']
+  steps_long_hop3_others1        e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0151', '+0.0323', '+0.0553'] lo ['+0.0000', '-0.1212', '-0.1434', '-0.0964', '-0.1553']
+  steps_long_hop3_others19       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0000', '+0.0164', '+0.0091'] lo ['+0.0000', '+0.0000', '+0.0000', '-0.0058', '-0.0321']
+  steps_long_hop4_others1        e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0041', '+0.0151', '+0.0323', '+0.0553'] lo ['+0.0000', '-0.1212', '-0.1434', '-0.1530', '-0.1037']
+  steps_long_hop4_others19       e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '+0.0237'] lo ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '-0.0022']
+  const_max (reference)          e - e(const 19 ms) before T_xi: hi ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '+0.0000'] lo ['+0.0000', '+0.0000', '+0.0000', '+0.0000', '+0.0000']
+  aggregate: dispersion <= 71.788 ms (max_after_all_W100ms), marker <= 0.1129 m, gap <= 0.0299 m, entry <= 141.63 s, u_max_pre 0.00000, mods 0, npos 0, bounds_ok True (0 failed []), age_ok True (12 s)
+  -> data/new_d19/fbref/adversarial.json
+[adv] done in 14.5 s
+=== part: sweep ===
+[sweep] age bounds [5, 10, 15, 20, 25, 26, 30, 40, 50, 70, 100, 150, 200, 300, 500, 1000] ms: certificate of the fixed design, constant transport and 20 random schedules per age (zoh 1 kHz), 10 processes
+  sweep 1/16 (28 s)
+  sweep 2/16 (28 s)
+  sweep 3/16 (28 s)
+  sweep 4/16 (28 s)
+  sweep 5/16 (28 s)
+  sweep 6/16 (28 s)
+  sweep 7/16 (28 s)
+  sweep 8/16 (28 s)
+  sweep 9/16 (28 s)
+  sweep 10/16 (28 s)
+  sweep 11/16 (42 s)
+  sweep 12/16 (42 s)
+  sweep 13/16 (43 s)
+  sweep 14/16 (43 s)
+  sweep 15/16 (43 s)
+  sweep 16/16 (43 s)
+     5 ms cert ADM                                | disp 11.1..20.4 ms (bound 44.9 ms) marker <= 0.1110 m gap <= 0.0293 m gmin 5.524 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 141.22 s contact 0 bounds@age True design ok
+    10 ms cert ADM                                | disp 19.6..37.5 ms (bound 65.2 ms) marker <= 0.1023 m gap <= 0.0286 m gmin 5.520 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 141.36 s contact 0 bounds@age True design ok
+    15 ms cert ADM                                | disp 21.3..54.5 ms (bound 85.7 ms) marker <= 0.1007 m gap <= 0.0296 m gmin 5.515 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 141.50 s contact 0 bounds@age True design ok
+    20 ms cert ADM                                | disp 21.3..71.6 ms (bound 106.6 ms) marker <= 0.1013 m gap <= 0.0285 m gmin 5.511 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 141.63 s contact 0 bounds@age True design ok
+    25 ms cert ADM                                | disp 32.4..88.7 ms (bound 127.7 ms) marker <= 0.0894 m gap <= 0.0289 m gmin 5.506 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 141.77 s contact 0 bounds@age True design ['braking_mismatch_integral', 'command_lower_pointwise', 'command_upper_pointwise', 'information_age', 'ramp_receipts', 'ramp_relay_steps']
+    26 ms cert cl  C8b                            | disp 29.8..92.1 ms (bound 132.0 ms) marker <= 0.0925 m gap <= 0.0298 m gmin 5.505 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 141.80 s contact 0 bounds@age True design ['braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_upper_pointwise', 'information_age', 'ramp_receipts', 'ramp_relay_steps']
+    30 ms cert cl  C3,C7a,C8b                     | disp 28.1..105.8 ms (bound 149.1 ms) marker <= 0.0945 m gap <= 0.0299 m gmin 5.502 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 141.91 s contact 0 bounds@age True design ['braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_upper_pointwise', 'information_age', 'ramp_receipts', 'ramp_relay_steps', 'stop_increments']
+    40 ms cert cl  C0a,C3,C7a,C8b,C8c,C9a         | disp 43.5..140.0 ms (bound 192.8 ms) marker <= 0.0788 m gap <= 0.0303 m gmin 5.493 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 142.18 s contact 0 bounds@age True design ['braking_envelope', 'braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_pointwise', 'final_standstill', 'first_window_velocity_error', 'information_age', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets']
+    50 ms cert cl  C0a,C2,C3,C7a,C8b,C8c,C9a,C9b  | disp 27.4..174.4 ms (bound 237.7 ms) marker <= 0.0970 m gap <= 0.0295 m gmin 5.484 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 142.45 s contact 0 bounds@age True design ['braking_envelope', 'braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_pointwise', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'information_age', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower']
+    70 ms cert cl  C0a,C2,C3,C7a,C8b,C8c,C9a,C9b  | disp 58.9..243.2 ms (bound 331.2 ms) marker <= 0.1260 m gap <= 0.0337 m gmin 5.466 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 142.99 s contact 0 bounds@age True design ['activation_deadlines', 'braking_envelope', 'braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_pointwise', 'detection_deadlines', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'information_age', 'persistent_entry_pairs', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower']
+   100 ms cert cl  C0a,C2,C3,C7a,C8b,C8c,C9a,C9b  | disp 92.0..347.1 ms (bound 481.0 ms) marker <= 0.2299 m gap <= 0.0603 m gmin 5.440 m u_max_pre 0.00000 npos 0 sat 0 mods 0 entry <= 143.79 s contact 0 bounds@age True design ['activation_deadlines', 'braking_envelope', 'braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_pointwise', 'detection_deadlines', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'information_age', 'persistent_entry_pairs', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower']
+   150 ms cert cl  C0a,C2,C3,C7a,C7b,C8b,C8c,C9a, | disp 194.9..521.4 ms (bound 758.9 ms) marker <= 0.4018 m gap <= 0.1043 m gmin 5.396 m u_max_pre 0.00887 npos 12834 sat 0 mods 0 entry <= 145.10 s contact 0 bounds@age True design ['activation_deadlines', 'braking_envelope', 'braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_before_T_xi', 'command_upper_pointwise', 'detection_deadlines', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'information_age', 'persistent_entry_pairs', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower']
+   200 ms cert cl  C0a,C2,C3,C7a,C7b,C8b,C8c,C9a, | disp 71.5..697.4 ms (bound 1076.1 ms) marker <= 0.5722 m gap <= 0.1482 m gmin 5.352 m u_max_pre 0.02000 npos 57326 sat 1161 mods 1161 entry <= 146.40 s contact 0 bounds@age ['filter_modifications', 'nominal_command_upper'] design ['activation_deadlines', 'barrier_floor_acquisition', 'braking_envelope', 'braking_mismatch_integral', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_before_T_xi', 'command_upper_pointwise', 'detection_deadlines', 'filter_modifications', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'information_age', 'nominal_command_upper', 'persistent_entry_pairs', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower']
+   300 ms cert cl  C0a,H8,C2,C3,C7a,C7b,C7c_brk_l | disp 174.0..1054.8 ms (bound 1852.8 ms) marker <= 0.9005 m gap <= 0.2352 m gmin 5.265 m u_max_pre 0.02000 npos 186669 sat 63534 mods 63534 entry <= 146.24 s contact 0 bounds@age ['filter_modifications', 'handoff_position_error', 'nominal_command_upper'] design ['activation_deadlines', 'barrier_floor_acquisition', 'box_hold_position', 'braking_envelope', 'braking_mismatch_integral', 'braking_position_band', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_before_T_xi', 'command_upper_pointwise', 'detection_deadlines', 'filter_modifications', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'handoff_position_error', 'information_age', 'marker_error', 'marker_error_units', 'nominal_command_upper', 'persistent_entry', 'persistent_entry_pairs', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower', 'terminal_gap_error', 'terminal_gap_error_pairs']
+   500 ms cert cl  C0a,H8,C2,C3,C4,C7a,C7b,C7c_br | disp 335.9..1806.7 ms (bound 4239.8 ms) marker <= 1.5458 m gap <= 0.4074 m gmin 5.093 m u_max_pre 0.02000 npos 298343 sat 168497 mods 168497 entry <= 148.66 s contact 0 bounds@age ['filter_modifications', 'handoff_position_error', 'handoff_velocity_error', 'nominal_command_upper'] design ['activation_deadlines', 'barrier_floor_acquisition', 'box_hold_position', 'box_hold_velocity', 'braking_envelope', 'braking_mismatch_integral', 'braking_position_band', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_before_T_xi', 'command_upper_pointwise', 'detection_deadlines', 'filter_modifications', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'handoff_position_error', 'handoff_velocity_error', 'information_age', 'marker_error', 'marker_error_units', 'nominal_command_upper', 'persistent_entry', 'persistent_entry_pairs', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower', 'terminal_gap_error', 'terminal_gap_error_pairs']
+  1000 ms cert cl  C0a,H8,C1,C2,C3,C4,C5,C7a,C7b, | disp 900.8..3322.4 ms (bound 40485.0 ms) marker <= 2.7702 m gap <= 0.8369 m gmin 4.663 m u_max_pre 0.02000 npos 637817 sat 494932 mods 494932 entry <= none contact 0 bounds@age ['S1_sign', 'command_lower_pre_receipt', 'filter_modifications', 'handoff_position_error', 'handoff_velocity_error', 'nominal_command_upper', 'switch_speed_upper'] design ['S1_sign', 'activation_deadlines', 'barrier_braking', 'barrier_floor_acquisition', 'box_hold_position', 'box_hold_velocity', 'braking_envelope', 'braking_mismatch_integral', 'braking_position_band', 'braking_speed_band', 'command_lower_pointwise', 'command_lower_pre_receipt', 'command_upper_before_T_xi', 'command_upper_pointwise', 'detection_deadlines', 'filter_modifications', 'final_standstill', 'first_window_position_excursion', 'first_window_velocity_error', 'handoff_position_error', 'handoff_velocity_error', 'information_age', 'marker_error', 'marker_error_units', 'nominal_command_upper', 'persistent_entry', 'persistent_entry_pairs', 'ramp_receipts', 'ramp_relay_steps', 'settling_time', 'stop_increments', 'stop_offsets', 'switch_position_lower', 'switch_speed_upper', 'terminal_gap_error', 'terminal_gap_error_pairs']
+  boundary 25 ms (next fails ['C8b']); admitted ages on the grid [5, 10, 15, 20, 25]; first failures {"design_bound": {"age_ms": 25, "failed": ["braking_mismatch_integral", "command_lower_pointwise", "command_upper_pointwise", "information_age", "ramp_receipts", "ramp_relay_steps"]}, "certificate": {"age_ms": 26, "failed": ["C8b"]}, "positive_nominal": {"age_ms": 150, "runs": 5}, "bound_at_age": {"age_ms": 200, "failed": ["filter_modifications", "nominal_command_upper"], "admitted": false}, "requirement": {"age_ms": 200, "failed": ["filter_inactive", "input_set_unmodified"]}, "clipped_command": {"age_ms": 200, "saturations": 1161, "upper": 1161, "lower": 0}, "clip_or_filter": {"age_ms": 200, "count": 1161}}
+  -> data/new_d19/fbref/sweep.json
+[sweep] done in 131.4 s
+=== part: ensemble ===
+[ens] 300 takeover states inside C2: c_i(0) in [47, 53] m (1 mm grid), v_1(0) in [10.45, 10.55] m/s, increments in [[0.02, 0.13], [0.035, 0.17], [0.05, 0.23], [0.065, 0.3]] m/s (seed 7); the design rule is re-run at lam = 0.065 for every state; rule at the nominal state reproduces the design reference: True (10.1 s)
+  ens 50/383 (178 s)
+  ens 100/383 (372 s)
+  ens 150/383 (577 s)
+  ens 200/383 (760 s)
+  ens 250/383 (955 s)
+  ens 300/383 (1165 s)
+  ens 350/383 (1378 s)
+  ens 50/89 (218 s)
+  300 states (C2 rejected 182 draws): admitted 221, rejected 79 {'C7b': 71, 'C8b': 11} (1933 s)
+  admitted by largest takeover error: [{'max_e0_range': [40.5, 41.5], 'n': 0, 'admitted': 0}, {'max_e0_range': [41.5, 42.5], 'n': 3, 'admitted': 3}, {'max_e0_range': [42.5, 43.5], 'n': 17, 'admitted': 17}, {'max_e0_range': [43.5, 44.5], 'n': 44, 'admitted': 42}, {'max_e0_range': [44.5, 45.5], 'n': 91, 'admitted': 74}, {'max_e0_range': [45.5, 46.5], 'n': 145, 'admitted': 85}]
+  admitted: {"n": 221, "n_runs": 442, "bounds_all_ok": true, "n_bounds_failed": 0, "bounds_failed": [], "all_rows_checked": true, "requirements_all_ok": true, "requirements_failed": [], "filter_modifications_total": 0, "runs_with_filter_action": 0, "saturations_total": 0, "positive_nominal_total": 0, "runs_with_positive_nominal": 0, "runs_with_rule_before_T_xi": 0, "fb_law_all": true, "all_stopped": true, "no_contact": true, "age_ok": true, "n_handoff_box_violated": 0, "observed": {"settling": [0.01629715953427535, 0.0721603025042441], "T_f": [148.04453859087, 150.82157700736053], "marker": [0.04058207013332549, 0.10815904536900689], "gap": [0.013408721828966463, 0.03169502601269869], "entry": [140.23821517380367, 142.86837525074995], "gmin_min": [5.508076928979335, 5.524872020796579], "mmin_lim_min": [5.480560403001167, 5.513937024632898], "u_min": [-1.0949754624581516, -1.043979701498125], "u_max_pre": [0.0, 0.0], "u_max_pre_informed": [-0.01980788494539655, -0.015243217354979327], "e_hnd_max": [0.03217164215442381, 0.035968928958936885], "eps_hnd_max": [0.0018867666958679585, 0.002105001141270435]}, "certified": {"T_xi": [147.0, 149.75], "a_r0": [-0.743, -0.692], "a_crawl": [0.027874, 0.033472], "T_f_bar": [148.11344864388545, 150.8639569330332], "settling_bound": [0.10627204694078035, 0.10673633226885543], "align": [0.8264534784195514, 0.8290584870054497], "gaperr_max": [0.1969610525937259, 0.1976290198745657], "T_ent_bar": [144.741, 147.6], "clearance_floor_min": [1.205664942033909, 2.7291669009362005], "sigma_min": [0.05099348189729189, 1.5844280166401166], "u_max_before_T_xi": [0.006136285108428341, 0.0074149184090216425], "vfloor_min": [0.9699720500097551, 0.9728519654298375]}, "ratio_max": {"settling": 0.6775844223836636, "marker": 0.13064089549491528, "gap": 0.1607466383729753, "entry": 0.9768743520493595}, "rule": {"converged": 221, "not_converged": [], "iterations": [3.0, 5.0], "runtime_s": [20.643500804901123, 43.95641112327576]}, "c0_range": [47.001, 52.995], "e0_range": [40.501, 46.495], "v1_range": [10.4504, 10.5496], "nonpos_certified": 0, "head_first_tail_last_all": true, "stop_orders": [[1, 2, 3, 4, 5]], "rule_entered_any": true}
+  rejected: {"n": 79, "n_runs": 158, "bounds_all_ok": true, "n_bounds_failed": 0, "bounds_failed": [], "all_rows_checked": true, "requirements_all_ok": true, "requirements_failed": [], "filter_modifications_total": 0, "runs_with_filter_action": 0, "saturations_total": 0, "positive_nominal_total": 0, "runs_with_positive_nominal": 0, "runs_with_rule_before_T_xi": 0, "fb_law_all": true, "all_stopped": true, "no_contact": true, "age_ok": true, "n_handoff_box_violated": 0, "observed": {"settling": [0.016158087227211126, 0.07234822943973995], "T_f": [148.03393470207087, 151.07181724684122], "marker": [0.04392212528307482, 0.11080366858146817], "gap": [0.013364102760647256, 0.03240728735642051], "entry": [140.70293562172716, 142.81771624624486], "gmin_min": [5.50824929761302, 5.52427859108974], "mmin_lim_min": [5.480709376035926, 5.5131680402156364], "u_min": [-1.1199550712431265, -1.055938935797501], "u_max_pre": [0.0, 0.0], "u_max_pre_informed": [-0.02010111578485109, -0.01565816716071347], "e_hnd_max": [0.03221100771480678, 0.03660709463679268], "eps_hnd_max": [0.0018879873092843003, 0.0021415686773660347]}, "certified": {"T_xi": [147.0, 150.0], "a_r0": [-0.768, -0.704], "a_crawl": [0.026257, 0.0314], "T_f_bar": [148.11360356322504, 151.11411638311392], "settling_bound": [0.10644389097363972, 0.10687044720487951], "align": [0.8274175284622494, 0.8298110250825496], "gaperr_max": [0.19720828711606606, 0.1978219670029131], "T_ent_bar": [144.863, 147.849], "clearance_floor_min": [0.9126509520393196, 2.6095999869509585], "sigma_min": [-0.28056973382650924, 1.4935798782626184], "u_max_before_T_xi": [0.006499536904280512, 0.0075284503120314206], "vfloor_min": [0.9695358833375245, 0.9718549593564236]}, "ratio_max": {"settling": 0.6784735841565092, "marker": 0.13374285818731316, "gap": 0.164254918373359, "entry": 0.9780315182143752}, "rule": {"converged": 79, "not_converged": [], "iterations": [3.0, 5.0], "runtime_s": [21.230627298355103, 41.36897158622742]}, "c0_range": [47.045, 52.996], "e0_range": [40.545, 46.496], "v1_range": [10.4505, 10.5497], "nonpos_certified": 0, "head_first_tail_last_all": true, "stop_orders": [[1, 2, 3, 4, 5]], "rule_entered_any": true}
+  -> data/new_d19/fbref/ensemble.json
+[ensemble] done in 1945.2 s
+=== part: outside ===
+[outside] 40 takeover states outside C2 (pair p in 2..5 slower than its predecessor by [0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.1] m/s), design reference, 4 runs each, 10 processes
+  outside 10/40 (22 s)
+  outside 20/40 (39 s)
+  outside 30/40 (59 s)
+  outside 40/40 (76 s)
+  pair 2 delta 0.01: C2 False (slack -0.0386), sym. box adm True  | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 51.0 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.068 contact None
+  pair 2 delta 0.02: C2 False (slack -0.0486), sym. box adm True  | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 50.2 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.069 contact None
+  pair 2 delta 0.03: C2 False (slack -0.0586), sym. box adm True  | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 50.2 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.069 contact None
+  pair 2 delta 0.04: C2 False (slack -0.0686), sym. box adm True  | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 45.1 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.075 contact None
+  pair 2 delta 0.05: C2 False (slack -0.0786), sym. box adm True  | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 48.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.071 contact None
+  pair 2 delta 0.06: C2 False (slack -0.0886), sym. box adm True  | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 35.8 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.085 contact None
+  pair 2 delta 0.07: C2 False (slack -0.0986), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 20.4 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.102 contact None
+  pair 2 delta 0.08: C2 False (slack -0.1086), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 51.1 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.069 contact None
+  pair 2 delta 0.09: C2 False (slack -0.1186), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 31.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.090 contact None
+  pair 2 delta 0.10: C2 False (slack -0.1286), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.049 contact None; zoh_random: disp 34.9 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.087 contact None
+  pair 3 delta 0.01: C2 False (slack -0.0611), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 38.3 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.082 contact None
+  pair 3 delta 0.02: C2 False (slack -0.0711), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 21.2 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.100 contact None
+  pair 3 delta 0.03: C2 False (slack -0.0811), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 48.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.071 contact None
+  pair 3 delta 0.04: C2 False (slack -0.0911), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 46.0 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.074 contact None
+  pair 3 delta 0.05: C2 False (slack -0.1011), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 34.9 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.086 contact None
+  pair 3 delta 0.06: C2 False (slack -0.1111), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 27.2 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.094 contact None
+  pair 3 delta 0.07: C2 False (slack -0.1211), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 45.1 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.075 contact None
+  pair 3 delta 0.08: C2 False (slack -0.1311), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 57.9 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.061 contact None
+  pair 3 delta 0.09: C2 False (slack -0.1411), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 48.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.072 contact None
+  pair 3 delta 0.10: C2 False (slack -0.1511), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 33.2 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.088 contact None
+  pair 4 delta 0.01: C2 False (slack -0.0837), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 51.0 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.068 contact None
+  pair 4 delta 0.02: C2 False (slack -0.0937), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 53.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.065 contact None
+  pair 4 delta 0.03: C2 False (slack -0.1037), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 43.4 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.076 contact None
+  pair 4 delta 0.04: C2 False (slack -0.1137), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.047 contact None; zoh_random: disp 46.0 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.074 contact None
+  pair 4 delta 0.05: C2 False (slack -0.1237), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 55.3 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.063 contact None
+  pair 4 delta 0.06: C2 False (slack -0.1337), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 29.7 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.091 contact None
+  pair 4 delta 0.07: C2 False (slack -0.1437), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 38.3 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.082 contact None
+  pair 4 delta 0.08: C2 False (slack -0.1537), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 43.4 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.077 contact None
+  pair 4 delta 0.09: C2 False (slack -0.1637), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 45.1 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.075 contact None
+  pair 4 delta 0.10: C2 False (slack -0.1737), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 50.2 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.070 contact None
+  pair 5 delta 0.01: C2 False (slack -0.1063), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 51.0 ms sat 0/0 npos 0 mods 0 rule [2, 3, 4, 5] (before T_xi []) marker 0.068 contact None
+  pair 5 delta 0.02: C2 False (slack -0.1163), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 4/0 npos 4 mods 4 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 46.0 ms sat 15/0 npos 15 mods 15 rule [2, 3, 4, 5] (before T_xi []) marker 0.074 contact None
+  pair 5 delta 0.03: C2 False (slack -0.1263), sym. box adm False C7a | zoh_const19: disp 71.5 ms sat 46/0 npos 46 mods 46 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 38.3 ms sat 53/0 npos 53 mods 53 rule [2, 3, 4, 5] (before T_xi []) marker 0.082 contact None
+  pair 5 delta 0.04: C2 False (slack -0.1363), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 88/0 npos 88 mods 88 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 46.9 ms sat 94/0 npos 94 mods 94 rule [2, 3, 4, 5] (before T_xi []) marker 0.073 contact None
+  pair 5 delta 0.05: C2 False (slack -0.1463), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 129/0 npos 129 mods 129 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 37.4 ms sat 115/0 npos 115 mods 115 rule [2, 3, 4, 5] (before T_xi []) marker 0.083 contact None
+  pair 5 delta 0.06: C2 False (slack -0.1563), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 169/0 npos 169 mods 169 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 47.7 ms sat 170/0 npos 170 mods 170 rule [2, 3, 4, 5] (before T_xi []) marker 0.072 contact None
+  pair 5 delta 0.07: C2 False (slack -0.1663), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 209/0 npos 209 mods 209 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 33.2 ms sat 219/0 npos 219 mods 219 rule [2, 3, 4, 5] (before T_xi []) marker 0.088 contact None
+  pair 5 delta 0.08: C2 False (slack -0.1763), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 249/0 npos 249 mods 249 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 49.4 ms sat 250/0 npos 250 mods 250 rule [2, 3, 4, 5] (before T_xi []) marker 0.071 contact None
+  pair 5 delta 0.09: C2 False (slack -0.1863), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 288/0 npos 288 mods 288 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 56.2 ms sat 305/0 npos 305 mods 305 rule [2, 3, 4, 5] (before T_xi []) marker 0.064 contact None
+  pair 5 delta 0.10: C2 False (slack -0.1963), sym. box adm False C7a | zoh_const19: disp 71.6 ms sat 327/0 npos 327 mods 327 rule [2, 3, 4, 5] (before T_xi []) marker 0.048 contact None; zoh_random: disp 51.9 ms sat 337/0 npos 337 mods 337 rule [2, 3, 4, 5] (before T_xi []) marker 0.068 contact None
+  aggregate: {"n_states": 40, "n_runs": 160, "certificate_not_applicable_all": true, "admitted_any": false, "symmetric_box_admitted": [[2, 0.01], [2, 0.02], [2, 0.03], [2, 0.04], [2, 0.05], [2, 0.06]], "symmetric_box_failures": ["C7a"], "runs_with_clipping": 36, "runs_with_upper_clipping": 36, "runs_with_positive_nominal": 36, "runs_with_filter_action": 0, "runs_with_rule_before_T_xi": 0, "runs_all_followers_rule": 160, "runs_within_design_bounds": 0, "runs_not_stopped": 0, "runs_with_contact": 0, "runs_fb_law": 160, "settling_max": 0.07158883629455204, "marker_max": 0.1123280427998452, "gap_max": 0.029565687155809428, "u_max": 0.02, "unom_max": 0.13636190100993806, "u_max_pre_informed": 0.02, "e_hnd_max": 0.0330346934380259, "eps_hnd_max": 0.0019287285122233655, "gmin_min": 5.510592267757204, "mmin_lim_min": 5.480371045075648, "requirements_failed": ["filter_inactive", "input_set_unmodified"], "design_bounds_failed": ["S1_sign", "activation_after_earliest_predecessor_switch", "command_upper_before_T_xi", "command_upper_pointwise", "earliest_switch_instants", "filter_modifications", "first_window_position_nonincreasing", "nominal_command_upper", "switch_position_upper", "switch_speed_upper", "velocity_floor_pointwise"], "stop_orders": [[1, 2, 3, 4, 5]], "age_ok": true, "first_clip_delta_by_pair": {"2": null, "3": null, "4": null, "5": 0.02}, "first_positive_delta_by_pair": {"2": null, "3": null, "4": null, "5": 0.02}, "first_filter_delta_by_pair": {"2": null, "3": null, "4": null, "5": null}, "first_design_bound_failure_delta_by_pair": {"2": 0.01, "3": 0.01, "4": 0.01, "5": 0.01}}
+  -> data/new_d19/fbref/outside.json
+[outside] done in 78.6 s
+=== part: independent ===
+[indep] sim_hr (zoh 1 ms, cont 1e-4 s; nosched park) vs sim_bench_hr ('proposed', 'feedback'; ideal plant, own kernel) on ['const19', 'seed500', 'seed501', 'seed502']
+  const19   sim_hr_zoh_h0.001_vs_sim_hr_cont_h0.0001                   stops 1.12e-06 s markers 4.06e-06 m gaps 3.92e-06 m act 0.0e+00 sw 2.2e-16 order True
+  const19   sim_hr_zoh_h0.001_vs_sim_bench_hr_proposed                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  const19   sim_hr_zoh_h0.001_vs_sim_bench_hr_feedback                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  const19   sim_bench_hr_proposed_vs_feedback                          stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed500   sim_hr_zoh_h0.001_vs_sim_hr_cont_h0.0001                   stops 8.18e-07 s markers 5.05e-06 m gaps 4.25e-06 m act 0.0e+00 sw 1.7e-18 order True
+  seed500   sim_hr_zoh_h0.001_vs_sim_bench_hr_proposed                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed500   sim_hr_zoh_h0.001_vs_sim_bench_hr_feedback                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed500   sim_bench_hr_proposed_vs_feedback                          stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed501   sim_hr_zoh_h0.001_vs_sim_hr_cont_h0.0001                   stops 1.07e-06 s markers 5.03e-06 m gaps 3.96e-06 m act 1.1e-16 sw 1.7e-18 order True
+  seed501   sim_hr_zoh_h0.001_vs_sim_bench_hr_proposed                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed501   sim_hr_zoh_h0.001_vs_sim_bench_hr_feedback                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed501   sim_bench_hr_proposed_vs_feedback                          stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed502   sim_hr_zoh_h0.001_vs_sim_hr_cont_h0.0001                   stops 9.18e-07 s markers 4.90e-06 m gaps 4.13e-06 m act 2.2e-16 sw 2.2e-16 order True
+  seed502   sim_hr_zoh_h0.001_vs_sim_bench_hr_proposed                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed502   sim_hr_zoh_h0.001_vs_sim_bench_hr_feedback                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed502   sim_bench_hr_proposed_vs_feedback                          stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  aggregate: {"sim_bench_hr_proposed": {"max_stop_diff": 0.0, "max_settling_diff": 0.0, "max_marker_diff": 0.0, "max_gap_diff": 0.0, "max_tact_diff": 0.0, "max_tset_diff": 0.0, "max_trule_diff": 0.0, "max_e_hnd_diff": 0.0, "max_gmin_diff": 3.907985046680551e-14, "max_u_min_unit_diff": 0.0, "max_u_max_unit_diff": 0.0, "max_entry_diff": null, "stop_order_equal": true, "rule_equal": true}, "sim_bench_hr_feedback": {"max_stop_diff": 0.0, "max_settling_diff": 0.0, "max_marker_diff": 0.0, "max_gap_diff": 0.0, "max_tact_diff": 0.0, "max_tset_diff": 0.0, "max_trule_diff": 0.0, "max_e_hnd_diff": 0.0, "max_gmin_diff": 3.907985046680551e-14, "max_u_min_unit_diff": 0.0, "max_u_max_unit_diff": 0.0, "max_entry_diff": null, "stop_order_equal": true, "rule_equal": true}, "cont_vs_zoh": {"max_stop_diff": 1.1176587406680483e-06, "max_settling_diff": 1.1156917025800794e-06, "max_marker_diff": 5.047471802299697e-06, "max_gap_diff": 4.247279491664813e-06, "max_tact_diff": 2.220446049250313e-16, "max_tset_diff": 2.220446049250313e-16, "max_trule_diff": 1.1176587406680483e-06, "max_e_hnd_diff": 5.1668573064489465e-06, "max_gmin_diff": 4.247279491664813e-06, "max_u_min_unit_diff": 7.105427357601002e-15, "max_u_max_unit_diff": 5.201519770459129e-12, "max_entry_diff": 3.504882542415544e-05, "stop_order_equal": true, "rule_equal": true}, "bench_proposed_vs_feedback": {"max_stop_diff": 0.0, "max_settling_diff": 0.0, "max_marker_diff": 0.0, "max_gap_diff": 0.0, "max_tact_diff": 0.0, "max_tset_diff": 0.0, "max_trule_diff": 0.0, "max_e_hnd_diff": 0.0, "max_gmin_diff": 0.0, "max_u_min_unit_diff": 0.0, "max_u_max_unit_diff": 0.0, "max_entry_diff": null, "stop_order_equal": true, "rule_equal": true}, "bench_no_schedule": true, "sim_hr_positive_nominal": 0, "all_sim_hr_bounds_ok": true, "all_sim_hr_fb_law": true, "tolerances": {"sim_bench_hr_stop_s": 1e-09, "sim_bench_hr_marker_m": 1e-09}, "sim_bench_hr_proposed_agrees": true, "sim_bench_hr_feedback_agrees": true, "bench_proposed_identical_to_feedback": true}
+  -> data/new_d19/fbref/independent.json
+[independent] done in 8.8 s
+=== part: age_audit ===
+[age_audit] constant transport: 9 runs + 16 swept ages, within bound True, mismatches 0
+  random: 1000 schedules, sup of the age 20 ms, 3814 hops reach the bound, mismatches 0
+  constructed: 84 schedules, sup of the age 20 ms, mismatches 0
+  sweep: 320 random schedules at 16 ages, within bounds True, mismatches 0
+  totals: 2207 schedules, all within bound True, mismatches with the runs 0 (164 s)
+  -> data/new_d19/fbref/age_audit.json
+[age_audit] done in 164.5 s
+=== part: check ===
+  reference.json     OK {"n_checked": 63, "failed": [], "dispersion": 0.07157955653156023, "u": [-1.0799186011406188, 0.0], "positive_nominal": 0}
+  convergence.json   OK {"max_diff": 5.488800525199622e-09, "argmax": "entry_obs", "max_stop_diff": 7.105427357601002e-13}
+  digital.json       OK {"max_stop_diff_1kHz": 1.1176587406680483e-06, "max_marker_diff_1kHz": 5.118498108913627e-06}
+  schedules.json     OK {"n": 1000, "settling_max": 0.06734385457303915, "n_bounds_failed": 0, "failed_rows": [], "positive_nominal": 0}
+  adversarial.json   OK {"n": 84, "settling_max": 0.07178753270386551, "n_bounds_failed": 0, "failed_rows": [], "positive_nominal": 0}
+  sweep.json         OK {"certified_ages_ms": [5, 10, 15, 20, 25], "boundary_ms": 25, "first_failures": {"design_bound": {"age_ms": 25, "failed": ["braking_mismatch_integral", "command_lower_pointwise", "command_upper_pointwise", "information_age", "ramp_receipts", "ramp_relay_steps"]}, "certificate": {"age_ms": 26, "failed": ["C8b"]}, "positive_nominal": {"age_ms": 150, "runs": 5}, "bound_at_age": {"age_ms": 200, "failed": ["filter_modifications", "nominal_command_upper"], "admitted": false}, "requirement": {"age_ms": 200, "failed": ["filter_inactive", "input_set_unmodified"]}, "clipped_command": {"age_ms": 200, "sa
+  ensemble.json      OK {"n": 300, "n_admitted": 221, "failures": {"C7b": 71, "C8b": 11}, "n_rejected_by_C2": 182}
+  outside.json       OK {"runs": 160, "clipping": 36, "positive": 36, "filter": 0, "rule_before_T_xi": 0, "within_design_bounds": 0, "not_stopped": 0, "contact": 0}
+  age_audit.json     OK {"schedules": 2207, "all_within_bound": true, "mismatches_vs_runs": 0}
+  independent.json   OK {"sim_bench_hr_proposed": {"max_stop_diff": 0.0, "max_settling_diff": 0.0, "max_marker_diff": 0.0, "max_gap_diff": 0.0, "max_tact_diff": 0.0, "max_tset_diff": 0.0, "max_trule_diff": 0.0, "max_e_hnd_diff": 0.0, "max_gmin_diff": 3.907985046680551e-14, "max_u_min_unit_diff": 0.0, "max_u_max_unit_diff": 0.0, "max_entry_diff": null, "stop_order_equal": true, "rule_equal": true}}
+  -> data/new_d19/fbref/check.json
+  ALL OK
+[check] done in 0.3 s
+  -> data/new_d19/fbref/ensemble_audit.json
+==== run_fb_validate.py 2026-09-29 17:26:10 parts ['independent', 'check'] (python 3.12.7, numpy 1.26.4, Windows-11-10.0.26200-SP0, 10 processes) ====
+=== part: independent ===
+[indep] sim_hr (zoh 1 ms, cont 1e-4 s; nosched park) vs sim_bench_hr ('proposed', 'feedback'; ideal plant, own kernel) on ['const19', 'seed500', 'seed501', 'seed502']
+  const19   sim_hr_zoh_h0.001_vs_sim_hr_cont_h0.0001                   stops 1.12e-06 s markers 4.06e-06 m gaps 3.92e-06 m act 0.0e+00 sw 2.2e-16 order True
+  const19   sim_hr_zoh_h0.001_vs_sim_bench_hr_proposed                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  const19   sim_hr_zoh_h0.001_vs_sim_bench_hr_feedback                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  const19   sim_bench_hr_proposed_vs_feedback                          stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed500   sim_hr_zoh_h0.001_vs_sim_hr_cont_h0.0001                   stops 8.18e-07 s markers 5.05e-06 m gaps 4.25e-06 m act 0.0e+00 sw 1.7e-18 order True
+  seed500   sim_hr_zoh_h0.001_vs_sim_bench_hr_proposed                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed500   sim_hr_zoh_h0.001_vs_sim_bench_hr_feedback                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed500   sim_bench_hr_proposed_vs_feedback                          stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed501   sim_hr_zoh_h0.001_vs_sim_hr_cont_h0.0001                   stops 1.07e-06 s markers 5.03e-06 m gaps 3.96e-06 m act 1.1e-16 sw 1.7e-18 order True
+  seed501   sim_hr_zoh_h0.001_vs_sim_bench_hr_proposed                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed501   sim_hr_zoh_h0.001_vs_sim_bench_hr_feedback                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed501   sim_bench_hr_proposed_vs_feedback                          stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed502   sim_hr_zoh_h0.001_vs_sim_hr_cont_h0.0001                   stops 9.18e-07 s markers 4.90e-06 m gaps 4.13e-06 m act 2.2e-16 sw 2.2e-16 order True
+  seed502   sim_hr_zoh_h0.001_vs_sim_bench_hr_proposed                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed502   sim_hr_zoh_h0.001_vs_sim_bench_hr_feedback                 stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  seed502   sim_bench_hr_proposed_vs_feedback                          stops 0.00e+00 s markers 0.00e+00 m gaps 0.00e+00 m act 0.0e+00 sw 0.0e+00 order True
+  aggregate: {"sim_bench_hr_proposed": {"max_stop_diff": 0.0, "max_settling_diff": 0.0, "max_marker_diff": 0.0, "max_gap_diff": 0.0, "max_tact_diff": 0.0, "max_tset_diff": 0.0, "max_trule_diff": 0.0, "max_e_hnd_diff": 0.0, "max_gmin_diff": 3.907985046680551e-14, "max_u_min_unit_diff": 0.0, "max_u_max_unit_diff": 0.0, "max_entry_diff": null, "stop_order_equal": true, "rule_equal": true}, "sim_bench_hr_feedback": {"max_stop_diff": 0.0, "max_settling_diff": 0.0, "max_marker_diff": 0.0, "max_gap_diff": 0.0, "max_tact_diff": 0.0, "max_tset_diff": 0.0, "max_trule_diff": 0.0, "max_e_hnd_diff": 0.0, "max_gmin_diff": 3.907985046680551e-14, "max_u_min_unit_diff": 0.0, "max_u_max_unit_diff": 0.0, "max_entry_diff": null, "stop_order_equal": true, "rule_equal": true}, "cont_vs_zoh": {"max_stop_diff": 1.1176587406680483e-06, "max_settling_diff": 1.1156917025800794e-06, "max_marker_diff": 5.047471802299697e-06, "max_gap_diff": 4.247279491664813e-06, "max_tact_diff": 2.220446049250313e-16, "max_tset_diff": 2.220446049250313e-16, "max_trule_diff": 1.1176587406680483e-06, "max_e_hnd_diff": 5.1668573064489465e-06, "max_gmin_diff": 4.247279491664813e-06, "max_u_min_unit_diff": 7.105427357601002e-15, "max_u_max_unit_diff": 5.201519770459129e-12, "max_entry_diff": 3.504882542415544e-05, "stop_order_equal": true, "rule_equal": true}, "bench_proposed_vs_feedback": {"max_stop_diff": 0.0, "max_settling_diff": 0.0, "max_marker_diff": 0.0, "max_gap_diff": 0.0, "max_tact_diff": 0.0, "max_tset_diff": 0.0, "max_trule_diff": 0.0, "max_e_hnd_diff": 0.0, "max_gmin_diff": 0.0, "max_u_min_unit_diff": 0.0, "max_u_max_unit_diff": 0.0, "max_entry_diff": null, "stop_order_equal": true, "rule_equal": true}, "bench_no_schedule": true, "sim_hr_positive_nominal": 0, "all_sim_hr_bounds_ok": true, "all_sim_hr_fb_law": true, "tolerances": {"sim_bench_hr_stop_s": 1e-09, "sim_bench_hr_marker_m": 1e-09}, "sim_bench_hr_proposed_agrees": true, "sim_bench_hr_feedback_agrees": true, "bench_proposed_identical_to_feedback": true}
+  -> data/new_d19/fbref/independent.json
+[independent] done in 20.7 s
+=== part: check ===
+  reference.json     OK {"n_checked": 63, "failed": [], "dispersion": 0.07157955653156023, "u": [-1.0799186011406188, 0.0], "positive_nominal": 0}
+  convergence.json   OK {"max_diff": 5.488800525199622e-09, "argmax": "entry_obs", "max_stop_diff": 7.105427357601002e-13}
+  digital.json       OK {"max_stop_diff_1kHz": 1.1176587406680483e-06, "max_marker_diff_1kHz": 5.118498108913627e-06}
+  schedules.json     OK {"n": 1000, "settling_max": 0.06734385457303915, "n_bounds_failed": 0, "failed_rows": [], "positive_nominal": 0}
+  adversarial.json   OK {"n": 84, "settling_max": 0.07178753270386551, "n_bounds_failed": 0, "failed_rows": [], "positive_nominal": 0}
+  sweep.json         OK {"certified_ages_ms": [5, 10, 15, 20, 25], "boundary_ms": 25, "first_failures": {"design_bound": {"age_ms": 25, "failed": ["braking_mismatch_integral", "command_lower_pointwise", "command_upper_pointwise", "information_age", "ramp_receipts", "ramp_relay_steps"]}, "certificate": {"age_ms": 26, "failed": ["C8b"]}, "positive_nominal": {"age_ms": 150, "runs": 5}, "bound_at_age": {"age_ms": 200, "failed": ["filter_modifications", "nominal_command_upper"], "admitted": false}, "requirement": {"age_ms": 200, "failed": ["filter_inactive", "input_set_unmodified"]}, "clipped_command": {"age_ms": 200, "sa
+  ensemble.json      OK {"n": 300, "n_admitted": 221, "failures": {"C7b": 71, "C8b": 11}, "n_rejected_by_C2": 182}
+  outside.json       OK {"runs": 160, "clipping": 36, "positive": 36, "filter": 0, "rule_before_T_xi": 0, "within_design_bounds": 0, "not_stopped": 0, "contact": 0}
+  age_audit.json     OK {"schedules": 2207, "all_within_bound": true, "mismatches_vs_runs": 0}
+  independent.json   OK {"sim_bench_hr_proposed": {"max_stop_diff": 0.0, "max_settling_diff": 0.0, "max_marker_diff": 0.0, "max_gap_diff": 0.0, "max_tact_diff": 0.0, "max_tset_diff": 0.0, "max_trule_diff": 0.0, "max_e_hnd_diff": 0.0, "max_gmin_diff": 3.907985046680551e-14, "max_u_min_unit_diff": 0.0, "max_u_max_unit_diff": 0.0, "max_entry_diff": null, "stop_order_equal": true, "rule_equal": true}}
+  -> data/new_d19/fbref/check.json
+  ALL OK
+[check] done in 0.5 s

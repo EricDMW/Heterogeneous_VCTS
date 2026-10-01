@@ -1,0 +1,43 @@
+lam 0.050: admitted True [] | boundary 24 next ['C3'] | T_xi 194.00 T_f 195.11 disp 0.1045 marker 0.994 gap 0.239 gmin 1.855 a_r0 -0.429 a_cr 0.0317 (66 s)
+lam 0.055: admitted True [] | boundary 25 next ['C3'] | T_xi 175.75 T_f 176.86 disp 0.1051 marker 0.928 gap 0.222 gmin 1.787 a_r0 -0.520 a_cr 0.0319 (63 s)
+lam 0.060: admitted True [] | boundary 27 next ['C3'] | T_xi 161.00 T_f 162.11 disp 0.1058 marker 0.874 gap 0.209 gmin 1.704 a_r0 -0.619 a_cr 0.0314 (63 s)
+lam 0.065: admitted True [] | boundary 25 next ['C8b'] | T_xi 148.75 T_f 149.86 disp 0.1066 marker 0.828 gap 0.197 gmin 1.606 a_r0 -0.728 a_cr 0.0300 (58 s)
+lam 0.070: admitted False ['C7b'] | boundary None next None | T_xi 138.50 T_f 139.61 disp 0.1074 marker 0.789 gap 0.188 gmin 1.495 a_r0 -0.846 a_cr 0.0276 (20 s)
+selected lam 0.065 (T_f 149.864, boundary 25 ms)
+(R1/R2) caseB            chain BIT-IDENTICAL, entry recursion BIT-IDENTICAL
+(R1/R2) caseA            chain BIT-IDENTICAL, entry recursion BIT-IDENTICAL
+(R1/R2) caseD_constants  chain BIT-IDENTICAL, entry recursion BIT-IDENTICAL
+(R3) Case B degenerate HR: admitted True (failed [])
+   disp               BIT-IDENTICAL
+   late               BIT-IDENTICAL
+   sched              BIT-IDENTICAL
+   align              BIT-IDENTICAL
+   gaperr             BIT-IDENTICAL
+   T_f                BIT-IDENTICAL
+   T_brk              BIT-IDENTICAL
+   taub               BIT-IDENTICAL
+   tset               BIT-IDENTICAL
+   E1                 BIT-IDENTICAL
+   epsb               BIT-IDENTICAL
+   anet               BIT-IDENTICAL
+   hops               BIT-IDENTICAL
+   Leps               BIT-IDENTICAL
+   margins            equal to 1e-12
+   gmin               BIT-IDENTICAL
+   auth_slack         DIFFERS (max |diff| 0.13092244404559095) -- authority: HR tests the sign-resolved envelopes P^+- + F^+- per 10 ms cell against [-U_i^-, U] and the braking and pre-receipt branches separately; OT tests one magnitude demand max{F_i + max(alpha, fbar_i), a_b + F^b_i, P^pre_i, (a_b + F^b_{i-1}) + fbar_i} <= U_i^-; the reported HR slack is the smallest slack of the C7 rows of the unit
+   vfloor             DIFFERS (max |diff| 2.8312442627877665) -- velocity floor: HR uses the time-resolved cell floor v_r(t) - sum_k E^vel_k(t) (PT) instead of the constant OT floor v^xi - max_i sum_k max{M1_k, eps2_k}
+   h0                 equal to 1e-12
+   e0                 BIT-IDENTICAL
+   entry/Tent_cert    DIFFERS (max |diff| 0.0008571428571428896) -- entry deadlines: HR takes the candidates on the fixed 1 ms grid in [tswb_i, T_xi] (supplement S.II-E, needed for the monotonicity in dbar) instead of the 1 ms lag grid anchored at tswb_i; the stored lag is Tent_i - tswb_i, which differs from the frozen grid lag by less than one grid step
+   entry/Tent_bar     DIFFERS (max |diff| 0.0004760127450822438) -- largest entry deadline: a point of the fixed 1 ms grid (see Tent_cert); it differs from the frozen value by less than one grid step
+   entry/T_hold       DIFFERS (max |diff| 0.06047601274508452) -- hold: HR tests T_ent_bar + (n-1) dbar <= T_xi (the last age windows of every layer, theory Sec. 8.3) instead of + dbar
+   entry/hold_ok      BIT-IDENTICAL
+   entry/Vhnd_max     BIT-IDENTICAL
+   entry/hnd_ok       BIT-IDENTICAL
+   pass flags: {'sync': (True, True), 'align': (True, True), 'gap': (True, True), 'adm': (True, True), 'auth': (True, True), 'clr': (True, True), 'event': (True, True), 'vel': (True, True), 'ramp': (True, True), 'hold': (True, True), 'hnd': (True, True)}
+   ceilings: {'sync': (0.160266, 0.160266), 'align': (0.051328, 0.051328), 'gap': (0.084906, 0.084906), 'adm': (0.024641, 0.024641), 'auth': (0.113672, 0.279594), 'clr': (0.026281, 0.026281), 'event': (0.45, 0.45), 'vel': (0.45, 0.45), 'ramp': (0.45, 0.45), 'hold': (0.038641, 0.038421), 'hnd': (0.111046, 0.111046)}
+(R4) planned-pulse bounds: never exceeded True; largest excess {'e': 0.0, 'x': 0.0, 'f': 0.0}; largest attained fraction {'e': 0.9996383500331357, 'x': 0.9996400404763269, 'f': 0.9996398432167207}
+(R5) PW.ext worst 0.00e+00; plan bounds (bound - sample) max {'h': -8.331735301680965e-11, 'mu': -8.331735301680965e-11, 'g': 0.0}; Q (sample - bound) max 0.00e+00; ok True
+(R6) setup: Assumption R True, Assumption S True, schedule jump sums ['0', '0', '0', '0'], ok True
+regression ok (R1-R6; R3: only the expected fields ['auth_slack', 'entry/T_hold', 'entry/Tent_bar', 'entry/Tent_cert', 'vfloor'] and ceilings ['auth', 'hold'] differ): True
+wrote D:\Calvin\Papers\Jornal\25_TITS_Optimization_Trainset\V_12_TITS\code\data\new_d19\fbref\design_fb.json (329 s)

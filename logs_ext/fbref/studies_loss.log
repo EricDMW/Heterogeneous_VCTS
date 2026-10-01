@@ -1,0 +1,170 @@
+=== part loss ===
+  proposed           t_loss=  15 em=None T_wd=None contact=- buffer lost=True (149.068) gmin=-0.282 (pair 5, t=151.11) stopped=5 completed=True disp=1.3564 marker=23.098 gap=5.782 met=False barrier=99.76 fallback=0.00
+  proposed           t_loss=  30 em=None T_wd=None contact=- buffer lost=True (149.068) gmin=-0.282 (pair 5, t=151.11) stopped=5 completed=True disp=1.3564 marker=23.098 gap=5.782 met=False barrier=90.78 fallback=0.00
+  proposed           t_loss=  60 em=None T_wd=None contact=- buffer lost=True (149.068) gmin=-0.282 (pair 5, t=151.11) stopped=5 completed=True disp=1.3564 marker=23.098 gap=5.782 met=False barrier=54.19 fallback=0.00
+  proposed           t_loss=  90 em=None T_wd=None contact=- buffer lost=True (149.068) gmin=-0.282 (pair 5, t=151.11) stopped=5 completed=True disp=1.3564 marker=23.098 gap=5.782 met=False barrier=18.94 fallback=0.00
+  proposed           t_loss= 120 em=None T_wd=None contact=- buffer lost=False (-) gmin=0.577 (pair 2, t=150.67) stopped=5 completed=True disp=4.6364 marker=18.148 gap=4.923 met=False barrier=0.34 fallback=0.00
+  proposed           t_loss= 140 em=None T_wd=None contact=- buffer lost=False (-) gmin=3.552 (pair 2, t=150.82) stopped=5 completed=True disp=4.4952 marker=6.646 gap=1.948 met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 145 em=None T_wd=None contact=- buffer lost=False (-) gmin=4.272 (pair 2, t=150.77) stopped=5 completed=True disp=4.1181 marker=4.663 gap=1.228 met=False barrier=0.00 fallback=0.00
+  == proposed           em=None T_wd=None contact 0/7 [], buffer lost 4 [15.0, 30.0, 60.0, 90.0], completed 7, met 0, aborted 0, gmin min -0.282, disp max (completed) 4.6364
+  proposed           t_loss=  15 em=None T_wd=0.1  contact=- buffer lost=False (-) gmin=30.377 (pair 5, t=22.64) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  30 em=None T_wd=0.1  contact=- buffer lost=False (-) gmin=18.691 (pair 5, t=36.52) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  60 em=None T_wd=0.1  contact=- buffer lost=False (-) gmin=8.789 (pair 5, t=63.89) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  90 em=None T_wd=0.1  contact=- buffer lost=False (-) gmin=6.087 (pair 4, t=92.35) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 120 em=None T_wd=0.1  contact=- buffer lost=False (-) gmin=5.563 (pair 4, t=121.56) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 140 em=None T_wd=0.1  contact=- buffer lost=False (-) gmin=5.509 (pair 4, t=141.08) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 145 em=None T_wd=0.1  contact=- buffer lost=False (-) gmin=5.506 (pair 4, t=145.97) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == proposed           em=None T_wd=0.1  contact 0/7 [], buffer lost 0 [], completed 0, met 0, aborted 7, gmin min 5.506, disp max (completed) n.d.
+  proposed           t_loss=  15 em=None T_wd=0.25 contact=- buffer lost=False (-) gmin=30.219 (pair 5, t=22.79) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  30 em=None T_wd=0.25 contact=- buffer lost=False (-) gmin=18.571 (pair 5, t=36.67) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  60 em=None T_wd=0.25 contact=- buffer lost=False (-) gmin=8.754 (pair 5, t=64.04) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  90 em=None T_wd=0.25 contact=- buffer lost=False (-) gmin=6.079 (pair 4, t=92.50) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 120 em=None T_wd=0.25 contact=- buffer lost=False (-) gmin=5.562 (pair 4, t=121.71) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 140 em=None T_wd=0.25 contact=- buffer lost=False (-) gmin=5.508 (pair 3, t=141.17) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 145 em=None T_wd=0.25 contact=- buffer lost=False (-) gmin=5.505 (pair 3, t=146.06) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == proposed           em=None T_wd=0.25 contact 0/7 [], buffer lost 0 [], completed 0, met 0, aborted 7, gmin min 5.505, disp max (completed) n.d.
+  proposed           t_loss=  15 em=None T_wd=0.5  contact=- buffer lost=False (-) gmin=29.955 (pair 5, t=23.05) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  30 em=None T_wd=0.5  contact=- buffer lost=False (-) gmin=18.372 (pair 5, t=36.91) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  60 em=None T_wd=0.5  contact=- buffer lost=False (-) gmin=8.695 (pair 5, t=64.29) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  90 em=None T_wd=0.5  contact=- buffer lost=False (-) gmin=6.067 (pair 4, t=92.75) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 120 em=None T_wd=0.5  contact=- buffer lost=False (-) gmin=5.559 (pair 3, t=121.86) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 140 em=None T_wd=0.5  contact=- buffer lost=False (-) gmin=5.507 (pair 3, t=141.42) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 145 em=None T_wd=0.5  contact=- buffer lost=False (-) gmin=5.504 (pair 3, t=146.31) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == proposed           em=None T_wd=0.5  contact 0/7 [], buffer lost 0 [], completed 0, met 0, aborted 7, gmin min 5.504, disp max (completed) n.d.
+  proposed           t_loss=  15 em=None T_wd=1.0  contact=- buffer lost=False (-) gmin=29.429 (pair 5, t=23.55) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  30 em=None T_wd=1.0  contact=- buffer lost=False (-) gmin=17.975 (pair 5, t=37.40) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  60 em=None T_wd=1.0  contact=- buffer lost=False (-) gmin=8.578 (pair 5, t=64.78) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  90 em=None T_wd=1.0  contact=- buffer lost=False (-) gmin=6.041 (pair 3, t=93.07) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 120 em=None T_wd=1.0  contact=- buffer lost=False (-) gmin=5.552 (pair 3, t=122.36) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 140 em=None T_wd=1.0  contact=- buffer lost=False (-) gmin=5.504 (pair 3, t=141.92) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 145 em=None T_wd=1.0  contact=- buffer lost=False (-) gmin=5.502 (pair 3, t=146.81) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == proposed           em=None T_wd=1.0  contact 0/7 [], buffer lost 0 [], completed 0, met 0, aborted 7, gmin min 5.502, disp max (completed) n.d.
+  proposed           t_loss=  15 em=3    T_wd=None contact=27.491 buffer lost=True (27.221) gmin=-1.001 (pair 5, t=27.49) stopped=2 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=2.34 fallback=2.25
+  proposed           t_loss=  30 em=3    T_wd=None contact=37.619 buffer lost=True (37.082) gmin=-1.000 (pair 4, t=37.62) stopped=1 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=2.99 fallback=2.92
+  proposed           t_loss=  60 em=3    T_wd=None contact=67.696 buffer lost=True (64.892) gmin=-1.000 (pair 5, t=67.70) stopped=2 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=3.00 fallback=5.49
+  proposed           t_loss=  90 em=3    T_wd=None contact=- buffer lost=True (149.068) gmin=-0.266 (pair 2, t=150.09) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=17.83 fallback=0.76
+  proposed           t_loss= 120 em=3    T_wd=None contact=- buffer lost=False (-) gmin=0.577 (pair 2, t=150.67) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.34 fallback=0.00
+  proposed           t_loss= 140 em=3    T_wd=None contact=- buffer lost=False (-) gmin=3.552 (pair 2, t=150.82) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 145 em=3    T_wd=None contact=- buffer lost=False (-) gmin=4.272 (pair 2, t=150.77) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == proposed           em=3    T_wd=None contact 3/7 [15.0, 30.0, 60.0], buffer lost 4 [15.0, 30.0, 60.0, 90.0], completed 0, met 0, aborted 7, gmin min -1.001, disp max (completed) n.d.
+  proposed           t_loss=  15 em=3    T_wd=0.1  contact=- buffer lost=False (-) gmin=30.372 (pair 5, t=22.64) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  30 em=3    T_wd=0.1  contact=- buffer lost=False (-) gmin=18.686 (pair 5, t=36.52) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  60 em=3    T_wd=0.1  contact=- buffer lost=False (-) gmin=8.427 (pair 4, t=63.47) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  90 em=3    T_wd=0.1  contact=- buffer lost=False (-) gmin=5.806 (pair 4, t=92.35) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 120 em=3    T_wd=0.1  contact=- buffer lost=False (-) gmin=5.379 (pair 4, t=121.56) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 140 em=3    T_wd=0.1  contact=- buffer lost=False (-) gmin=5.384 (pair 4, t=141.08) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 145 em=3    T_wd=0.1  contact=- buffer lost=False (-) gmin=5.396 (pair 4, t=145.97) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == proposed           em=3    T_wd=0.1  contact 0/7 [], buffer lost 0 [], completed 0, met 0, aborted 7, gmin min 5.379, disp max (completed) n.d.
+  proposed           t_loss=  15 em=3    T_wd=0.25 contact=- buffer lost=False (-) gmin=29.560 (pair 4, t=21.53) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  30 em=3    T_wd=0.25 contact=- buffer lost=False (-) gmin=17.821 (pair 4, t=35.63) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  60 em=3    T_wd=0.25 contact=- buffer lost=False (-) gmin=7.797 (pair 4, t=63.61) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  90 em=3    T_wd=0.25 contact=- buffer lost=False (-) gmin=5.382 (pair 4, t=92.50) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 120 em=3    T_wd=0.25 contact=- buffer lost=False (-) gmin=5.103 (pair 4, t=121.71) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 140 em=3    T_wd=0.25 contact=- buffer lost=False (-) gmin=5.199 (pair 4, t=141.23) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 145 em=3    T_wd=0.25 contact=- buffer lost=False (-) gmin=5.233 (pair 4, t=146.11) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == proposed           em=3    T_wd=0.25 contact 0/7 [], buffer lost 0 [], completed 0, met 0, aborted 7, gmin min 5.103, disp max (completed) n.d.
+  proposed           t_loss=  15 em=3    T_wd=0.5  contact=- buffer lost=False (-) gmin=27.630 (pair 4, t=21.77) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  30 em=3    T_wd=0.5  contact=- buffer lost=False (-) gmin=16.211 (pair 4, t=35.86) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  60 em=3    T_wd=0.5  contact=- buffer lost=False (-) gmin=6.779 (pair 4, t=63.85) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  90 em=3    T_wd=0.5  contact=- buffer lost=False (-) gmin=4.697 (pair 4, t=92.73) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 120 em=3    T_wd=0.5  contact=- buffer lost=False (-) gmin=4.658 (pair 4, t=121.95) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 140 em=3    T_wd=0.5  contact=- buffer lost=False (-) gmin=4.900 (pair 4, t=141.47) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 145 em=3    T_wd=0.5  contact=- buffer lost=False (-) gmin=4.970 (pair 4, t=146.35) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == proposed           em=3    T_wd=0.5  contact 0/7 [], buffer lost 0 [], completed 0, met 0, aborted 7, gmin min 4.658, disp max (completed) n.d.
+  proposed           t_loss=  15 em=3    T_wd=1.0  contact=- buffer lost=False (-) gmin=23.992 (pair 4, t=22.22) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  30 em=3    T_wd=1.0  contact=- buffer lost=False (-) gmin=13.181 (pair 4, t=36.30) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  60 em=3    T_wd=1.0  contact=- buffer lost=False (-) gmin=4.868 (pair 4, t=64.29) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss=  90 em=3    T_wd=1.0  contact=- buffer lost=False (-) gmin=3.416 (pair 4, t=93.18) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 120 em=3    T_wd=1.0  contact=- buffer lost=False (-) gmin=3.831 (pair 4, t=122.40) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 140 em=3    T_wd=1.0  contact=- buffer lost=False (-) gmin=4.414 (pair 4, t=141.87) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  proposed           t_loss= 145 em=3    T_wd=1.0  contact=- buffer lost=False (-) gmin=4.623 (pair 4, t=146.67) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == proposed           em=3    T_wd=1.0  contact 0/7 [], buffer lost 0 [], completed 0, met 0, aborted 7, gmin min 3.416, disp max (completed) n.d.
+  feedback retuned   t_loss=  15 em=None T_wd=None contact=- buffer lost=False (-) gmin=4.857 (pair 2, t=150.34) stopped=5 completed=True disp=2.2120 marker=2.502 gap=0.643 met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  30 em=None T_wd=None contact=- buffer lost=False (-) gmin=4.857 (pair 2, t=150.34) stopped=5 completed=True disp=2.2120 marker=2.502 gap=0.643 met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  60 em=None T_wd=None contact=- buffer lost=False (-) gmin=4.857 (pair 2, t=150.34) stopped=5 completed=True disp=2.2120 marker=2.502 gap=0.643 met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  90 em=None T_wd=None contact=- buffer lost=False (-) gmin=4.857 (pair 2, t=150.34) stopped=5 completed=True disp=2.2120 marker=2.502 gap=0.643 met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 120 em=None T_wd=None contact=- buffer lost=False (-) gmin=4.857 (pair 2, t=150.34) stopped=5 completed=True disp=2.2120 marker=2.502 gap=0.643 met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 140 em=None T_wd=None contact=- buffer lost=False (-) gmin=4.861 (pair 2, t=150.34) stopped=5 completed=True disp=2.2151 marker=2.538 gap=0.639 met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 145 em=None T_wd=None contact=- buffer lost=False (-) gmin=4.882 (pair 5, t=152.05) stopped=5 completed=True disp=2.2995 marker=2.464 gap=0.618 met=False barrier=0.00 fallback=0.00
+  == feedback retuned   em=None T_wd=None contact 0/7 [], buffer lost 0 [], completed 7, met 0, aborted 0, gmin min 4.857, disp max (completed) 2.2995
+  feedback retuned   t_loss=  15 em=None T_wd=0.1  contact=- buffer lost=False (-) gmin=5.014 (pair 3, t=22.78) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  30 em=None T_wd=0.1  contact=35.812 buffer lost=True (35.571) gmin=-1.002 (pair 5, t=35.81) stopped=3 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  60 em=None T_wd=0.1  contact=- buffer lost=False (-) gmin=5.157 (pair 5, t=63.12) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  90 em=None T_wd=0.1  contact=- buffer lost=False (-) gmin=5.305 (pair 5, t=92.38) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 120 em=None T_wd=0.1  contact=- buffer lost=False (-) gmin=5.411 (pair 5, t=121.64) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 140 em=None T_wd=0.1  contact=- buffer lost=False (-) gmin=5.459 (pair 5, t=141.14) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 145 em=None T_wd=0.1  contact=- buffer lost=False (-) gmin=5.468 (pair 5, t=146.02) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == feedback retuned   em=None T_wd=0.1  contact 1/7 [30.0], buffer lost 1 [30.0], completed 0, met 0, aborted 7, gmin min -1.002, disp max (completed) n.d.
+  feedback retuned   t_loss=  15 em=None T_wd=0.25 contact=- buffer lost=False (-) gmin=4.080 (pair 3, t=22.93) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  30 em=None T_wd=0.25 contact=35.709 buffer lost=True (35.485) gmin=-1.001 (pair 5, t=35.71) stopped=3 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  60 em=None T_wd=0.25 contact=- buffer lost=False (-) gmin=5.157 (pair 5, t=63.27) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  90 em=None T_wd=0.25 contact=- buffer lost=False (-) gmin=5.305 (pair 5, t=92.53) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 120 em=None T_wd=0.25 contact=- buffer lost=False (-) gmin=5.411 (pair 5, t=121.79) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 140 em=None T_wd=0.25 contact=- buffer lost=False (-) gmin=5.459 (pair 5, t=141.29) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 145 em=None T_wd=0.25 contact=- buffer lost=False (-) gmin=5.468 (pair 5, t=146.17) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == feedback retuned   em=None T_wd=0.25 contact 1/7 [30.0], buffer lost 1 [30.0], completed 0, met 0, aborted 7, gmin min -1.001, disp max (completed) n.d.
+  feedback retuned   t_loss=  15 em=None T_wd=0.5  contact=- buffer lost=False (-) gmin=2.525 (pair 3, t=23.19) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  30 em=None T_wd=0.5  contact=35.575 buffer lost=True (35.372) gmin=-1.003 (pair 5, t=35.58) stopped=3 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  60 em=None T_wd=0.5  contact=- buffer lost=False (-) gmin=5.157 (pair 5, t=63.52) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  90 em=None T_wd=0.5  contact=- buffer lost=False (-) gmin=5.305 (pair 5, t=92.78) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 120 em=None T_wd=0.5  contact=- buffer lost=False (-) gmin=5.411 (pair 5, t=122.04) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 140 em=None T_wd=0.5  contact=- buffer lost=False (-) gmin=5.458 (pair 3, t=141.41) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 145 em=None T_wd=0.5  contact=- buffer lost=False (-) gmin=5.467 (pair 3, t=146.30) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == feedback retuned   em=None T_wd=0.5  contact 1/7 [30.0], buffer lost 1 [30.0], completed 0, met 0, aborted 7, gmin min -1.003, disp max (completed) n.d.
+  feedback retuned   t_loss=  15 em=None T_wd=1.0  contact=- buffer lost=True (22.780) gmin=-0.575 (pair 3, t=23.69) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  30 em=None T_wd=1.0  contact=35.575 buffer lost=True (35.387) gmin=-1.000 (pair 5, t=35.58) stopped=3 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  60 em=None T_wd=1.0  contact=- buffer lost=False (-) gmin=5.149 (pair 3, t=63.65) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  90 em=None T_wd=1.0  contact=- buffer lost=False (-) gmin=5.295 (pair 3, t=93.00) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 120 em=None T_wd=1.0  contact=- buffer lost=False (-) gmin=5.402 (pair 3, t=122.35) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 140 em=None T_wd=1.0  contact=- buffer lost=False (-) gmin=5.451 (pair 3, t=141.91) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 145 em=None T_wd=1.0  contact=- buffer lost=False (-) gmin=5.460 (pair 3, t=146.80) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == feedback retuned   em=None T_wd=1.0  contact 1/7 [30.0], buffer lost 2 [15.0, 30.0], completed 0, met 0, aborted 7, gmin min -1.000, disp max (completed) n.d.
+  feedback retuned   t_loss=  15 em=3    T_wd=None contact=24.664 buffer lost=True (24.474) gmin=-1.000 (pair 4, t=24.66) stopped=1 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=1.98 fallback=2.22
+  feedback retuned   t_loss=  30 em=3    T_wd=None contact=35.424 buffer lost=True (35.239) gmin=-1.001 (pair 5, t=35.42) stopped=2 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.42 fallback=2.04
+  feedback retuned   t_loss=  60 em=3    T_wd=None contact=- buffer lost=False (-) gmin=2.595 (pair 4, t=63.84) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  90 em=3    T_wd=None contact=- buffer lost=False (-) gmin=3.461 (pair 4, t=93.07) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 120 em=3    T_wd=None contact=- buffer lost=False (-) gmin=4.239 (pair 4, t=122.30) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 140 em=3    T_wd=None contact=- buffer lost=False (-) gmin=4.747 (pair 5, t=142.37) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 145 em=3    T_wd=None contact=- buffer lost=False (-) gmin=4.866 (pair 5, t=147.17) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == feedback retuned   em=3    T_wd=None contact 2/7 [15.0, 30.0], buffer lost 2 [15.0, 30.0], completed 0, met 0, aborted 7, gmin min -1.001, disp max (completed) n.d.
+  feedback retuned   t_loss=  15 em=3    T_wd=0.1  contact=- buffer lost=False (-) gmin=6.079 (pair 3, t=22.68) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  30 em=3    T_wd=0.1  contact=35.805 buffer lost=True (35.565) gmin=-1.002 (pair 5, t=35.80) stopped=3 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  60 em=3    T_wd=0.1  contact=- buffer lost=False (-) gmin=4.818 (pair 4, t=62.93) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  90 em=3    T_wd=0.1  contact=- buffer lost=False (-) gmin=5.048 (pair 4, t=92.23) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 120 em=3    T_wd=0.1  contact=- buffer lost=False (-) gmin=5.238 (pair 4, t=121.54) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 140 em=3    T_wd=0.1  contact=- buffer lost=False (-) gmin=5.341 (pair 4, t=141.07) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 145 em=3    T_wd=0.1  contact=- buffer lost=False (-) gmin=5.364 (pair 4, t=145.96) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == feedback retuned   em=3    T_wd=0.1  contact 1/7 [30.0], buffer lost 1 [30.0], completed 0, met 0, aborted 7, gmin min -1.002, disp max (completed) n.d.
+  feedback retuned   t_loss=  15 em=3    T_wd=0.25 contact=- buffer lost=False (-) gmin=6.758 (pair 3, t=22.68) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  30 em=3    T_wd=0.25 contact=35.669 buffer lost=True (35.447) gmin=-1.003 (pair 5, t=35.67) stopped=3 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  60 em=3    T_wd=0.25 contact=- buffer lost=False (-) gmin=4.367 (pair 4, t=63.05) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  90 em=3    T_wd=0.25 contact=- buffer lost=False (-) gmin=4.709 (pair 4, t=92.36) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 120 em=3    T_wd=0.25 contact=- buffer lost=False (-) gmin=5.010 (pair 4, t=121.66) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 140 em=3    T_wd=0.25 contact=- buffer lost=False (-) gmin=5.187 (pair 4, t=141.20) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 145 em=3    T_wd=0.25 contact=- buffer lost=False (-) gmin=5.229 (pair 4, t=146.08) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == feedback retuned   em=3    T_wd=0.25 contact 1/7 [30.0], buffer lost 1 [30.0], completed 0, met 0, aborted 7, gmin min -1.003, disp max (completed) n.d.
+  feedback retuned   t_loss=  15 em=3    T_wd=0.5  contact=- buffer lost=False (-) gmin=7.258 (pair 2, t=16.06) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  30 em=3    T_wd=0.5  contact=35.450 buffer lost=True (35.252) gmin=-1.001 (pair 5, t=35.45) stopped=3 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  60 em=3    T_wd=0.5  contact=- buffer lost=False (-) gmin=3.784 (pair 4, t=63.22) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  90 em=3    T_wd=0.5  contact=- buffer lost=False (-) gmin=4.272 (pair 4, t=92.52) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 120 em=3    T_wd=0.5  contact=- buffer lost=False (-) gmin=4.720 (pair 4, t=121.82) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 140 em=3    T_wd=0.5  contact=- buffer lost=False (-) gmin=4.996 (pair 4, t=141.36) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 145 em=3    T_wd=0.5  contact=- buffer lost=False (-) gmin=5.062 (pair 4, t=146.24) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == feedback retuned   em=3    T_wd=0.5  contact 1/7 [30.0], buffer lost 1 [30.0], completed 0, met 0, aborted 7, gmin min -1.001, disp max (completed) n.d.
+  feedback retuned   t_loss=  15 em=3    T_wd=1.0  contact=- buffer lost=False (-) gmin=6.953 (pair 2, t=16.47) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  30 em=3    T_wd=1.0  contact=35.279 buffer lost=True (35.099) gmin=-1.004 (pair 5, t=35.28) stopped=3 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  60 em=3    T_wd=1.0  contact=- buffer lost=False (-) gmin=3.121 (pair 4, t=63.41) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss=  90 em=3    T_wd=1.0  contact=- buffer lost=False (-) gmin=3.787 (pair 4, t=92.72) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 120 em=3    T_wd=1.0  contact=- buffer lost=False (-) gmin=4.412 (pair 4, t=122.02) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 140 em=3    T_wd=1.0  contact=- buffer lost=False (-) gmin=4.810 (pair 4, t=141.55) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  feedback retuned   t_loss= 145 em=3    T_wd=1.0  contact=- buffer lost=False (-) gmin=4.913 (pair 4, t=146.43) stopped=5 completed=False disp=n.d. marker=n.d. gap=n.d. met=False barrier=0.00 fallback=0.00
+  == feedback retuned   em=3    T_wd=1.0  contact 1/7 [30.0], buffer lost 1 [30.0], completed 0, met 0, aborted 7, gmin min -1.004, disp max (completed) n.d.
+  nominal state at   15 s: v [5.012, 6.047, 7.08, 8.109, 9.128], clearances [39.14, 39.45, 39.88, 40.42], u [-0.043, -0.045, -0.04, -0.033, -0.021]
+  nominal state at   30 s: v [4.555, 5.345, 6.142, 6.95, 7.771], clearances [24.96, 25.2, 25.54, 26.0], u [-0.03, -0.055, -0.079, -0.104, -0.128]
+  nominal state at   60 s: v [3.657, 3.884, 4.113, 4.347, 4.588], clearances [10.88, 10.95, 11.05, 11.18], u [-0.03, -0.041, -0.052, -0.063, -0.075]
+  nominal state at   90 s: v [2.76, 2.808, 2.857, 2.907, 2.959], clearances [7.37, 7.39, 7.41, 7.44], u [-0.03, -0.033, -0.035, -0.038, -0.041]
+  nominal state at  120 s: v [1.861, 1.87, 1.88, 1.889, 1.899], clearances [6.66, 6.66, 6.67, 6.67], u [-0.03, -0.03, -0.031, -0.032, -0.032]
+  nominal state at  140 s: v [1.262, 1.265, 1.268, 1.271, 1.274], clearances [6.55, 6.55, 6.55, 6.55], u [-0.03, -0.03, -0.03, -0.03, -0.031]
+  nominal state at  145 s: v [1.112, 1.115, 1.117, 1.119, 1.121], clearances [6.54, 6.54, 6.54, 6.54], u [-0.03, -0.03, -0.03, -0.03, -0.03]
+  design record unchanged at the end: True; part run time 5.7 s
+  -> data/new_d19/fbref/studies/loss.json (1087.2 kB)

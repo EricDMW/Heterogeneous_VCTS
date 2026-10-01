@@ -1,0 +1,31 @@
+==== run_fb_ensemble_audit.py 2026-09-29 01:29:34: 1 admitted states with failed bound rows; states with |eps_1(0)| = eps_det exactly: [{'index': 305, 'v1': '10.4650', 'admitted': True}] ====
+  state 305 as_drawn  cert admitted True failed [], head lower envelope -0.742950, switch deadline 0.043857 s, C7b slack 0.003559
+  state 305 v1+1e-09  cert admitted True failed [], head lower envelope -1.092950, switch deadline 0.043857 s, C7b slack 0.003559
+  state 305 v1-1e-09  cert admitted True failed [], head lower envelope -0.742950, switch deadline 0.043857 s, C7b slack 0.003559
+  state 305 eps_1(0): exact -3/200, double -0.015000000000000568434 (|eps| - eps_det = 5.69e-16)
+  state 305 run constant head u ['-1.091000', '-0.742905', '-0.742904'], head tset 0.0010 s; rows: {'as_drawn': (False, ['command_lower_before_T_xi', 'command_lower_pointwise']), 'v1+1e-09': (True, []), 'v1-1e-09': (False, ['command_lower_before_T_xi', 'command_lower_pointwise', 'first_window_velocity_error'])}
+  state 305 run random   head u ['-1.091000', '-0.742905', '-0.742904'], head tset 0.0010 s; rows: {'as_drawn': (False, ['command_lower_before_T_xi', 'command_lower_pointwise']), 'v1+1e-09': (True, []), 'v1-1e-09': (False, ['command_lower_before_T_xi', 'command_lower_pointwise', 'first_window_velocity_error'])}
+  state 305 nudged v1+1e-09 run constant head u ['-1.091000', '-0.742905', '-0.742904'], head tset 0.0010 s; rows vs own certificate: {'v1+1e-09': (True, [])}
+  state 305 nudged v1+1e-09 run random   head u ['-1.091000', '-0.742905', '-0.742904'], head tset 0.0010 s; rows vs own certificate: {'v1+1e-09': (True, [])}
+  state 305 nudged v1-1e-09 run constant head u ['-0.742950', '-0.742950', '-0.742950'], head tset 0.0000 s; rows vs own certificate: {'v1-1e-09': (True, [])}
+  state 305 nudged v1-1e-09 run random   head u ['-0.742950', '-0.742950', '-0.742950'], head tset 0.0000 s; rows vs own certificate: {'v1-1e-09': (True, [])}
+  wrote data/new_d19/fbref/ensemble_audit.json (7.6 s)
+==== run_fb_ensemble_audit.py 2026-09-29 01:30:46: 1 admitted states with failed bound rows; states with |eps_1(0)| = eps_det exactly: [{'index': 305, 'v1': '10.4650', 'admitted': True}] ====
+  state 305 as_drawn  cert admitted True failed [], head lower envelope -0.742950, switch deadline 0.043857 s, C7b slack 0.003559
+  state 305 v1+1e-09  cert admitted True failed [], head lower envelope -1.092950, switch deadline 0.043857 s, C7b slack 0.003559
+  state 305 v1-1e-09  cert admitted True failed [], head lower envelope -0.742950, switch deadline 0.043857 s, C7b slack 0.003559
+  state 305 eps_1(0): exact -3/200, double -0.015000000000000568434 (|eps| - eps_det = 5.69e-16)
+  state 305 run constant head u ['-1.091000', '-0.742905', '-0.742904'], head tset 0.0010 s; rows: {'as_drawn': (False, ['command_lower_before_T_xi', 'command_lower_pointwise']), 'v1+1e-09': (True, []), 'v1-1e-09': (False, ['command_lower_before_T_xi', 'command_lower_pointwise', 'first_window_velocity_error'])}
+  state 305 run random   head u ['-1.091000', '-0.742905', '-0.742904'], head tset 0.0010 s; rows: {'as_drawn': (False, ['command_lower_before_T_xi', 'command_lower_pointwise']), 'v1+1e-09': (True, []), 'v1-1e-09': (False, ['command_lower_before_T_xi', 'command_lower_pointwise', 'first_window_velocity_error'])}
+  state 305 nudged v1+1e-09 run constant head u ['-1.091000', '-0.742905', '-0.742904'], head tset 0.0010 s; rows vs own certificate: {'v1+1e-09': (True, [])}
+  state 305 nudged v1+1e-09 run random   head u ['-1.091000', '-0.742905', '-0.742904'], head tset 0.0010 s; rows vs own certificate: {'v1+1e-09': (True, [])}
+  state 305 nudged v1-1e-09 run constant head u ['-0.742950', '-0.742950', '-0.742950'], head tset 0.0000 s; rows vs own certificate: {'v1-1e-09': (True, [])}
+  state 305 nudged v1-1e-09 run random   head u ['-0.742950', '-0.742950', '-0.742950'], head tset 0.0000 s; rows vs own certificate: {'v1-1e-09': (True, [])}
+  rejected by C7a  n= 39 slack [-0.36470268129851463, -0.15197413684157438] binding t [0.0, 0.07] s units [2, 3, 4, 5] (before 0.5 s: 39); first increment [0.0292, 0.0711], last increment [0.0998, 0.2999], head speed [10.4509, 10.4921], largest e_i(0) [42.553, 46.339], tlow_2 [0.0, 0.0795989844952477]
+  rejected by C7b  n= 71 slack [-0.027529985312590766, -2.8882910958483166e-06] binding t [0.26, 1.25] s units [5] (before 0.5 s: 21); first increment [0.0313, 0.1299], last increment [0.106, 0.2973], head speed [10.4505, 10.5497], largest e_i(0) [44.79, 46.496], tlow_2 [0.0, 0.43347886863421187]
+  rejected by C8b  n= 11 slack [-0.2882509756957117, -0.01935136406868109] binding t None s units [] (before 0.5 s: 0); first increment [0.0573, 0.1292], last increment [0.2628, 0.2973], head speed [10.4737, 10.5417], largest e_i(0) [43.93, 46.39], tlow_2 [0.2052533604673818, 0.4563368013412987]
+  wrote data/new_d19/fbref/ensemble_audit.json (70.3 s)
+==== run_fb_ensemble_audit.py 2026-09-29 02:29:19: 0 admitted states with failed bound rows; states with |eps_1(0)| = eps_det exactly: [{'index': 305, 'v1': '10.4650', 'admitted': True}] ====
+  rejected by C7b  n= 71 slack [-0.027529985312590766, -2.8882910958483166e-06] binding t [0.26, 1.25] s units [5] (before 0.5 s: 21); first increment [0.0313, 0.1299], last increment [0.106, 0.2973], head speed [10.4505, 10.5497], largest e_i(0) [44.79, 46.496], tlow_2 [0.0, 0.43347886863421187]
+  rejected by C8b  n= 11 slack [-0.2882509756957117, -0.01935136406868109] binding t None s units [] (before 0.5 s: 0); first increment [0.0573, 0.1292], last increment [0.2628, 0.2973], head speed [10.4737, 10.5417], largest e_i(0) [43.93, 46.39], tlow_2 [0.2052533604673818, 0.4563368013412987]
+  wrote data/new_d19/fbref/ensemble_audit.json (45.9 s)

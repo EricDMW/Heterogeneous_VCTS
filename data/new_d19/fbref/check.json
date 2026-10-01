@@ -1,0 +1,315 @@
+{
+ "meta": {
+  "part": "check",
+  "evidence_class": "summary of the pass/fail flags of the records",
+  "generated": "2026-09-29 17:26:31",
+  "script": "code/run_fb_validate.py",
+  "template": "code/run_hr_validate.py (not modified)",
+  "code_sha256": {
+   "run_fb_validate": "cc5717faced93871cb3ba4c5868112d9d23c5e730a81ac00a117ce9e1c9e39ae",
+   "certify_fb": "2fb6da7ddeb086e01de1ff6430d19ff20676a5c1ef4e77e181c1e8e0305add5d",
+   "certify_plan": "86c64d7691a244cfe17008d96e12594c0c24e6eb6bba6be0d4be37210338a18d",
+   "certify_profile": "4dfe46d773316e9fc392e83825204ac1819b7ab415db66593d3fffee35313dce",
+   "sim_hr": "6f503ef59f906301c1f1ce0b2373d40436de17da8be6293652f154375c13a1c2",
+   "sim_cont": "0b493331f1ab9e74f632993d49e3f0139791409875703cce49fbc629011d1502",
+   "sim_bench_hr": "11586d93da1b4dda0741bb0719eada546b2e31188e0c05eed846d9874bffce2e",
+   "run_fb_design": "5d668872c18f933419c245d3878a26939e650557294e06c2cfe72da3bcb40b6c",
+   "run_caseD_validate": "f9897e388d49450617feb00da3c535abc4dd4489da614971b47d4fc535a81568",
+   "design_fb_json": "5532cbc6e4a59a003979c637b99bb38e2365cec8424bbbd8f89b1121668e951c"
+  },
+  "evaluator_matches_design_record": true,
+  "design_rule_matches_design_record": true,
+  "python": "3.12.7",
+  "numpy": "1.26.4",
+  "numba": "0.60.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processes": 10,
+  "design": {
+   "lam": 0.065,
+   "U": 0.02,
+   "Uminus": 1.2,
+   "vhnd": 0.01,
+   "lags": [
+    41,
+    41
+   ],
+   "dbar": 0.02,
+   "age_boundary_ms": 25,
+   "T_xi": 148.75,
+   "plan_T_xi_exact": "595/4",
+   "n_pieces": 52
+  },
+  "sim_law": {
+   "schedules": false,
+   "nosched": "park",
+   "T_m": 0.001,
+   "T_c": 0.001
+  }
+ },
+ "files": {
+  "reference.json": {
+   "ok": true,
+   "flags": {
+    "certificate_admitted": true,
+    "design_constants": true,
+    "bounds_all_ok": true,
+    "all_rows_checked": true,
+    "fine_bounds_all_ok": true,
+    "records_identical": true,
+    "fine_vs_reference_stops": true,
+    "stop_record_resolves_1us": true,
+    "certificate_consistent_with_design_record": true,
+    "evaluator_matches_design_record": true,
+    "fb_law": true,
+    "filter_inactive": true,
+    "commands_in_set": true,
+    "zero_after_latch": true,
+    "all_stopped": true,
+    "requirements": true
+   },
+   "detail": {
+    "n_checked": 63,
+    "failed": [],
+    "dispersion": 0.07157955653156023,
+    "u": [
+     -1.0799186011406188,
+     0.0
+    ],
+    "positive_nominal": 0
+   }
+  },
+  "convergence.json": {
+   "ok": true,
+   "flags": {
+    "all_rows_inside_bounds": true,
+    "all_rows_checked": true,
+    "all_filter_inactive": true,
+    "stops_converged": true,
+    "age": true,
+    "fb_law": true
+   },
+   "detail": {
+    "max_diff": 5.488800525199622e-09,
+    "argmax": "entry_obs",
+    "max_stop_diff": 7.105427357601002e-13
+   }
+  },
+  "digital.json": {
+   "ok": true,
+   "flags": {
+    "all_bounds_ok": true,
+    "all_rows_checked": true,
+    "all_filter_inactive": true,
+    "age": true,
+    "fb_law": true
+   },
+   "detail": {
+    "max_stop_diff_1kHz": 1.1176587406680483e-06,
+    "max_marker_diff_1kHz": 5.118498108913627e-06
+   }
+  },
+  "schedules.json": {
+   "ok": true,
+   "flags": {
+    "bounds_all_ok": true,
+    "all_rows_checked": true,
+    "age": true,
+    "all_stopped": true,
+    "no_contact": true,
+    "filter_inactive": true,
+    "zero_after_latch": true,
+    "commands_in_set": true,
+    "no_rule_before_T_xi": true,
+    "fb_law": true,
+    "requirements": true
+   },
+   "detail": {
+    "n": 1000,
+    "settling_max": 0.06734385457303915,
+    "n_bounds_failed": 0,
+    "failed_rows": [],
+    "positive_nominal": 0
+   }
+  },
+  "adversarial.json": {
+   "ok": true,
+   "flags": {
+    "bounds_all_ok": true,
+    "all_rows_checked": true,
+    "age": true,
+    "all_stopped": true,
+    "no_contact": true,
+    "filter_inactive": true,
+    "zero_after_latch": true,
+    "commands_in_set": true,
+    "no_rule_before_T_xi": true,
+    "fb_law": true,
+    "requirements": true
+   },
+   "detail": {
+    "n": 84,
+    "settling_max": 0.07178753270386551,
+    "n_bounds_failed": 0,
+    "failed_rows": [],
+    "positive_nominal": 0
+   }
+  },
+  "sweep.json": {
+   "ok": true,
+   "flags": {
+    "admitted_rows_inside_bounds": true,
+    "admitted_rows_all_checked": true,
+    "admitted_rows_filter_inactive": true,
+    "admitted_rows_requirements_ok": true,
+    "admitted_rows_commands_in_set": true,
+    "admitted_grid_consistent_with_boundary": true,
+    "boundary_equals_design_record": true,
+    "fb_law": true,
+    "age": true
+   },
+   "detail": {
+    "certified_ages_ms": [
+     5,
+     10,
+     15,
+     20,
+     25
+    ],
+    "boundary_ms": 25,
+    "first_failures": {
+     "design_bound": {
+      "age_ms": 25,
+      "failed": [
+       "braking_mismatch_integral",
+       "command_lower_pointwise",
+       "command_upper_pointwise",
+       "information_age",
+       "ramp_receipts",
+       "ramp_relay_steps"
+      ]
+     },
+     "certificate": {
+      "age_ms": 26,
+      "failed": [
+       "C8b"
+      ]
+     },
+     "positive_nominal": {
+      "age_ms": 150,
+      "runs": 5
+     },
+     "bound_at_age": {
+      "age_ms": 200,
+      "failed": [
+       "filter_modifications",
+       "nominal_command_upper"
+      ],
+      "admitted": false
+     },
+     "requirement": {
+      "age_ms": 200,
+      "failed": [
+       "filter_inactive",
+       "input_set_unmodified"
+      ]
+     },
+     "clipped_command": {
+      "age_ms": 200,
+      "saturations": 1161,
+      "upper": 1161,
+      "lower": 0
+     },
+     "clip_or_filter": {
+      "age_ms": 200,
+      "count": 1161
+     }
+    }
+   }
+  },
+  "ensemble.json": {
+   "ok": true,
+   "flags": {
+    "rule_reproduces_design": true,
+    "admitted_inside_bounds": true,
+    "admitted_all_checked": true,
+    "admitted_filter_inactive": true,
+    "admitted_requirements": true,
+    "admitted_age": true,
+    "admitted_fb_law": true,
+    "all_states_inside_C2": true
+   },
+   "detail": {
+    "n": 300,
+    "n_admitted": 221,
+    "failures": {
+     "C7b": 71,
+     "C8b": 11
+    },
+    "n_rejected_by_C2": 182
+   }
+  },
+  "outside.json": {
+   "ok": true,
+   "flags": {
+    "certificate_not_applicable_all": true,
+    "not_admitted": true,
+    "age": true,
+    "fb_law": true
+   },
+   "detail": {
+    "runs": 160,
+    "clipping": 36,
+    "positive": 36,
+    "filter": 0,
+    "rule_before_T_xi": 0,
+    "within_design_bounds": 0,
+    "not_stopped": 0,
+    "contact": 0
+   }
+  },
+  "age_audit.json": {
+   "ok": true,
+   "flags": {
+    "all_within_bound": true,
+    "matches_runs": true
+   },
+   "detail": {
+    "schedules": 2207,
+    "all_within_bound": true,
+    "mismatches_vs_runs": 0
+   }
+  },
+  "independent.json": {
+   "ok": true,
+   "flags": {
+    "sim_bench_hr_proposed_agrees": true,
+    "sim_bench_hr_feedback_agrees": true,
+    "bench_proposed_identical_to_feedback": true,
+    "bench_no_schedule": true,
+    "all_sim_hr_bounds_ok": true,
+    "all_sim_hr_fb_law": true
+   },
+   "detail": {
+    "sim_bench_hr_proposed": {
+     "max_stop_diff": 0.0,
+     "max_settling_diff": 0.0,
+     "max_marker_diff": 0.0,
+     "max_gap_diff": 0.0,
+     "max_tact_diff": 0.0,
+     "max_tset_diff": 0.0,
+     "max_trule_diff": 0.0,
+     "max_e_hnd_diff": 0.0,
+     "max_gmin_diff": 3.907985046680551e-14,
+     "max_u_min_unit_diff": 0.0,
+     "max_u_max_unit_diff": 0.0,
+     "max_entry_diff": null,
+     "stop_order_equal": true,
+     "rule_equal": true
+    }
+   }
+  }
+ },
+ "all_ok": true,
+ "n_flags": 78,
+ "failed_flags": []
+}
